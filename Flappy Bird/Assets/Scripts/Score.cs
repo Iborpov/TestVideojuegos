@@ -17,7 +17,5 @@ public class Score : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         GameObject.Find("GameManager").GetComponent<GameManager>().score++;
-
-        //score += 1;
     }
 }

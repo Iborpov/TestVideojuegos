@@ -27,14 +27,16 @@ public class Spawner : MonoBehaviour
 
                 CreateRandom();
             }
+
+            
         }
     }
 
     void CreateRandom()
     {
         var pipes = Instantiate(pipesPrefab);
-        pipes.transform.position = new Vector2(10, Random.Range(-3f, 3f));
+        pipes.transform.position = new Vector2(0, Random.Range(-3f, 3f));
         var topPipe = pipes.transform.GetChild(0);
-        var bottomPipe = pipes.transform.GetChild(1);
+        var bottomPipe = pipes.transform.GetChild(1); 
     }
 }

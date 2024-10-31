@@ -6,15 +6,22 @@ public class Pipes : MonoBehaviour
 {
     public GameObject pipes;
 
+
     // Start is called before the first frame update
     void Start() { }
 
     // Update is called once per frame
-    void Update() {
-        
+    void Update()
+    {
+        if (GameObject.Find("GameManager").GetComponent<GameManager>().started)
+        {
             Move();
-        
-     }
+        }
+        if (pipes.transform.position.x <= -20)
+        {
+            DestroyPipe();
+        }
+    }
 
     public void Move()
     {
@@ -24,5 +31,8 @@ public class Pipes : MonoBehaviour
         );
     }
 
-    
+    public void DestroyPipe()
+    {
+        GameObject.Destroy(pipes, 0.6f);
+    }
 }
