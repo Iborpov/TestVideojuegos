@@ -5,13 +5,17 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
     [SerializeField]
-    int lives = 9;
+    int lives = 8;
 
     [SerializeField]
     List<Sprite> sprites;
+    [SerializeField]
+    GameObject bricks;
 
     // Start is called before the first frame update
-    void Start() { }
+    void Start() {
+        GetComponent<SpriteRenderer>().sprite = sprites[lives-1];
+     }
 
     // Update is called once per frame
     void Update() { }
@@ -23,6 +27,13 @@ public class Brick : MonoBehaviour
     void Hit()
     {
         lives -= 1;
-        GetComponent<SpriteRenderer>().sprite = sprites[lives];
+        if (lives<0)
+        {
+            GameObject.Destroy(bricks, 0.6f);
+        } else
+        {
+            GetComponent<SpriteRenderer>().sprite = sprites[lives];    
+        }
+        
     }
 }
