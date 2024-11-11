@@ -27,12 +27,12 @@ public class Brick : MonoBehaviour
     void Hit()
     {
         lives -= 1;
-        if (lives<0)
+        if (lives<=0)
         {
-            GameObject.Destroy(bricks, 0.6f);
+            Destroy(bricks);
         } else
         {
-            GetComponent<SpriteRenderer>().sprite = sprites[lives];    
+            GetComponent<SpriteRenderer>().sprite = sprites[lives-1];    
         }
         
     }

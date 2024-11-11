@@ -5,7 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Scenes/TestLevel.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainTitle.unity
+    guid: 59ece117ef43def35a0019419304d5ec
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 633fa2efaad2f6a57ac947d007de42e5
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 9cbaec767704d9336993c65259d15d84
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 261aa23fbfb9d90a6a81d9b4805b1755
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 12bc585bd3ca20e9092373229a798f89
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: bd37fc4eda16e3eb6a7c50bae44c8511
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 3ed65e4c1f51ccbd9b6120c11aaa6e83
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: e9870ad52f12658be9d1ef25a604a563
+  - enabled: 1
+    path: Assets/Scenes/Scores.unity
+    guid: e8f5241be32889c6c905e2b4e7a9d7be
   m_configObjects: {}

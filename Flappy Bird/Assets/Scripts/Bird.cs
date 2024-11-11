@@ -9,14 +9,17 @@ public class Bird : MonoBehaviour
 
     public float JumpSpeed = 5f;
 
+    AudioSource audioData;
+
     // Start is called before the first frame update
-    void Start() { }
+    void Start() { audioData = GetComponent<AudioSource>(); Debug.Log(audioData.clip);}
 
     // Update is called once per frame
     void Update()
     {
         if (active)
         {
+            
             rbody.gravityScale = 1f;
             rbody.constraints = RigidbodyConstraints2D.FreezeRotation;
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
@@ -32,6 +35,7 @@ public class Bird : MonoBehaviour
 
     public void Jump()
     {
+        audioData.Play();
         if (rbody.transform.position.y < 4f)
         {
          rbody.velocity = new Vector2(0f, JumpSpeed);   
@@ -40,6 +44,7 @@ public class Bird : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        audioData.Play();
         Debug.Log("Estas Muerto");
         var gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         gm.LoseGame();

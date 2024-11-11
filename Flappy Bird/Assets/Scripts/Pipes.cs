@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pipes : MonoBehaviour
 {
     public GameObject pipes;
+    
 
 
     // Start is called before the first frame update
@@ -33,6 +34,6 @@ public class Pipes : MonoBehaviour
 
     public void DestroyPipe()
     {
-        GameObject.Destroy(pipes, 0.6f);
+        GameObject.Destroy(pipes);
     }
 }

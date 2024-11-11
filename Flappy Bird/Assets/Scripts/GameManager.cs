@@ -7,6 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool started = false;
+    public GameObject birdPrefab;
     public GameObject startPanel;
     public GameObject losePanel;
     public GameObject pausePanel;
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         scene = GameObject.Find("Scene").GetComponent<Scene>();
-        bird = GameObject.Find("Bird").GetComponent<Bird>();
+        bird = GameObject.Find("birdPrefab").GetComponent<Bird>();
     }
 
     // Update is called once per frame
@@ -52,38 +53,59 @@ public class GameManager : MonoBehaviour
 
     public void NewGame()
     {
+        score = 0;
         startPanel.gameObject.SetActive(false);
         losePanel.gameObject.SetActive(false);
-        bird.active = true;
 
-        var pipes = GameObject.Find("pipesPrefab").GetComponent<Pipes>();
-        if (pipes != null)
+        var pipes = FindObjectsByType<Pipes>(FindObjectsSortMode.None);
+
+        foreach (var pipe in pipes)
         {
-            pipes.DestroyPipe();
+            pipe.GetComponent<Pipes>().DestroyPipe();
         }
-        
-        
+
+        if (bird == null)
+        {
+            bird = Instantiate(birdPrefab).GetComponent<Bird>();
+        }
+
+        Debug.Log(GameObject.FindObjectOfType<Bird>());
+        if (bird.transform.position.y != 0f)
+        {
+            bird.transform.position = new Vector2(0f, 0f);
+        }
+        Paused(false);
     }
 
     public void LoseGame()
     {
         started = false;
-        bird.active = false;
+        GameObject.Destroy(FindAnyObjectByType<Bird>().gameObject);
         losePanel.gameObject.SetActive(true);
-        var scored = losePanel.transform.GetChild(1);
-        //scored.text = "Has conseguido "+score+" puntos";
+        var scored = losePanel.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        Debug.Log(scored);
+        scored.text = "Has conseguido " + score + " puntos";
         score = 0;
     }
 
-    void Paused(bool paused){
+    void Paused(bool paused)
+    {
         if (paused)
         {
             bird.active = false;
-            pausePanel.SetActive(true);     
-        } else
+            pausePanel.SetActive(true);
+        }
+        else
         {
             bird.active = true;
             pausePanel.SetActive(false);
         }
+    }
+
+    public void QuitGame(){
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 }

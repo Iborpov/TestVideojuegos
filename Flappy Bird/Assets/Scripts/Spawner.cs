@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
             if (timePassedSinceLastPipe > randomTime)
             {
                 timePassedSinceLastPipe = 0;
-                randomTime = Random.Range(1.5f, 5f);
+                randomTime = Random.Range(2f, 5f);
 
                 CreateRandom();
             }
