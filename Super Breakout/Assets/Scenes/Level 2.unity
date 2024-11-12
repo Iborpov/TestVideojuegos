@@ -340,7 +340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1621222695643099870, guid: 9f6bea26d06d384149781b21857f0e65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1621222695643099870, guid: 9f6bea26d06d384149781b21857f0e65, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1909,6 +1909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 3
   ballpref: {fileID: 7104622943106773299, guid: 83351c5c5f94d5d80aa1a410b5aa28ca, type: 3}
+  briks: {fileID: 1808729343}
 --- !u!4 &1947468603
 Transform:
   m_ObjectHideFlags: 0

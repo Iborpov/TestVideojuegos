@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    float speed = 5;
+    float speed = 5f;
     Rigidbody2D rbody;
 
     // Start is called before the first frame update
@@ -36,5 +36,9 @@ public class Ball : MonoBehaviour
         transform.parent = null;
         float x = UnityEngine.Random.Range(0, 2) == 0 ? -0.2f : 0.2f;
         GetComponent<Rigidbody2D>().velocity = new Vector2(x * speed, 1 * speed);
+    }
+
+    public void ChangeDirection(float direction){
+        GetComponent<Rigidbody2D>().velocity = new Vector2(direction, rbody.velocity.y);
     }
 }

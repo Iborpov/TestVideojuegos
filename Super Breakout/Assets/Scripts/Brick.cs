@@ -30,9 +30,11 @@ public class Brick : MonoBehaviour
         if (lives<=0)
         {
             Destroy(bricks);
+            Score.Instance.AddScore(100);
         } else
         {
-            GetComponent<SpriteRenderer>().sprite = sprites[lives-1];    
+            GetComponent<SpriteRenderer>().sprite = sprites[lives-1];  
+            Score.Instance.AddScore(50);  
         }
         
     }
