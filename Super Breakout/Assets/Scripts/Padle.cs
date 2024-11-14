@@ -33,12 +33,12 @@ public class Padle : MonoBehaviour
 
         if (direction.x < rbody.transform.position.x-0.5)
         { //Izquierda
-            Debug.Log("Izquierda"+direction.x +" "+rbody.transform.position.x);
+            //Debug.Log("Izquierda"+direction.x +" "+rbody.transform.position.x);
             ball.ChangeDirection(-2.5f);
         }
         else if (direction.x > rbody.transform.position.x+0.5)
         { //Derecha
-            Debug.Log("Derecha"+direction.x +" "+rbody.transform.position.x);
+            //Debug.Log("Derecha"+direction.x +" "+rbody.transform.position.x);
             ball.ChangeDirection(2.5f);
         }
     }
