@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     //Primer nivel del modo limitado
     public void ModoNormal()
     {
+        Lives.Instance.SetLives(3);
         SceneManager.LoadScene(1);
     }
 
@@ -100,8 +101,8 @@ public class GameManager : MonoBehaviour
     //Se pierde una vida
     public void Loselive()
     {
-        Lives.Instance.lives -= 1;
-        if (Lives.Instance.lives <= 0)
+        int lives = Lives.Instance.LoseLive();
+        if (lives <= 0)
         {
             Gamelose();
         }

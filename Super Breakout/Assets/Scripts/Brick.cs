@@ -12,6 +12,10 @@ public class Brick : MonoBehaviour
     [SerializeField]
     GameObject bricks;
 
+    [SerializeField]
+    GameObject powerupPrefab;
+
+
     // Start is called before the first frame update
     void Start() {
         GetComponent<SpriteRenderer>().sprite = sprites[lives-1];

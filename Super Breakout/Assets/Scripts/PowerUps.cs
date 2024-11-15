@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUps : Singleton<PowerUps>
+public class PowerUps : MonoBehaviour
 {
-    [SerializeField]
-    GameObject extraLife;
 
     [SerializeField]
     int tipe;
+
+    
 
     // Start is called before the first frame update
     void Start() { }
@@ -38,7 +38,8 @@ public class PowerUps : Singleton<PowerUps>
 
     void AddLive()
     {
-        Lives.Instance.lives += 1;
+        GameObject newball = Instantiate(ballpref);
+        Lives.Instance.AddLive();
     }
 
     void ExtraBall() {

@@ -6,27 +6,39 @@ using UnityEngine;
 
 public class Lives : Singleton<Lives>
 {
+    private int lives = 3;
 
-    public int lives = 3;
     [SerializeField]
-    List<Sprite> sprites;
+    private List<Sprite> sprites;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        //LoadHearts();
-    }
+    void Start() { }
 
     // Update is called once per frame
-    void Update()
+    void Update() { }
+
+    public int GetLives()
     {
-        
+        return lives;
     }
 
-    // void LoadHearts(){
-    //     for (int i = 0; i < lives; i++)
-    //     {
-    //         GameObject imgObject = new GameObject("live"+(i+1));
-    //         Image image = imgObject.AddComponent<Image>();
-    //     }
-    // }
+    public void SetLives(int newlives){
+        lives = newlives;
+    }
+
+    public Sprite GetSprite(int i){
+        return sprites[i];
+    }
+
+    public int LoseLive()
+    {
+        lives -= 1;
+        return lives;
+    }
+
+    public int AddLive()
+    {
+        lives += 1;
+        return lives;
+    }
 }

@@ -24,6 +24,15 @@ public class Score : Singleton<Score>
         {
             PrintScore();
         }
+        else
+        {
+            GameObject gotext = GameObject.Find("ScoreText");
+            if (gotext != null)
+            {
+                scoretext = gotext.GetComponent<TextMeshProUGUI>();
+            }
+            Debug.LogWarning("No existe el TextMeshPro");
+        }
     }
 
     //Recibe la puntuación obtenida y la suma a la existente
@@ -34,7 +43,7 @@ public class Score : Singleton<Score>
     }
 
     void PrintScore()
-    {
+    { //Actualiza el texto de la puntuación
         scoretext.text = score + " Puntos";
     }
 
@@ -47,7 +56,7 @@ public class Score : Singleton<Score>
             int index = topten.FindIndex(x => x < newNumber);
             topten.Insert(index, newNumber);
 
-            // Eliminar el último elemento para mantener la lista con 10 elementos
+            // Elimina el último elemento para mantener la lista con 10 elementos
             topten.RemoveAt(topten.Count - 1);
         }
     }
