@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class Hearts : MonoBehaviour
 {
-    //[SerializeField]
     private List<Image> hearts;
     private int lives;
 
@@ -32,7 +31,6 @@ public class Hearts : MonoBehaviour
             }
             else
             {
-                Debug.Log("sin vida");
                 // Si no, mostrar el corazón vacío
                 image.sprite = Lives.Instance.GetSprite(2); // Sprite vacío
             }

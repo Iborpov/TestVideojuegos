@@ -18,7 +18,10 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Una vida menos");
-        gm.GetComponent<GameManager>().Loselive();
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            Debug.Log("Una vida menos "+Lives.Instance.GetLives());
+            gm.GetComponent<GameManager>().Loselive();
+        }
     }
 }

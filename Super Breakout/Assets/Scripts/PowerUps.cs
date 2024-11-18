@@ -4,49 +4,92 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
+    [SerializeField]
+    private int type;
 
     [SerializeField]
-    int tipe;
+    private GameObject ballpref;
 
-    
+    [SerializeField]
+    private List<Sprite> sprites;
+
+    float time = 0f;
 
     // Start is called before the first frame update
-    void Start() { }
+    void Start()
+    {
+        type = UnityEngine.Random.Range(0, 4);
+        GetComponent<SpriteRenderer>().sprite = sprites[type];
+    }
 
     // Update is called once per frame
-    void Update() { }
-
-    void OnCollisionEnter2D(Collision2D collisionInfo)
+    void Update()
     {
-        if (tipe == 0)
+        time += Time.deltaTime;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider2D)
+    {
+        if (collider2D.gameObject.CompareTag("Player"))
         {
-            AddLive();
-        }
-        else if (tipe == 1)
-        {
-            ExtraBall();
-        }
-        else if (tipe == 2)
-        {
-            BigBall();
-        }
-        else if (tipe == 3)
-        {
-            SmallBall();
+            switch (type)
+            {
+                case 0:
+                    AddLive();
+                    break;
+                case 1:
+                    ExtraBall();
+                    break;
+                case 2:
+                    BigBall();
+                    break;
+                case 3:
+                    SmallBall();
+                    break;
+                default:
+                    break;
+            }
+            Destroy(gameObject);
         }
     }
 
+    //Añade una vida más
     void AddLive()
     {
-        GameObject newball = Instantiate(ballpref);
         Lives.Instance.AddLive();
     }
 
-    void ExtraBall() {
-        
-     }
+    //Añade una bola más
+    void ExtraBall()
+    {
+        var padle = GameObject.Find("Padle");
+        GameObject newball = Instantiate(ballpref);
+        newball.transform.parent = padle.transform;
+    }
 
-    void BigBall() { }
+    //Hace la bola más grande
+    void BigBall()
+    {
+        var ball = FindFirstObjectByType<Ball>().gameObject;
+        ball.transform.localScale = new Vector2(2, 2);
+    }
 
-    void SmallBall() { }
+    //Hace la bola más pequeña
+    void SmallBall()
+    {
+        var ball = FindFirstObjectByType<Ball>().gameObject;
+        ball.transform.localScale = new Vector2(0.5f, 0.5f);
+    }
+
+    //-----------------------------------------------------------------------
+
+    public int GetTipe()
+    {
+        return this.type;
+    }
+
+    public void SetType(int newType)
+    {
+        this.type = newType;
+    }
 }

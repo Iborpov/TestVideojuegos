@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
         newball.transform.parent = padle.transform;
     }
 
+
     void SkipLevel() { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
