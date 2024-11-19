@@ -323,9 +323,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_18
       rect:
         serializedVersion: 2
-        x: 400
+        x: 399
         y: 576
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -344,9 +344,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_19
       rect:
         serializedVersion: 2
-        x: 784
+        x: 783
         y: 576
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -554,9 +554,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_35
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 336
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -575,9 +575,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_36
       rect:
         serializedVersion: 2
-        x: 400
+        x: 399
         y: 336
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -596,9 +596,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_37
       rect:
         serializedVersion: 2
-        x: 784
+        x: 783
         y: 336
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -806,9 +806,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_53
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 96
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -827,9 +827,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_54
       rect:
         serializedVersion: 2
-        x: 400
+        x: 399
         y: 96
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -848,9 +848,9 @@ TextureImporter:
       name: more_breakout_pieces 32x32_55
       rect:
         serializedVersion: 2
-        x: 784
+        x: 783
         y: 96
-        width: 64
+        width: 65
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -937,7 +937,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,6 +945,48 @@ TextureImporter:
       bones: []
       spriteID: 70eaf823737373f55876754658dfc230
       internalID: 1808007048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 192
+        width: 65
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87214eb2ed7b4100089f408629af6109
+      internalID: 1758815500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 672
+        width: 65
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4860393, y: 0.39406878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8dbe6f72676f523a8ddfb901250455
+      internalID: -1519364789
       vertices: []
       indices: 
       edges: []

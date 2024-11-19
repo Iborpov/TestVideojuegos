@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour
@@ -11,21 +12,24 @@ public class PowerUps : MonoBehaviour
     private GameObject ballpref;
 
     [SerializeField]
-    private List<Sprite> sprites;
+    private List<Sprite> poweupSprites;
 
-    float time = 0f;
+    [SerializeField]
+    private List<Sprite> extraSprites;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        type = UnityEngine.Random.Range(0, 4);
-        GetComponent<SpriteRenderer>().sprite = sprites[type];
+        type = UnityEngine.Random.Range(0, 4); //Se añade un tipo aleatorio
+        GetComponent<SpriteRenderer>().sprite = poweupSprites[type]; //Se le aplica la aparencia segun el tipo elegido
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        
     }
 
     void OnTriggerEnter2D(Collider2D collider2D)
@@ -53,6 +57,11 @@ public class PowerUps : MonoBehaviour
         }
     }
 
+    
+
+
+    //PoweUps -----------------------------------------------------------------------
+
     //Añade una vida más
     void AddLive()
     {
@@ -72,6 +81,7 @@ public class PowerUps : MonoBehaviour
     {
         var ball = FindFirstObjectByType<Ball>().gameObject;
         ball.transform.localScale = new Vector2(2, 2);
+        ball.GetComponent<SpriteRenderer>().sprite = extraSprites[0];
     }
 
     //Hace la bola más pequeña
@@ -79,6 +89,7 @@ public class PowerUps : MonoBehaviour
     {
         var ball = FindFirstObjectByType<Ball>().gameObject;
         ball.transform.localScale = new Vector2(0.5f, 0.5f);
+        ball.GetComponent<SpriteRenderer>().sprite = extraSprites[1];
     }
 
     //-----------------------------------------------------------------------

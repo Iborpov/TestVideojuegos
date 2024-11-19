@@ -344,6 +344,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed13a24a873d99c278c4750d1edb5562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  extraHealth: {fileID: 4628706943375284855}
+  hearts:
+  - {fileID: 7897671716192185432}
+  - {fileID: 5876359632355129780}
+  - {fileID: 6469096684446110271}
+  sprites:
+  - {fileID: -702791920, guid: a004b5413910db08ab301c6b594d9fa9, type: 3}
+  - {fileID: 1543974369, guid: a004b5413910db08ab301c6b594d9fa9, type: 3}
+  - {fileID: -2098057430, guid: a004b5413910db08ab301c6b594d9fa9, type: 3}
 --- !u!1 &7304621848627019832
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +1
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

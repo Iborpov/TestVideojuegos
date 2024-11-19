@@ -101,11 +101,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   ballpref: {fileID: 7104622943106773299, guid: 83351c5c5f94d5d80aa1a410b5aa28ca, type: 3}
-  sprites:
+  poweupSprites:
   - {fileID: 1648005304, guid: cc33f53d5853405369fc3668226019ff, type: 3}
   - {fileID: -1988070603, guid: cc33f53d5853405369fc3668226019ff, type: 3}
   - {fileID: -727107259, guid: cc33f53d5853405369fc3668226019ff, type: 3}
   - {fileID: 800770379, guid: cc33f53d5853405369fc3668226019ff, type: 3}
+  extraSprites:
+  - {fileID: -61463924, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
+  - {fileID: 621381520, guid: f4b8a75d87426c1c9ae534955f3e49e2, type: 3}
+  - {fileID: 1758815500, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
 --- !u!61 &2369941809233926822
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            Debug.Log("Una vida menos "+Lives.Instance.GetLives());
+            //Debug.Log("Una vida menos "+Lives.Instance.GetLives());
             gm.GetComponent<GameManager>().Loselive();
         }
     }
