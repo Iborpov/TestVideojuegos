@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 5.unity
     guid: bd37fc4eda16e3eb6a7c50bae44c8511
   - enabled: 1
+    path: Assets/Scenes/Level Infinite.unity
+    guid: 48ccc039cb4d07b58ac647b8d671d5ab
+  - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 3ed65e4c1f51ccbd9b6120c11aaa6e83
   - enabled: 1

@@ -12,10 +12,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject briks = null;
 
+    [SerializeField]
+    List<AudioClip> sounds;
+
     // Start is called before the first frame update
     void Start()
     {
-        //SceneManager.LoadScene(0);
+        
     }
 
     // Update is called once per frame
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
     //Primer nivel del modo limitado
     public void ModoNormal()
     {
+        SoundManager.Instance.PlayClip(sounds[0]);
         Lives.Instance.SetLives(3);
         SceneManager.LoadScene(1);
     }
@@ -69,32 +73,32 @@ public class GameManager : MonoBehaviour
     //Modo creado procedimentalmente
     public void ModoInfinito()
     {
-        //SceneManager.LoadScene(1);
+        SceneManager.LoadScene(6);
     }
 
     //Pantalla del top 10 de mejores puntuaciónes
     public void PantallaScore()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 
     //Pantalla para ragistrar una puntuación nueva
     public void PantallaGuardar()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(10);
     }
 
     //Pantalla de fin de juego
     void Gamelose()
     {
         Debug.Log("GAME OVER");
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
 
     //Pantalla de victoria del modo limitado
     void Win()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
         Score.Instance.TopScore(Score.Instance.score);
     }
 

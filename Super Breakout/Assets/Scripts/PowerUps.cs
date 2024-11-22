@@ -17,8 +17,6 @@ public class PowerUps : MonoBehaviour
     [SerializeField]
     private List<Sprite> extraSprites;
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +25,7 @@ public class PowerUps : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Update() { }
 
     void OnTriggerEnter2D(Collider2D collider2D)
     {
@@ -57,9 +52,6 @@ public class PowerUps : MonoBehaviour
         }
     }
 
-    
-
-
     //PoweUps -----------------------------------------------------------------------
 
     //Añade una vida más
@@ -82,6 +74,7 @@ public class PowerUps : MonoBehaviour
         var ball = FindFirstObjectByType<Ball>().gameObject;
         ball.transform.localScale = new Vector2(2, 2);
         ball.GetComponent<SpriteRenderer>().sprite = extraSprites[0];
+        PoweupsManager.Instance.CooldownBigBall(5f);
     }
 
     //Hace la bola más pequeña
@@ -90,6 +83,7 @@ public class PowerUps : MonoBehaviour
         var ball = FindFirstObjectByType<Ball>().gameObject;
         ball.transform.localScale = new Vector2(0.5f, 0.5f);
         ball.GetComponent<SpriteRenderer>().sprite = extraSprites[1];
+        PoweupsManager.Instance.CooldownSmallBall(5);
     }
 
     //-----------------------------------------------------------------------
@@ -102,5 +96,9 @@ public class PowerUps : MonoBehaviour
     public void SetType(int newType)
     {
         this.type = newType;
+    }
+
+    public Sprite GetExtraSprite(int i){
+        return extraSprites[i];
     }
 }
