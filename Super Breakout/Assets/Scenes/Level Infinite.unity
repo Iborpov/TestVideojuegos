@@ -1337,6 +1337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score
       objectReference: {fileID: 0}
+    - target: {fileID: 7048370291473329096, guid: 8b2246929011c104689e9a093b52fa5d, type: 3}
+      propertyPath: scoretext
+      value: 
+      objectReference: {fileID: 2018017442}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1794,9 +1798,20 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 884, y: -489}
-  m_SizeDelta: {x: 118.2201, y: 46.1953}
+  m_AnchoredPosition: {x: 869.66174, y: -489}
+  m_SizeDelta: {x: 146.8966, y: 46.1953}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2018017442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3361846892138141836, guid: 7985f0843dff508e188e0223a935f46b, type: 3}
+  m_PrefabInstance: {fileID: 1203142428770291994}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1131614867020621273
 PrefabInstance:
   m_ObjectHideFlags: 0

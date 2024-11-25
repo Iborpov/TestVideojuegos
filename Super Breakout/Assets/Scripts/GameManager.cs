@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
             {
                 if (SceneManager.GetActiveScene().buildIndex == 6) //Si el nivel es el infinito
                 {
+                    Newball();
                     var pm = FindAnyObjectByType<ProceduralManager>();
                     pm.level += 1;
                     pm.GenerateLevel();
@@ -101,6 +102,7 @@ public class GameManager : MonoBehaviour
         SoundManager.Instance.PlayClip(sounds[3]);
         Debug.Log("GAME OVER");
         SceneManager.LoadScene(8);
+        Lives.Instance.SetLives(3);
     }
 
     //Pantalla de victoria del modo limitado

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProceduralManager : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class ProceduralManager : MonoBehaviour
                 1,
                 9
             );
+            brick.transform.position = new Vector2(-10+i*2, 4);
+            brick.transform.parent = bricks.transform;
         }
     }
 }
