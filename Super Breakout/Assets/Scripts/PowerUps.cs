@@ -17,6 +17,9 @@ public class PowerUps : MonoBehaviour
     [SerializeField]
     private List<Sprite> extraSprites;
 
+    [SerializeField]
+    private AudioClip recover;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +60,7 @@ public class PowerUps : MonoBehaviour
     //Añade una vida más
     void AddLive()
     {
+        SoundManager.Instance.PlayClip(recover);
         Lives.Instance.AddLive();
     }
 

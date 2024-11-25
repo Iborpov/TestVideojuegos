@@ -8,6 +8,9 @@ public class Padle : MonoBehaviour
     float speed = 5;
     Rigidbody2D rbody;
 
+    [SerializeField]
+    AudioClip hit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class Padle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
+        SoundManager.Instance.PlayClip(hit);
         var ball = GameObject.FindAnyObjectByType<Ball>();
 
         var direction = collisionInfo.transform.position;

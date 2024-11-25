@@ -1936,54 +1936,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2011634834
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2011634836}
-  - component: {fileID: 2011634835}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2011634835
+--- !u!114 &2011634835 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1019614075427915818, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+  m_PrefabInstance: {fileID: 6214698593791234320}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011634834}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 974c7fcfa1ca482a483b62e76387a6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballpref: {fileID: 7104622943106773299, guid: 83351c5c5f94d5d80aa1a410b5aa28ca, type: 3}
-  briks: {fileID: 0}
-  sounds:
-  - {fileID: 8300000, guid: a1cfb0bb705408cdf88e223b4c90d368, type: 3}
---- !u!4 &2011634836
-Transform:
+--- !u!1001 &6214698593791234320
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011634834}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897319402105839586, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680014314119348104, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1992,5 +2012,5 @@ SceneRoots:
   - {fileID: 1794109479}
   - {fileID: 71466789}
   - {fileID: 1017964934}
-  - {fileID: 2011634836}
+  - {fileID: 6214698593791234320}
   - {fileID: 545852881}

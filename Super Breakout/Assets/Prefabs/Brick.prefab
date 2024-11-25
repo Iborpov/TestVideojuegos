@@ -59,6 +59,8 @@ MonoBehaviour:
   - {fileID: -1555291634, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
   bricks: {fileID: 3658840246666868757}
   powerupPref: {fileID: 4772211043556095851, guid: efb132e490707a9fb92e562a813757e0, type: 3}
+  hit: {fileID: 8300000, guid: 8f8b909ce32bd7a83a362dcf27d414f3, type: 3}
+  destroy: {fileID: 8300000, guid: 24b9bdf03cc31dacb8145dcda613bda1, type: 3}
 --- !u!61 &1634612839089215191
 BoxCollider2D:
   m_ObjectHideFlags: 0

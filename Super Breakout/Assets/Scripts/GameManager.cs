@@ -16,15 +16,13 @@ public class GameManager : MonoBehaviour
     List<AudioClip> sounds;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
     // Update is called once per frame
     void Update()
     {
-        NextLevelNormal();
+        NextLevel();
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PantallaStart();
@@ -40,6 +38,7 @@ public class GameManager : MonoBehaviour
     //Pantalla de titulo del juego
     public void PantallaStart()
     {
+        SoundManager.Instance.PlayClip(sounds[1]);
         SceneManager.LoadScene(0);
     }
 
@@ -52,18 +51,25 @@ public class GameManager : MonoBehaviour
     }
 
     //Pasa a la siguiente nivel/pantalla del modo limitado o si detecta que no quedan bloques a la pantalla de victoria
-    void NextLevelNormal()
+    void NextLevel()
     {
-        if (briks != null)
+        if (briks != null) //Comprueba que exista el grupo de ladrillos
         {
-            if (briks.transform.childCount <= 0)
+            if (briks.transform.childCount <= 0) // Entra si no queda ninguno
             {
-                if (SceneManager.GetActiveScene().buildIndex == 5)
+                if (SceneManager.GetActiveScene().buildIndex == 6) //Si el nivel es el infinito
+                {
+                    var pm = FindAnyObjectByType<ProceduralManager>();
+                    pm.level += 1;
+                    pm.GenerateLevel();
+                }
+                else if (SceneManager.GetActiveScene().buildIndex == 5) //Si es el ultimo nivel del modo normal
                 {
                     Win();
                 }
-                else
+                else //Pasa de escena/nivel del modo normal
                 {
+                    SoundManager.Instance.PlayClip(sounds[5]);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
             }
@@ -73,6 +79,7 @@ public class GameManager : MonoBehaviour
     //Modo creado procedimentalmente
     public void ModoInfinito()
     {
+        SoundManager.Instance.PlayClip(sounds[0]);
         SceneManager.LoadScene(6);
     }
 
@@ -91,6 +98,7 @@ public class GameManager : MonoBehaviour
     //Pantalla de fin de juego
     void Gamelose()
     {
+        SoundManager.Instance.PlayClip(sounds[3]);
         Debug.Log("GAME OVER");
         SceneManager.LoadScene(8);
     }
@@ -98,6 +106,7 @@ public class GameManager : MonoBehaviour
     //Pantalla de victoria del modo limitado
     void Win()
     {
+        SoundManager.Instance.PlayClip(sounds[2]);
         SceneManager.LoadScene(7);
         Score.Instance.TopScore(Score.Instance.score);
     }
@@ -105,6 +114,7 @@ public class GameManager : MonoBehaviour
     //Se pierde una vida
     public void Loselive()
     {
+        SoundManager.Instance.PlayClip(sounds[4]);
         int lives = Lives.Instance.LoseLive();
         if (lives <= 0)
         {
@@ -126,8 +136,8 @@ public class GameManager : MonoBehaviour
         newball.transform.parent = padle.transform;
     }
 
-
-    void SkipLevel() { 
+    void SkipLevel()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

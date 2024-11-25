@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
+    //Stats
     [SerializeField]
-    int lives = 8;
+    public int lives = 9;
 
+    //Appereance
     [SerializeField]
     List<Sprite> sprites;
 
+    //Prefabs
     [SerializeField]
     GameObject bricks;
 
     [SerializeField]
     GameObject powerupPref;
 
+    //Sounds
+    [SerializeField]
+    AudioClip hit;
+
+    [SerializeField]
+    AudioClip destroy;
+
+    //--------------------------------------------------------------------------------
     // Start is called before the first frame update
     void Start()
     {
@@ -35,18 +46,28 @@ public class Brick : MonoBehaviour
         lives -= 1;
         if (lives <= 0)
         {
+            SoundManager.Instance.PlayClip(destroy);
             if (UnityEngine.Random.Range(0, 101) <= 50)
             {
                 GameObject powerup = Instantiate(powerupPref);
-                powerup.transform.position = new Vector2(transform.position.x, transform.position.y);
+                powerup.transform.position = new Vector2(
+                    transform.position.x,
+                    transform.position.y
+                );
             }
             Destroy(bricks);
             Score.Instance.AddScore(100);
         }
         else
         {
+            SoundManager.Instance.PlayClip(hit);
             GetComponent<SpriteRenderer>().sprite = sprites[lives - 1];
             Score.Instance.AddScore(50);
         }
+    }
+
+
+    public void SetLive(int newLives){
+        lives = newLives;
     }
 }

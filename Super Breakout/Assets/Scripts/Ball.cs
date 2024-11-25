@@ -38,7 +38,16 @@ public class Ball : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(x * speed, 1 * speed);
     }
 
-    public void ChangeDirection(float direction){
+    public void ChangeDirection(float direction)
+    {
         GetComponent<Rigidbody2D>().velocity = new Vector2(direction, rbody.velocity.y);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            other.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 }
