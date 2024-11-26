@@ -22,6 +22,9 @@ public class Goal : MonoBehaviour
         {
             //Debug.Log("Una vida menos "+Lives.Instance.GetLives());
             gm.GetComponent<GameManager>().Loselive();
+        } else
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

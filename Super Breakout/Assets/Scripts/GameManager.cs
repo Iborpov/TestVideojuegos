@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     public void ModoInfinito()
     {
         SoundManager.Instance.PlayClip(sounds[0]);
+        Lives.Instance.SetLives(6);
         SceneManager.LoadScene(6);
     }
 
