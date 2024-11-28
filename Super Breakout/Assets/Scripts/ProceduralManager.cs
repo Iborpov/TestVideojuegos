@@ -40,9 +40,9 @@ public class ProceduralManager : MonoBehaviour
     public void GenerateLevel()
     {
         //Filas minimas: 1 - Filas Maximas: 10
-        //Ladrillos minimos: 5 minimo 3 por fila - Ladrillos maximos: 110 / Maximo 11 por fila 
         float filas = Math.Clamp(level * UnityEngine.Random.Range(0.5f, 3), 1, 10);
-        int cantidadTotal = Math.Clamp(level * UnityEngine.Random.Range(1, 3), 5, 110);
+        //Ladrillos minimos: 6 minimo 3 por fila - Ladrillos maximos: 110 / Maximo 11 por fila 
+        int cantidadTotal = Math.Clamp(level * UnityEngine.Random.Range(1, 3), 6, 110);
         for (int i = 0; i < filas; i++)
         {
             float cantidadFila = Math.Clamp(cantidadTotal/filas,3, 11);
@@ -56,7 +56,8 @@ public class ProceduralManager : MonoBehaviour
                     9
                 );
                 float xPos = Mathf.Lerp(minXPos, maxXPos, j / cantidadFila);
-                brick.transform.position = new Vector2(xPos * 2, i);
+                float yPos = Mathf.Lerp(minYPos, maxYPos, i / filas);
+                brick.transform.position = new Vector2(xPos, yPos);
                 brick.transform.parent = bricks.transform;
             }
         }
