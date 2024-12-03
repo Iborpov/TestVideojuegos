@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
         SoundManager.Instance.PlayClip(sounds[1]);
         SceneManager.LoadScene(0);
+        Score.Instance.score = 0;
     }
 
     //Primer nivel del modo limitado
@@ -111,7 +113,6 @@ public class GameManager : MonoBehaviour
     {
         SoundManager.Instance.PlayClip(sounds[2]);
         SceneManager.LoadScene(7);
-        Score.Instance.TopScore(Score.Instance.score);
     }
 
     //Se pierde una vida
@@ -133,10 +134,19 @@ public class GameManager : MonoBehaviour
     public void Newball()
     {
         var padle = GameObject.Find("Padle");
-        var ball = FindFirstObjectByType<Ball>().gameObject;
-        Destroy(ball);
         GameObject newball = Instantiate(ballpref);
         newball.transform.parent = padle.transform;
+    }
+
+    public void AddTopScore()
+    {
+        GameObject nameText = GameObject.Find("UserName");
+        name = nameText
+            .transform.GetChild(0)
+            .transform.GetChild(2)
+            .GetComponent<TextMeshProUGUI>()
+            .text;
+        Score.Instance.TopScore(Score.Instance.score, name);
     }
 
     void SkipLevel()

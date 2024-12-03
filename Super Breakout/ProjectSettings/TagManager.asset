@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Wall
+  - ExtraBall
   layers:
   - Default
   - TransparentFX

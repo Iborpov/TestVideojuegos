@@ -69,6 +69,8 @@ public class PowerUps : MonoBehaviour
     {
         var padle = GameObject.Find("Padle");
         GameObject newball = Instantiate(ballpref);
+        newball.gameObject.tag = "ExtraBall";
+        newball.GetComponent<SpriteRenderer>().sprite = extraSprites[3];
         newball.transform.parent = padle.transform;
     }
 

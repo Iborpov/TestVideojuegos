@@ -110,6 +110,7 @@ MonoBehaviour:
   - {fileID: -61463924, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
   - {fileID: 621381520, guid: f4b8a75d87426c1c9ae534955f3e49e2, type: 3}
   - {fileID: 1758815500, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
+  - {fileID: -1478088566, guid: 21daac393292b3d46a86b0d6265cf32d, type: 3}
   recover: {fileID: 8300000, guid: 6534e1470e5bcd9f3b34dfd7fb658a35, type: 3}
 --- !u!61 &2369941809233926822
 BoxCollider2D:

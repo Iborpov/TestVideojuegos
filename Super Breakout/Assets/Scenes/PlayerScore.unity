@@ -206,6 +206,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322715079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1019614075427915818, guid: 628ebf0a4b1db34e49623b98e1c01518, type: 3}
+  m_PrefabInstance: {fileID: 1187940774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974c7fcfa1ca482a483b62e76387a6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &368813346
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -296, y: -145}
+  m_AnchoredPosition: {x: -286, y: -108}
   m_SizeDelta: {x: 524.9645, y: 69.7731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534632900
@@ -1121,7 +1132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 266, y: -145}
+  m_AnchoredPosition: {x: 276, y: -108}
   m_SizeDelta: {x: 441.18, y: 69.778}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112893032
@@ -1167,7 +1178,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1112893033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 322715079}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: AddTopScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 322715079}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: PantallaScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1112893033
 MonoBehaviour:
   m_ObjectHideFlags: 0
