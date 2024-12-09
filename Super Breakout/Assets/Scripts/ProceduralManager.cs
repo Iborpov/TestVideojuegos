@@ -16,11 +16,11 @@ public class ProceduralManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI levelText;
 
-    float minXPos = -8;
-    float maxXPos = 7;
+    float minXPos = -8f;
+    float maxXPos = 8f;
 
-    float minYPos = 0;
-    float maxYPos = 4.25f;
+    float minYPos = 4f;
+    float maxYPos = 0;
 
     public int level = 1;
 
@@ -39,19 +39,25 @@ public class ProceduralManager : MonoBehaviour
     public void GenerateLevel()
     {
         //Filas minimas: 1 - Filas Maximas: 10
-        float filas = Math.Clamp(level * UnityEngine.Random.Range(0.5f, 3), 1, 10);
-        //Ladrillos minimos: 6 minimo 3 por fila - Ladrillos maximos: 110 / Maximo 11 por fila
-        int cantidadTotal = Math.Clamp(level * UnityEngine.Random.Range(1, 3), 6, 110);
+        float filas = Math.Clamp(UnityEngine.Random.Range(1, level), 1, 10);
+        //Ladrillos minimos: 6 minimo - Ladrillos maximos: 110 / Maximo 11 por fila
+        float cantidadTotal = Math.Clamp(level, 6, 110);
+
         for (int i = 0; i < filas; i++)
         {
-            int live = Math.Clamp(UnityEngine.Random.Range(level, level * 2), 1, 9);
-            float cantidadFila = Math.Clamp(cantidadTotal / filas, 3, 11);
+            //Vidas minimas: 1 - Vidas Maximas: 9
+            int live = Math.Clamp(UnityEngine.Random.Range(1, level), 1, 9);
+
+            float cantidadFila = Math.Clamp(cantidadTotal, 0, 11);
+            cantidadTotal -= cantidadFila;
+            
+            float yPos = Mathf.Lerp(minYPos, maxYPos, i / filas);
+
             for (int j = 0; j < cantidadFila; j++)
             {
                 GameObject brick = Instantiate(brickPref);
                 brick.GetComponent<Brick>().lives = live;
                 float xPos = Mathf.Lerp(minXPos, maxXPos, j / cantidadFila);
-                float yPos = Mathf.Lerp(minYPos, maxYPos, i / filas);
                 brick.transform.position = new Vector2(xPos, yPos);
                 brick.transform.parent = bricks.transform;
             }

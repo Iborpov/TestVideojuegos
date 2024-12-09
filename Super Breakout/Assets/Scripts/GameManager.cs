@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -134,6 +135,18 @@ public class GameManager : MonoBehaviour
     public void Newball()
     {
         var padle = GameObject.Find("Padle");
+        var balls = GameObject.FindGameObjectsWithTag("Ball");
+        foreach (GameObject ball in balls)
+        {
+            Destroy(ball);
+        }
+        balls = GameObject.FindGameObjectsWithTag("ExtraBall");
+        foreach (GameObject ball in balls)
+        {
+            Destroy(ball);
+        }
+
+        //Crea una bola nueva y la añade a la pala
         GameObject newball = Instantiate(ballpref);
         newball.transform.parent = padle.transform;
     }
@@ -151,7 +164,10 @@ public class GameManager : MonoBehaviour
 
     void SkipLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        foreach (Transform child in briks.transform)
+        {
+            Destroy(child.gameObject);
+        }
     }
 
     //Funcion para cerrar el juego

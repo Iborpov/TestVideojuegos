@@ -30,20 +30,25 @@ public class Padle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
-        SoundManager.Instance.PlayClip(hit);
-        var ball = GameObject.FindAnyObjectByType<Ball>();
+        if (
+            collisionInfo.gameObject.CompareTag("Ball")
+            || collisionInfo.gameObject.CompareTag("ExtraBall")
+        )
+        {
+            SoundManager.Instance.PlayClip(hit);
+            var ball = collisionInfo.gameObject.GetComponent<Ball>();
+            var direction = collisionInfo.transform.position;
 
-        var direction = collisionInfo.transform.position;
-
-        if (direction.x < rbody.transform.position.x-0.5)
-        { //Izquierda
-            //Debug.Log("Izquierda"+direction.x +" "+rbody.transform.position.x);
-            ball.ChangeDirection(-2.5f);
-        }
-        else if (direction.x > rbody.transform.position.x+0.5)
-        { //Derecha
-            //Debug.Log("Derecha"+direction.x +" "+rbody.transform.position.x);
-            ball.ChangeDirection(2.5f);
+            if (direction.x < rbody.transform.position.x - 0.5)
+            { //Izquierda
+                //Debug.Log("Izquierda"+direction.x +" "+rbody.transform.position.x);
+                ball.ChangeDirection(-2.5f);
+            }
+            else if (direction.x > rbody.transform.position.x + 0.5)
+            { //Derecha
+                //Debug.Log("Derecha"+direction.x +" "+rbody.transform.position.x);
+                ball.ChangeDirection(2.5f);
+            }
         }
     }
 }
