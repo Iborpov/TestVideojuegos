@@ -16,13 +16,21 @@ public class ProceduralManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI levelText;
 
+    //Maximos de posiciones
     float minXPos = -8f;
     float maxXPos = 8f;
 
     float minYPos = 4f;
     float maxYPos = 0;
 
+    //Nivel de dificultad - seed
     public int level = 1;
+
+    float probability;
+
+    //Sprites
+    [SerializeField]
+    private List<Sprite> sprites;
 
     // Start is called before the first frame update
     void Start()
@@ -39,27 +47,35 @@ public class ProceduralManager : MonoBehaviour
     public void GenerateLevel()
     {
         //Filas minimas: 1 - Filas Maximas: 10
-        float filas = Math.Clamp(UnityEngine.Random.Range(1, level), 1, 10);
+        float filas = Math.Clamp(UnityEngine.Random.Range(2, level), 2, 10);
         //Ladrillos minimos: 6 minimo - Ladrillos maximos: 110 / Maximo 11 por fila
-        float cantidadTotal = Math.Clamp(level, 6, 110);
 
+
+        //Filas
         for (int i = 0; i < filas; i++)
         {
             //Vidas minimas: 1 - Vidas Maximas: 9
-            int live = Math.Clamp(UnityEngine.Random.Range(1, level), 1, 9);
+            int live = Math.Clamp(UnityEngine.Random.Range(1, level / (i + 1)), 1, 9);
 
-            float cantidadFila = Math.Clamp(cantidadTotal, 0, 11);
-            cantidadTotal -= cantidadFila;
-            
-            float yPos = Mathf.Lerp(minYPos, maxYPos, i / filas);
+            float cantidadFila = Math.Clamp(UnityEngine.Random.Range(1, level), 3, 11);
+            //float cantidadFila = Math.Clamp(cantidadTotal, 4, 11);
 
+            //Posición de la fila
+            float yPos = Mathf.Lerp(minYPos, maxYPos, i / (filas - 1));
+
+            probability = (100 - level) / (i + 1);
+            Debug.Log(probability);
+            //Columnas
             for (int j = 0; j < cantidadFila; j++)
             {
                 GameObject brick = Instantiate(brickPref);
-                brick.GetComponent<Brick>().lives = live;
-                float xPos = Mathf.Lerp(minXPos, maxXPos, j / cantidadFila);
-                brick.transform.position = new Vector2(xPos, yPos);
-                brick.transform.parent = bricks.transform;
+                brick.GetComponent<Brick>().lives = live; //Le pone la vida correspondiente
+                brick.GetComponent<Brick>().probPowerup = probability; //Le añade una probabilidad de soltar poweup
+                //Posicion del ladrillo en columna
+                float xPos = Mathf.Lerp(minXPos, maxXPos, j / (cantidadFila - 1));
+
+                brick.transform.position = new Vector2(xPos, yPos); //Se coloca el ladrillo eb una posición
+                brick.transform.parent = bricks.transform; //Se añade el ladrillo al padre bricks
             }
         }
     }

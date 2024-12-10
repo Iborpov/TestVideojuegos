@@ -26,6 +26,8 @@ public class Brick : MonoBehaviour
     [SerializeField]
     AudioClip destroy;
 
+    public float probPowerup = 50;
+
     //--------------------------------------------------------------------------------
     // Start is called before the first frame update
     void Start()
@@ -47,7 +49,7 @@ public class Brick : MonoBehaviour
         if (lives <= 0)
         {
             SoundManager.Instance.PlayClip(destroy);
-            if (UnityEngine.Random.Range(0, 101) <= 50)
+            if (UnityEngine.Random.Range(0, 101) >= probPowerup)
             {
                 GameObject powerup = Instantiate(powerupPref);
                 powerup.transform.position = new Vector2(
@@ -55,8 +57,8 @@ public class Brick : MonoBehaviour
                     transform.position.y
                 );
             }
-            Destroy(bricks);
             Score.Instance.AddScore(100);
+            Destroy(gameObject);
         }
         else
         {
@@ -66,8 +68,8 @@ public class Brick : MonoBehaviour
         }
     }
 
-
-    public void SetLive(int newLives){
+    public void SetLive(int newLives)
+    {
         lives = newLives;
     }
 }

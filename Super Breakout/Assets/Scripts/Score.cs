@@ -23,7 +23,7 @@ public class Score : Singleton<Score>
         // Ruta del archivo CSV
         filePath = Path.Combine(Application.persistentDataPath, "scores.csv");
 
-         // Verificar si el archivo existe, y si no, crearlo con datos iniciales
+        // Verificar si el archivo existe, y si no, crearlo con datos iniciales
         if (!File.Exists(filePath))
         {
             CreateDefaultCsv();
@@ -60,7 +60,7 @@ public class Score : Singleton<Score>
             Tuple.Create(900, "Pepe"),
             Tuple.Create(800, "Amador"),
             Tuple.Create(550, "Elena"),
-            Tuple.Create(50, "asdfXD")
+            Tuple.Create(50, "asdfXD"),
         };
 
         // Crear el archivo CSV con los datos iniciales

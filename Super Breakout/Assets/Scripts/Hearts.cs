@@ -31,7 +31,9 @@ public class Hearts : MonoBehaviour
         if (lives > 3)
         {
             extraHealth.text = "+" + (lives - 3);
-        } else {
+        }
+        else
+        {
             extraHealth.text = "";
         }
 

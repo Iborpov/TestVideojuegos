@@ -766,7 +766,7 @@ Transform:
   m_GameObject: {fileID: 924143202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.1, y: 0.18, z: 0}
+  m_LocalPosition: {x: -10.12, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1227,8 +1227,8 @@ Transform:
   m_GameObject: {fileID: 1527308067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6877206, y: 0.18837854, z: -0.04245063}
-  m_LocalScale: {x: 0.28137273, y: 0.27905548, z: 1}
+  m_LocalPosition: {x: -0.7706, y: 0.1787, z: -0.04245063}
+  m_LocalScale: {x: 0.09833313, y: 0.1007776, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1115515515}
@@ -1274,7 +1274,7 @@ SpriteRenderer:
   m_SortingLayerID: -690498353
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c5986e6e1c440b77bbc5d68502c692a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1868c19021c25c51caede50499f17f69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1379,6 +1379,7 @@ MonoBehaviour:
   bricks: {fileID: 1808729343}
   levelText: {fileID: 1863069604}
   level: 1
+  sprites: []
 --- !u!4 &1762124271
 Transform:
   m_ObjectHideFlags: 0
@@ -1453,7 +1454,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.7, y: 5.7, z: 0}
-  m_LocalScale: {x: 18, y: 1, z: 1}
+  m_LocalScale: {x: 25, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1115515515}
@@ -1798,8 +1799,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 869.66174, y: -489}
-  m_SizeDelta: {x: 146.8966, y: 46.1953}
+  m_AnchoredPosition: {x: 860.7102, y: -489.05194}
+  m_SizeDelta: {x: 164.7996, y: 46.2992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018017442 stripped
 MonoBehaviour:
