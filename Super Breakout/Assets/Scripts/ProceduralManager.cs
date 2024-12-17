@@ -63,14 +63,12 @@ public class ProceduralManager : MonoBehaviour
             //Posición de la fila
             float yPos = Mathf.Lerp(minYPos, maxYPos, i / (filas - 1));
 
-            probability = (100 - level) / (i + 1);
-            Debug.Log(probability);
             //Columnas
             for (int j = 0; j < cantidadFila; j++)
             {
                 GameObject brick = Instantiate(brickPref);
                 brick.GetComponent<Brick>().lives = live; //Le pone la vida correspondiente
-                brick.GetComponent<Brick>().probPowerup = probability; //Le añade una probabilidad de soltar poweup
+                //brick.GetComponent<Brick>().probPowerup = probability; //Le añade una probabilidad de soltar poweup
                 //Posicion del ladrillo en columna
                 float xPos = Mathf.Lerp(minXPos, maxXPos, j / (cantidadFila - 1));
 

@@ -104,7 +104,8 @@ public class PowerUps : MonoBehaviour
         this.type = newType;
     }
 
-    public Sprite GetExtraSprite(int i){
+    public Sprite GetExtraSprite(int i)
+    {
         return extraSprites[i];
     }
 }
