@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -958,7 +971,7 @@ TextureImporter:
         width: 65
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -987,6 +1000,1140 @@ TextureImporter:
       bones: []
       spriteID: cf8dbe6f72676f523a8ddfb901250455
       internalID: -1519364789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 688
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f0f68599f761e7bbbfe5aa221c7c9c
+      internalID: 337647780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 656
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24482ee80827e976aa2e7679a617664
+      internalID: 1538794080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 624
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf159f43e9f5559995cf14c8fc0ab32
+      internalID: 1404344431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_24
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 592
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6624d141c8f23e028b04a205cba2dd8
+      internalID: 911800414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 560
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd4a8e46ed46f56885ac15426a2455d
+      internalID: 1639600610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 480
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8c8036509300a64b0ab0558e38ac78
+      internalID: 1163196490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 448
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618b8f66eab98b17a9789f782966ccdb
+      internalID: 1127221836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_34
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 416
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3be7da97c600af05873b55b7ce9bf1e
+      internalID: 1882382450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_40
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9a01611c9704d5b82bc98ef1c3fdd9
+      internalID: -76200732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_42
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 352
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed019bb99a2760ed8275f98027140b5
+      internalID: -1243086040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_45
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 320
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e533e684fded11c2ca575facbcedf63b
+      internalID: 1151813324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f1e4918a814c80eb31992a33c4e456
+      internalID: 464092301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_50
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f34be2cffeb22747ae2f48ffb1bb60a
+      internalID: 2060649605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_52
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d3f016b7a86878846f18631017c85
+      internalID: 1027647477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_56
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995711f929670e8afbaf60a244b7e5dc
+      internalID: 1874776192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_57
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc267f9d18bc8027db210cf6a50ca715
+      internalID: 581392661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48119f339b089970d8f23a8635a4c5fe
+      internalID: 508429831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_59
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 720
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0312d41665c58fdc924f2ea89b8c23a
+      internalID: -1976225397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_60
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 688
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ea2e724e1fdb6dd80705204db47e5c
+      internalID: 509906734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_61
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 656
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5133347f8cec84ec49d1b1f48864d50b
+      internalID: 1404480597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_62
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 624
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00186e568baed6d4bdf8b14d0a9b8b1
+      internalID: 360311398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_63
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 592
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9090d750bb01cd6298c1f00a771a317e
+      internalID: -832861308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_64
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 560
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9cbca07f9545cc0aff764124cf50e6
+      internalID: -1318501860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_65
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 481
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7554da3238212459a7409f75b3463e3
+      internalID: -1234049220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_66
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 449
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae91d6a8f25cebf3adeeb60aed291a8
+      internalID: 310995101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_67
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 416
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6c710a7bb35f93f9c11d8c29e04eb8
+      internalID: -1266026467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_68
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 385
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f000bd59089b365079c6215497a692ee
+      internalID: 1535039049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_69
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 353
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4dfb3a586d80bb7a16aad6984b578c
+      internalID: -1587032280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_70
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 321
+        width: 48
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c831359d1860786da99be6550ebf533
+      internalID: 947230465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_71
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 240
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69774bf2df2cf64ccad034ec77d22200
+      internalID: -2100163368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_72
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 208
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e6ac8161a4663ca0e890ed1020c1f
+      internalID: -1571853046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_73
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 176
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb7cca4464b0b95eb0a80e7a27a83e8
+      internalID: 859541321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_74
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 144
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc67207abd5edcb7c83bff04e0d45bb0
+      internalID: 2029096166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_75
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 112
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96d5bfbd8f124baab8be961a1a52e7b
+      internalID: -1911006628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_76
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 80
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54372f6a16ea7fd1d8c9d4ef41b3adb5
+      internalID: 877788701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_77
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 720
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173078e666c23aecb8e6e9c571cf616d
+      internalID: -1885208941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_78
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 688
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21fcd08e4d3bc75a8fea88f8c24d199
+      internalID: 815628207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_79
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 656
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d8f2efb8ef000feb9a95f5f9ba12c2
+      internalID: -828181653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_80
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 624
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be06eea24945e9599f036bc9383f3ae
+      internalID: -909206255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_81
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 592
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50223476c8dee705a00224d8241fc7c
+      internalID: 2003495560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_82
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 560
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ca122f1003435ab306a792bb27782
+      internalID: -761147683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_83
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 480
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a934abcdae3e2b795bd9aa039ea0111a
+      internalID: -1518201632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_84
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 448
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb29bfac60241fae85453bc3885a52e
+      internalID: 494740595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_85
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 416
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1389bd4868fd2ca85a4ecbbe117221bd
+      internalID: 1438775619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_86
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 384
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25630538157f2ff1681a763141627095
+      internalID: 237642609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_87
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 352
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c967eb52955723d1a7b06dff99173d9
+      internalID: 2016052496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_88
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 320
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09acefdf87b9c9415bbf9bcec1cf769c
+      internalID: -1335785467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_89
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 240
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae506c2c191017239b234311f5ba547e
+      internalID: 700494921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_90
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 208
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b0e551bbdf99fab85be8f163afb55d
+      internalID: -2081515078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_91
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 176
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edda8b0375afca054ad36ea344af6603
+      internalID: 1111313505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_92
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 144
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc77545c6735c02fe8d5a09f1fc29bef
+      internalID: 1100987934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_93
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 112
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7eca012419ba084bc40eb2d13390c1
+      internalID: -485605247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_94
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 80
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a55ceb6718f117bda389be9c3add7bc
+      internalID: -520853769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: more_breakout_pieces 32x32_95
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 720
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6c6d2e1d32d5aa3bd57b1855b89457
+      internalID: -702678777
       vertices: []
       indices: 
       edges: []
@@ -1054,10 +2201,50 @@ TextureImporter:
       more_breakout_pieces 32x32_53: 1647212168
       more_breakout_pieces 32x32_54: -1589922502
       more_breakout_pieces 32x32_55: -170260929
+      more_breakout_pieces 32x32_56: 1874776192
+      more_breakout_pieces 32x32_57: 581392661
+      more_breakout_pieces 32x32_58: 508429831
+      more_breakout_pieces 32x32_59: -1976225397
       more_breakout_pieces 32x32_6: 1808007048
+      more_breakout_pieces 32x32_60: 509906734
+      more_breakout_pieces 32x32_61: 1404480597
+      more_breakout_pieces 32x32_62: 360311398
+      more_breakout_pieces 32x32_63: -832861308
+      more_breakout_pieces 32x32_64: -1318501860
+      more_breakout_pieces 32x32_65: -1234049220
+      more_breakout_pieces 32x32_66: 310995101
+      more_breakout_pieces 32x32_67: -1266026467
+      more_breakout_pieces 32x32_68: 1535039049
+      more_breakout_pieces 32x32_69: -1587032280
       more_breakout_pieces 32x32_7: -303063029
+      more_breakout_pieces 32x32_70: 947230465
+      more_breakout_pieces 32x32_71: -2100163368
+      more_breakout_pieces 32x32_72: -1571853046
+      more_breakout_pieces 32x32_73: 859541321
+      more_breakout_pieces 32x32_74: 2029096166
+      more_breakout_pieces 32x32_75: -1911006628
+      more_breakout_pieces 32x32_76: 877788701
+      more_breakout_pieces 32x32_77: -1885208941
+      more_breakout_pieces 32x32_78: 815628207
+      more_breakout_pieces 32x32_79: -828181653
       more_breakout_pieces 32x32_8: 1568278658
+      more_breakout_pieces 32x32_80: -909206255
+      more_breakout_pieces 32x32_81: 2003495560
+      more_breakout_pieces 32x32_82: -761147683
+      more_breakout_pieces 32x32_83: -1518201632
+      more_breakout_pieces 32x32_84: 494740595
+      more_breakout_pieces 32x32_85: 1438775619
+      more_breakout_pieces 32x32_86: 237642609
+      more_breakout_pieces 32x32_87: 2016052496
+      more_breakout_pieces 32x32_88: -1335785467
+      more_breakout_pieces 32x32_89: 700494921
       more_breakout_pieces 32x32_9: 1758815500
+      more_breakout_pieces 32x32_90: -2081515078
+      more_breakout_pieces 32x32_91: 1111313505
+      more_breakout_pieces 32x32_92: 1100987934
+      more_breakout_pieces 32x32_93: -485605247
+      more_breakout_pieces 32x32_94: -520853769
+      more_breakout_pieces 32x32_95: -702678777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1375,7 +1375,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29de2258e07c83aae911637a3956a25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brickPref: {fileID: 3658840246666868757, guid: 4190b20d38b693d238efd177694c0e40, type: 3}
+  brickPref:
+  - {fileID: 3658840246666868757, guid: 4190b20d38b693d238efd177694c0e40, type: 3}
+  - {fileID: 3658840246666868757, guid: 602ce72ab89ba7a3bbb4060f943d60bd, type: 3}
+  - {fileID: 3658840246666868757, guid: 9f88b77b3fabf0b23b1807e36a81ac4f, type: 3}
+  - {fileID: 3658840246666868757, guid: 007d4fb254ba2cdda8097ea78b82643d, type: 3}
+  - {fileID: 3658840246666868757, guid: 4afe209a3bf14f5fba165de47d49d6e0, type: 3}
+  - {fileID: 3658840246666868757, guid: b4230587210885b4db20cc46f4ba79c3, type: 3}
+  - {fileID: 3658840246666868757, guid: e4ae0737e43b68ae6be087c457113f63, type: 3}
   bricks: {fileID: 1808729343}
   levelText: {fileID: 1863069604}
   level: 1

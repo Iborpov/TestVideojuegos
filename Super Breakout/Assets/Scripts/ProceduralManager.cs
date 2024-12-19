@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class ProceduralManager : MonoBehaviour
 {
     [SerializeField]
-    GameObject brickPref;
+    List<GameObject> brickPref;
 
     [SerializeField]
     GameObject bricks;
@@ -62,11 +62,11 @@ public class ProceduralManager : MonoBehaviour
 
             //Posición de la fila
             float yPos = Mathf.Lerp(minYPos, maxYPos, i / (filas - 1));
-
+            GameObject pref = brickPref[UnityEngine.Random.Range(0, 7)];
             //Columnas
             for (int j = 0; j < cantidadFila; j++)
             {
-                GameObject brick = Instantiate(brickPref);
+                GameObject brick = Instantiate(pref);
                 brick.GetComponent<Brick>().lives = live; //Le pone la vida correspondiente
                 //brick.GetComponent<Brick>().probPowerup = probability; //Le añade una probabilidad de soltar poweup
                 //Posicion del ladrillo en columna
