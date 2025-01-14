@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
         if (imput == PlayerImput.Rigth)
         {
             animator.SetBool("Running", true);
+            state = PlayerControllerState.Run;
         }
     }
 
@@ -97,6 +98,10 @@ public class Player : MonoBehaviour
     {
         //Comprobar si tengo que cambiar de estado
         //Mover al player
+        if (imput == PlayerImput.Rigth)
+        {
+            this.GameObject.transform
+        }
     }
 
     private void Jump()

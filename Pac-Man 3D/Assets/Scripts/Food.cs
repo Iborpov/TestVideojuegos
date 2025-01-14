@@ -10,6 +10,9 @@ public class Food : MonoBehaviour
     [SerializeField]
     int score = 0;
 
+    [SerializeField]
+    AudioClip audioClip;
+
     // Start is called before the first frame update
     void Start() { }
 
@@ -20,6 +23,7 @@ public class Food : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            SoundManager.Instance.PlayClip(audioClip);
             Destroy(this.gameObject);
         }
     }
