@@ -18,17 +18,22 @@ public class Player : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rbody;
+    BoxCollider2D boxCollider;
 
     PlayerControllerState state = PlayerControllerState.Idle;
 
     float movement;
     float jump;
 
+    [SerializeField]
+    LayerMask mapLayer;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         animator = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -98,7 +103,7 @@ public class Player : MonoBehaviour
             state = PlayerControllerState.Run;
         }
 
-        if (jump != 0)
+        if (jump != 0 && isGrounded())
         {
             state = PlayerControllerState.Jump;
         }
@@ -115,7 +120,7 @@ public class Player : MonoBehaviour
             state = PlayerControllerState.Idle;
         }
 
-        if (jump != 0)
+        if (jump != 0 && isGrounded())
         {
             state = PlayerControllerState.Jump;
         }
@@ -125,7 +130,14 @@ public class Player : MonoBehaviour
     {
         //Comprobar si tengo que cambiar de estado
         //Mover al player
-        rbody.velocity = new Vector2(rbody.velocity.x, jump * 5);
+        if (isGrounded())
+        {
+            rbody.velocity = new Vector2(rbody.velocity.x, jump * 10);
+        }
+        else
+        {
+            state = PlayerControllerState.DoubleJump;
+        }
 
         if (rbody.velocity.y == 0)
         {
@@ -137,11 +149,28 @@ public class Player : MonoBehaviour
     {
         //Comprobar si tengo que cambiar de estado
         //Mover al player
+        if (rbody.velocity.y == 0)
+        {
+            state = PlayerControllerState.Idle;
+        }
     }
 
     private void OnWall()
     {
         //Comprobar si tengo que cambiar de estado
         //Mover al player
+    }
+
+    bool isGrounded()
+    {
+        var boxCastHit = Physics2D.BoxCast(
+            boxCollider.bounds.center,
+            boxCollider.bounds.size,
+            0,
+            Vector2.down,
+            0.1f,
+            mapLayer
+        );
+        return boxCastHit.collider != null;
     }
 }
