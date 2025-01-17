@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : Component
+public class Singleton<T> : MonoBehaviour
+    where T : Component
 {
     private static T instance;
     public static T Instance
@@ -18,12 +19,12 @@ public class Singleton<T> : MonoBehaviour where T : Component
             return instance;
         }
     }
-    
+
     public virtual void Awake()
     {
         RemoveDuplicates();
     }
-    
+
     private static void SetupInstance()
     {
         instance = (T)FindObjectOfType(typeof(T));
