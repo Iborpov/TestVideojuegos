@@ -64,4 +64,14 @@ public class Chomp : MonoBehaviour
             transform.position = new Vector3(10, transform.position.y, transform.position.z);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("-1 vida");
+            Lives.Instance.LoseLive();
+            Destroy(this.gameObject);
+        }
+    }
 }

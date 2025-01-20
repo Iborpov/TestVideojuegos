@@ -1,18 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+public class Score : Singleton<Score>
 {
-    // Start is called before the first frame update
-    void Start()
+    int score = 0;
+
+    public int LoseScore(int losedScore)
     {
-        
+        score -= losedScore;
+        return score;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int AddScore(int newscore)
     {
-        
+        score += newscore;
+        return score;
+    }
+
+    //-------------------------------------------------------------
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public void SetScore(int newscore)
+    {
+        score = newscore;
     }
 }

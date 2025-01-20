@@ -5,6 +5,9 @@ using UnityEngine;
 public class GhostBT : BTree
 {
     public List<Transform> points;
+    public float exitTime;
+
+    public LayerMask player;
 
     protected override Node SetupTree()
     {

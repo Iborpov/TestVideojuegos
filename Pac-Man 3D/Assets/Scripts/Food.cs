@@ -24,6 +24,7 @@ public class Food : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             SoundManager.Instance.PlayClip(audioClip);
+            Score.Instance.AddScore(score);
             Destroy(this.gameObject);
         }
     }

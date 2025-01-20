@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chomp
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07b805cc50f7b21469eb77045e84e87c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07b805cc50f7b21469eb77045e84e87c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07b805cc50f7b21469eb77045e84e87c, type: 3}
       propertyPath: m_RootOrder
       value: 0

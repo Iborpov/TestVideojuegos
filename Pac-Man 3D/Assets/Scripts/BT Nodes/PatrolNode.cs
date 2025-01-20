@@ -8,6 +8,12 @@ public class PatrolNode : Node
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
+    float exitTimePassed = 0f;
+    float exitTime;
+    int point;
+    float timePassed = 0f;
+    float time = 1f;
+
     public PatrolNode(BTree btree)
         : base(btree)
     {
@@ -17,21 +23,34 @@ public class PatrolNode : Node
 
     public override NodeState Evaluate()
     {
-        agent.destination = ghostBT.points[0].transform.position;
+        exitTime = ghostBT.exitTime;
+        exitTimePassed += Time.deltaTime;
 
-        Debug.Log("Position actual " + agent.transform.position);
-        Debug.Log("Position final " + ghostBT.points[0].transform.position);
-        var distance = Vector2.Distance(
-            new Vector2(ghostBT.transform.position.x, ghostBT.transform.position.z),
-            new Vector2(
-                ghostBT.points[0].transform.position.x,
-                ghostBT.points[0].transform.position.z
-            )
-        );
-        Debug.Log(distance);
-        if (distance < .1f)
+        if (exitTimePassed > exitTime)
         {
-            Debug.Log("Ya estoy en el punto 0");
+            agent.destination = ghostBT.points[point].transform.position;
+
+            var distance = Vector2.Distance(
+                new Vector2(ghostBT.transform.position.x, ghostBT.transform.position.z),
+                new Vector2(
+                    ghostBT.points[point].transform.position.x,
+                    ghostBT.points[point].transform.position.z
+                )
+            );
+
+            if (distance < .1f)
+            {
+                timePassed += Time.deltaTime;
+                if (timePassed > time)
+                {
+                    timePassed = 0;
+                    point++;
+                    if (point >= 4)
+                    {
+                        point = 0;
+                    }
+                }
+            }
         }
 
         state = NodeState.RUNNING;
