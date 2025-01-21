@@ -9,6 +9,8 @@ public class GhostBT : BTree
 
     public LayerMask player;
 
+    Transform position;
+
     protected override Node SetupTree()
     {
         return new Selector(
@@ -19,8 +21,21 @@ public class GhostBT : BTree
                     this,
                     new List<Node> { new OnRangeNode(this), new GoToTargetNode(this) }
                 ),
-                new PatrolNode(this),
+                new Sequence(this, new List<Node> { new WaitNode(this), new PatrolNode(this) }),
             }
         );
+    }
+
+    private void Awake()
+    {
+        position = this.gameObject.transform;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameObject.transform.position = position.position;
+        }
     }
 }

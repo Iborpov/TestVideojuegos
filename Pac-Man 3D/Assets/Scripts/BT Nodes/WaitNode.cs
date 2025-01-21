@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using BehaviorTree;
 using UnityEngine;
 
-public class PatrolNode : Node
+public class WaitNode : Node
 {
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
+    float exitTimePassed = 0f;
+    float exitTime;
     int point;
     float timePassed = 0f;
     float time = 1f;
 
-    public PatrolNode(BTree btree)
+    public WaitNode(BTree btree)
         : base(btree)
     {
         ghostBT = bTree as GhostBT;
@@ -21,18 +23,12 @@ public class PatrolNode : Node
 
     public override NodeState Evaluate()
     {
-        agent.destination = ghostBT.points[point].transform.position;
+        exitTime = ghostBT.exitTime;
+        exitTimePassed += Time.deltaTime;
 
-        var distance = Vector2.Distance(
-            new Vector2(ghostBT.transform.position.x, ghostBT.transform.position.z),
-            new Vector2(
-                ghostBT.points[point].transform.position.x,
-                ghostBT.points[point].transform.position.z
-            )
-        );
-
-        if (distance < .1f)
+        if (exitTimePassed > exitTime) //Tiempo para salir de base
         {
+
             timePassed += Time.deltaTime;
             if (timePassed > time)
             {
@@ -44,8 +40,11 @@ public class PatrolNode : Node
                 }
             }
         }
-
-        state = NodeState.RUNNING;
+        else
+        {
+            state = NodeState.RUNNING;
+        }
+        ;
         return state;
     }
 }

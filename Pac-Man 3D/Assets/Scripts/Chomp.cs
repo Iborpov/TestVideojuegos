@@ -29,7 +29,22 @@ public class Chomp : MonoBehaviour
         xMovement = Input.GetAxisRaw("Horizontal");
         zMovement = Input.GetAxisRaw("Vertical");
         Vector2 move = new Vector2(xMovement, zMovement);
+        Movement(move);
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //Si choca con un enemigo
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("-1 vida");
+            Lives.Instance.LoseLive();
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void Movement(Vector2 move)
+    {
         Vector3 inputDirection = new Vector3(xMovement, 0.0f, zMovement).normalized;
 
         if (move != Vector2.zero)
@@ -62,16 +77,6 @@ public class Chomp : MonoBehaviour
         else if (transform.position.x <= -10)
         {
             transform.position = new Vector3(10, transform.position.y, transform.position.z);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            Debug.Log("-1 vida");
-            Lives.Instance.LoseLive();
-            Destroy(this.gameObject);
         }
     }
 }
