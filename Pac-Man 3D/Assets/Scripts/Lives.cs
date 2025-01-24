@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Lives : Singleton<Lives>
 {
-    int lives = 3;
+    public int lives = 3;
 
-    void Start() { }
+    void Start()
+    {
+        lives = 3;
+    }
 
     // Update is called once per frame
     void Update() { }
@@ -15,6 +18,7 @@ public class Lives : Singleton<Lives>
     public int LoseLive()
     {
         lives -= 1;
+        Debug.Log(lives);
         return lives;
     }
 

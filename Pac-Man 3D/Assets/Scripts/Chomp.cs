@@ -37,7 +37,6 @@ public class Chomp : MonoBehaviour
         //Si choca con un enemigo
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("-1 vida");
             Lives.Instance.LoseLive();
             Destroy(this.gameObject);
         }

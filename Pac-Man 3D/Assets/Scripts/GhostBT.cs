@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using BehaviorTree;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class GhostBT : BTree
 {
@@ -9,10 +10,13 @@ public class GhostBT : BTree
 
     public LayerMask player;
 
-    Transform position;
+    public int point = 0;
+
+    Vector3 initialPos;
 
     protected override Node SetupTree()
     {
+        initialPos = transform.position;
         return new Selector(
             this,
             new List<Node>
@@ -26,16 +30,9 @@ public class GhostBT : BTree
         );
     }
 
-    private void Awake()
+    public void ResetPosition()
     {
-        position = this.gameObject.transform;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            gameObject.transform.position = position.position;
-        }
+        GetComponent<NavMeshAgent>().Warp(initialPos);
+        point = 0;
     }
 }

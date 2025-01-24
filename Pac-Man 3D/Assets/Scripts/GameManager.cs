@@ -48,22 +48,26 @@ public class GameManager : MonoBehaviour
 
         if (player == null)
         {
-            //El jugador se queda sin vidas
+            //El jugador uan tiene vidas
             if (Lives.Instance.GetLives() != 0)
             {
                 player = Instantiate(chomp);
                 player.transform.parent = chars.transform;
-                player.transform.position = new Vector3(0, 0, -5);
+                GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (var ghost in ghosts)
+                {
+                    ghost.GetComponent<GhostBT>().ResetPosition();
+                }
             }
             else
-            {
+            { //El jugador se queda sin vidas
                 Destroy(chars);
                 UI[2].transform.parent.gameObject.SetActive(true);
             }
         }
 
         if (dots != null && powepellets != null)
-        {
+        { //Si no quedan puntos el jugador a ganado
             if (dots.transform.childCount == 0 && powepellets.transform.childCount == 0)
             {
                 Destroy(chars);

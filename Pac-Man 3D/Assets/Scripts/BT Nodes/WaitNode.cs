@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using BehaviorTree;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaitNode : Node
@@ -8,11 +9,10 @@ public class WaitNode : Node
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
-    float exitTimePassed = 0f;
     float exitTime;
     int point;
-    float timePassed = 0f;
     float time = 1f;
+    float distance;
 
     public WaitNode(BTree btree)
         : base(btree)
@@ -23,28 +23,41 @@ public class WaitNode : Node
 
     public override NodeState Evaluate()
     {
+        Debug.Log("Wait Node ----------------------------------");
         exitTime = ghostBT.exitTime;
-        exitTimePassed += Time.deltaTime;
+        point = ghostBT.point;
+        exitTime = exitTime + Time.time;
+        time = time + Time.time;
 
-        if (exitTimePassed > exitTime) //Tiempo para salir de base
+        Debug.Log(point + "p wait");
+        if (point == 0)
         {
-
-            timePassed += Time.deltaTime;
-            if (timePassed > time)
+            if (exitTime <= Time.time)
             {
-                timePassed = 0;
-                point++;
-                if (point >= 4)
-                {
-                    point = 0;
-                }
+                state = NodeState.SUCCESS;
+            }
+            else
+            {
+                state = NodeState.RUNNING;
             }
         }
         else
         {
-            state = NodeState.RUNNING;
+            distance = (float)bTree.GetData("distance");
+            if (distance == 0)
+            {
+                if (time <= Time.time)
+                {
+                    Debug.Log(time + "s");
+                    state = NodeState.SUCCESS;
+                }
+                else
+                {
+                    state = NodeState.RUNNING;
+                }
+            }
         }
-        ;
+
         return state;
     }
 }

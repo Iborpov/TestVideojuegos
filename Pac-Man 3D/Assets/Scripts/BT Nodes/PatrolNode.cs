@@ -9,8 +9,6 @@ public class PatrolNode : Node
     UnityEngine.AI.NavMeshAgent agent;
 
     int point;
-    float timePassed = 0f;
-    float time = 1f;
 
     public PatrolNode(BTree btree)
         : base(btree)
@@ -21,31 +19,35 @@ public class PatrolNode : Node
 
     public override NodeState Evaluate()
     {
-        agent.destination = ghostBT.points[point].transform.position;
+        Debug.Log("Patrol Node ----------------------------------");
+        point = ghostBT.point + 1;
+        Debug.Log(point + "p");
+        agent.destination = ghostBT.points[point - 1].transform.position;
 
         var distance = Vector2.Distance(
             new Vector2(ghostBT.transform.position.x, ghostBT.transform.position.z),
             new Vector2(
-                ghostBT.points[point].transform.position.x,
-                ghostBT.points[point].transform.position.z
+                ghostBT.points[point - 1].transform.position.x,
+                ghostBT.points[point - 1].transform.position.z
             )
         );
-
+        Debug.Log("Distance: " + distance);
+        bTree.SetData("distance", distance);
         if (distance < .1f)
         {
-            timePassed += Time.deltaTime;
-            if (timePassed > time)
+            ghostBT.point++;
+            if (point >= 5)
             {
-                timePassed = 0;
-                point++;
-                if (point >= 4)
-                {
-                    point = 0;
-                }
+                ghostBT.point = 1;
+                point = 1;
             }
+            state = NodeState.SUCCESS;
+        }
+        else
+        {
+            state = NodeState.RUNNING;
         }
 
-        state = NodeState.RUNNING;
         return state;
     }
 }
