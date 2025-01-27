@@ -8,7 +8,7 @@ public class PatrolNode : Node
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
-    int point;
+    int point = 0;
 
     public PatrolNode(BTree btree)
         : base(btree)
@@ -19,32 +19,33 @@ public class PatrolNode : Node
 
     public override NodeState Evaluate()
     {
-        Debug.Log("Patrol Node ----------------------------------");
-        point = ghostBT.point + 1;
-        Debug.Log(ghostBT.point + "p");
-        agent.destination = ghostBT.points[point - 1].transform.position;
-
+        //Calcula la distancia entre el punto A y el B
         var distance = Vector2.Distance(
             new Vector2(ghostBT.transform.position.x, ghostBT.transform.position.z),
             new Vector2(
-                ghostBT.points[point - 1].transform.position.x,
-                ghostBT.points[point - 1].transform.position.z
+                ghostBT.points[point].transform.position.x,
+                ghostBT.points[point].transform.position.z
             )
         );
-        ghostBT.point++;
-        bTree.SetData("distance", distance);
-        if (distance < .1f)
+
+        if (distance < .1f) //Si la distancia del punto A a punto B es 0
         {
-            
-            if (point >= 5)
+            bTree.SetData("OnPoint", true); //Establece que si ha llegado
+
+            point++;
+            if (point >= 4) //Si el punto es igual o mayor a 4 se reescribe al 0
             {
-                ghostBT.point = 1;
-                point = 1;
+                point = 0;
             }
-            
+            state = NodeState.SUCCESS;
         }
-        state = NodeState.SUCCESS;
-        
+        else
+        {
+            agent.destination = ghostBT.points[point].transform.position; //Envia al agent al siguiente punto
+            bTree.SetData("OnPoint", false); //Establece que aun no ha llegado
+            state = NodeState.RUNNING;
+        }
+
         return state;
     }
 }

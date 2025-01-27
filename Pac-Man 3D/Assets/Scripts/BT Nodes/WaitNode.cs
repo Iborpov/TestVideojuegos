@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using BehaviorTree;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WaitNode : Node
@@ -9,61 +6,38 @@ public class WaitNode : Node
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
-
-    int point;
-    float time = 1f;   
+    float time = 1f;
     float waitTime;
-    float exitTime;
-    float waitExitTime;
-    float distance;
+    bool onPoint = false;
 
     public WaitNode(BTree btree)
         : base(btree)
     {
         ghostBT = bTree as GhostBT;
         agent = ghostBT.transform.GetComponent<UnityEngine.AI.NavMeshAgent>();
+        bTree.SetData("OnPoint", false);
+        waitTime = 0f;
     }
 
     public override NodeState Evaluate()
     {
-        Debug.Log("Wait Node ----------------------------------");
-        exitTime = ghostBT.exitTime;
-        point = ghostBT.point;
-        exitTime = exitTime + Time.time;
-        time = time + Time.time;
-
-        Debug.Log(point + "p wait");
-        if (point == 0)
+        onPoint = (bool)bTree.GetData("OnPoint");
+        if (onPoint) //Si esta en el punto
         {
-            if (exitTime <= Time.time)
+            waitTime += Time.deltaTime;
+            if (waitTime >= time)
             {
                 state = NodeState.SUCCESS;
-                point++;
             }
             else
             {
                 state = NodeState.RUNNING;
             }
-            
         }
         else
-        {
-            distance = (float)bTree.GetData("distance");
-            if (distance == 0)
-            {
-                if (time <= Time.time)
-                {
-                    Debug.Log(time + "s");
-                    state = NodeState.SUCCESS;
-                }
-                else
-                {
-                    state = NodeState.RUNNING;
-                }
-            } else
-            {
-                state = NodeState.SUCCESS;
-            }
+        { //Si no eta en el punto
+            waitTime = 0f; //Reinicia el tiempo de espera a 0
+            state = NodeState.SUCCESS;
         }
 
         return state;

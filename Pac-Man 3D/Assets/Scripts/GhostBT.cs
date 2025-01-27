@@ -7,10 +7,8 @@ public class GhostBT : BTree
 {
     public List<Transform> points;
     public float exitTime;
-
     public LayerMask player;
-
-    public int point = 0;
+    public bool start = true;
 
     Vector3 initialPos;
 
@@ -21,6 +19,7 @@ public class GhostBT : BTree
             this,
             new List<Node>
             {
+                new StartNode(this),
                 new Sequence(
                     this,
                     new List<Node> { new OnRangeNode(this), new GoToTargetNode(this) }
@@ -32,7 +31,7 @@ public class GhostBT : BTree
 
     public void ResetPosition()
     {
+        start = true;
         GetComponent<NavMeshAgent>().Warp(initialPos);
-        point = 0;
     }
 }

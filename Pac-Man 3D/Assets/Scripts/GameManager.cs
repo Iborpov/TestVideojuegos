@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -78,5 +79,15 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("No existe ningun punto");
         }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            Restart();
+        }
+    }
+
+    void Restart()
+    {
+        SceneManager.LoadScene("Level_01");
     }
 }
