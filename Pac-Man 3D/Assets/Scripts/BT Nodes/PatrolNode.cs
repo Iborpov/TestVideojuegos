@@ -21,7 +21,7 @@ public class PatrolNode : Node
     {
         Debug.Log("Patrol Node ----------------------------------");
         point = ghostBT.point + 1;
-        Debug.Log(point + "p");
+        Debug.Log(ghostBT.point + "p");
         agent.destination = ghostBT.points[point - 1].transform.position;
 
         var distance = Vector2.Distance(
@@ -31,23 +31,20 @@ public class PatrolNode : Node
                 ghostBT.points[point - 1].transform.position.z
             )
         );
-        Debug.Log("Distance: " + distance);
+        ghostBT.point++;
         bTree.SetData("distance", distance);
         if (distance < .1f)
         {
-            ghostBT.point++;
+            
             if (point >= 5)
             {
                 ghostBT.point = 1;
                 point = 1;
             }
-            state = NodeState.SUCCESS;
+            
         }
-        else
-        {
-            state = NodeState.RUNNING;
-        }
-
+        state = NodeState.SUCCESS;
+        
         return state;
     }
 }

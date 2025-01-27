@@ -9,9 +9,12 @@ public class WaitNode : Node
     GhostBT ghostBT;
     UnityEngine.AI.NavMeshAgent agent;
 
-    float exitTime;
+
     int point;
-    float time = 1f;
+    float time = 1f;   
+    float waitTime;
+    float exitTime;
+    float waitExitTime;
     float distance;
 
     public WaitNode(BTree btree)
@@ -35,11 +38,13 @@ public class WaitNode : Node
             if (exitTime <= Time.time)
             {
                 state = NodeState.SUCCESS;
+                point++;
             }
             else
             {
                 state = NodeState.RUNNING;
             }
+            
         }
         else
         {
@@ -55,6 +60,9 @@ public class WaitNode : Node
                 {
                     state = NodeState.RUNNING;
                 }
+            } else
+            {
+                state = NodeState.SUCCESS;
             }
         }
 
