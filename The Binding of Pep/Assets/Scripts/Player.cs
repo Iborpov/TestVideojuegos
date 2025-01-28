@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     public float speed = 5;
     bool attackPending = false;
+    bool pickUpPending = false;
 
     private void Awake()
     {
@@ -40,9 +41,12 @@ public class Player : MonoBehaviour
         }
     }
 
-
     //Controlador de inputs de Recoger/Lanzar
-    public void OnPickUp(InputAction.CallbackContext context){
-
+    public void OnPickUp(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            pickUpPending = true;
+        }
     }
 }
