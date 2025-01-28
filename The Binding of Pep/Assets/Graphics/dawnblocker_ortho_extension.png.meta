@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,4711 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50e7f4d964e5754793a309b8f4eef34
+      internalID: 86371885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8646ca0126139ff47bf7360236bde231
+      internalID: 621621874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d70e58ce6416d04aaff611d5c07b3be
+      internalID: 2097200387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e240cbf1a38c0c4e831d32a5c12f7fe
+      internalID: 1919592819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c753159b2f8084e8e395a062777c1d
+      internalID: 1512276182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08581b77699fc0c4db365c8fa64d6688
+      internalID: 495927213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 449
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ca83f79185be046b9b150e21134ca3
+      internalID: -379505017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 405
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c8e5e5a0a6c4442a0a9825b7e7d727
+      internalID: 1965846802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63c2199dc855434e81ae8db0affd163
+      internalID: 1200396413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 416
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff05429314b58a94baa25d2d609649ab
+      internalID: -1164261589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 405
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d97ef7c0cc5a0459ed68ed2ea1606e
+      internalID: 1826921296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 411
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00723435bd1531044a9cc7279ff912c8
+      internalID: 1874360454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 410
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e60e14db70ee024eb08ab4b256a151d
+      internalID: 999924404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d998b825d8d2a534396682154b0e8cbf
+      internalID: -1754752833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_14
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 13
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a99d747b98a504e814d37b081d7a25
+      internalID: -696493206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 13
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5ff92cef48e054aa1414b4a93efc0b
+      internalID: 1865037042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffa5927523094f4394dbd1af3dbc7a8
+      internalID: -1308378900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7475482325a9bcc4ca0c286b3b525c4a
+      internalID: 1805058294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d162f9e38bd194fa24ebc574c8c7b9
+      internalID: 1330984215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ea8562ec51f3e4db41e5b5f272ff95
+      internalID: 1382182515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23555599badf3c4498891cef308039e
+      internalID: 1514773873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_21
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad93e9bc3f33ca645bbec1b138f01d7d
+      internalID: 1606142203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c985e6c36be8340b892e089ee18de4
+      internalID: 1639658123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_23
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80006509625f0e646bd755ae8f2fa109
+      internalID: 607007160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_24
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 69
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c5222cff9eda44c9fc8e9dd05c201c
+      internalID: 1373676114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_25
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6feb0335466ed48aecd224e8c98555
+      internalID: 87571124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532418f74cb875a4f99992edaabadfde
+      internalID: -344365508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fd0319d3aa6a84c929421f38a315a6
+      internalID: 1931679881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121fb9498941b7c449a1c41d1a6dda88
+      internalID: -1591565888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c115566ce5ca445982c811760c5d3f
+      internalID: -2140668198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f00c6f2a5f96c47adf8ab75f213f27
+      internalID: -592980233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd71f2a22efe054a9db28afdc30297e
+      internalID: 1470125386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_32
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984c9baeacc2a2c43a246bc6dd8e2047
+      internalID: 1532177805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_33
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da877fee3ef173419eb19719ce5f5f0
+      internalID: -65366051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d7dda70fe7508429e422f8b5eeb49c
+      internalID: 1220599753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_35
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa30aed77ec6693459306816436b8479
+      internalID: -1157408231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_36
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd81596db81567a47a9a9161ff56d8bd
+      internalID: -931668170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_37
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba989af29e472d41817b7a61f9d172a
+      internalID: 761026152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd392077d8352cb4ba8b227b592d8be2
+      internalID: -2056028202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_39
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 36
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632a6724b7eb6244f9c5e45de0d7a56b
+      internalID: 963792776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_40
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edb1d4e547a1e7419ec01daa2c82cd8
+      internalID: -926444006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 11
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992558a55ea393b439fbfd852b632f5d
+      internalID: 1487097125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 13
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff473f77622edbc458768d8ef408846a
+      internalID: -902016757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_43
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 13
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967953d04a8c221479668733b730790f
+      internalID: 170075865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_44
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407faffc1b96ec249afa5f9b84752215
+      internalID: -1958163584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 69
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a89c5fe4bdaa744bb308555931549a6
+      internalID: -346141814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_46
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6ea2a92397dd440842d9b9be976b2c
+      internalID: 552104200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_47
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 67
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc174151f894bf4999c4b5b6641ea18
+      internalID: 1083427619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_48
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43f48fe9f45db4f8665a8c0d0f8102
+      internalID: 1009135286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_49
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fe51bc6bcbd0142a700fa19e3069db
+      internalID: 725333825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_50
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a90d055395c9af4988a255aad0dcf9b
+      internalID: 1863069316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_51
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 97
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30263b05d5a5b7a4e848c2bf5a32db95
+      internalID: -1611647063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_52
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef2c358e2dbb0e45b2189da42e24522
+      internalID: 1951504917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 92
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf488a07b5483744842b0defccb25ed
+      internalID: -1996698246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 125
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b176f63b3242841ac7c90aa167399b
+      internalID: -1559349889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_55
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 125
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91ebc129f432e14fa7cde3cdacc9c49
+      internalID: 906243467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_56
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97403bcf2f8e8e41818711ea3a46000
+      internalID: -1527385150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_57
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d69502e8bcbe04f88c050f3fb097ba
+      internalID: 331488325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_58
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9bc920f8c1f0545be76123b9457d25
+      internalID: 637987167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_59
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429f94d6a79539649914257b733890b3
+      internalID: -1558331724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_60
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 416
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9616a74e26d14514d84a937e3850d762
+      internalID: -1038083059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_61
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 411
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd31b30f79e45834c935a4c34d7de103
+      internalID: 1942333104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_62
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 410
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136c2381b15e5d94b9a91d6e6b840474
+      internalID: 1274936455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_63
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 449
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade2f57d1d1da6544b4843f7f2b7dfa6
+      internalID: -1827911400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_64
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0825a8dfb4af64041adc7a18771d187f
+      internalID: 113915617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_65
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e58eaaef815524aa60c4a6e10a0e05
+      internalID: -104931216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_66
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 433
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2c067b94cd72d438287aed50d16e61
+      internalID: -264408028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_67
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 428
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389857b1030b2e34f888ae4aaebf3ead
+      internalID: 32386366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_68
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ae974900e3fff4eba149520b27acee
+      internalID: 1358116916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_69
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 403
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f807698ba740094ab40a044df90160f
+      internalID: -204127308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 405
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34807035754823e4b9b5eae277339dcb
+      internalID: 1419242136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_71
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 405
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77a8ad94f4449c49ab597854d4e3869
+      internalID: -225804770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_72
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 393
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e11280b08c09540a18c8f524bf61a9
+      internalID: -420793620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_73
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbf05af7cf6d43449e39999a85e41f6
+      internalID: -1987285178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_74
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e683736b4f176c4d86b56079787bc76
+      internalID: 387516900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_75
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37a06ba407108949b748e9ec96772d3
+      internalID: 190256082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_76
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1730f85aad1294a4d8348ec97d69ab04
+      internalID: 2027008745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_77
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27551d702000984b92c428b5ee305cd
+      internalID: 411443347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_78
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b80b2960f5c8946bdfb74aa765c276
+      internalID: 1631810589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_79
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 360
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc3b0aaea2f72b4daeacda20b8b770d
+      internalID: -309492900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_80
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 355
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc98de6ae8e247040a2be3ce2b663ea3
+      internalID: -1348867987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_81
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 354
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a72cf2e135dc7448976c40f2fe671e5
+      internalID: 116045334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_82
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 348
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51bad448fb00074493c7155cf5eed49
+      internalID: 699606905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_83
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 347
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd12c39a27ef834fbcd9c34ba987d8f
+      internalID: -1282783733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_84
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 349
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880e23a9d1c10b341979e419a509acc9
+      internalID: 2113909434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_85
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 349
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c442d4b41ee1c1748a50624f8af78273
+      internalID: -378775467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_86
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 337
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22860ac10c3a6b4186d778bee8077e8
+      internalID: -790944032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_87
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a3444b4b5c64c478632d011d1185cd
+      internalID: 973470219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_88
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329d3f8470ab4774684647ab48551371
+      internalID: -1955339638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_89
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3a044035502074c855e3a8ec9f45a0
+      internalID: -425361457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_90
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f0423224c6136458a9b7cab6d21259
+      internalID: 484946647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_91
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab66fa546d189b45a4c9dc5fa76203f
+      internalID: 2126620987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_92
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13ae42282dfca14ea4795c433ac2d07
+      internalID: -168717522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_93
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 304
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7510f68af2668ea4d86e2b64e122b120
+      internalID: -1037210693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_94
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 299
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b80ed4c113d704dac28d6c66aadf29
+      internalID: 1027500138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_95
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 298
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea9b4ca741d6b142b739c3425a0ab36
+      internalID: -735736958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_96
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b25a518a36883945b0d6e40fba44800
+      internalID: -602196119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_97
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c60304de160124caf056e2ffa2f3b2
+      internalID: -1811370460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_98
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 293
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df03691278244f4c98da547a53012f2
+      internalID: -1662888507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_99
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1d38c3dd0214e4e9a0e73c12a877db
+      internalID: -1037701020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_100
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 281
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441c3511aba2f0e42a32abb91bede711
+      internalID: 1130720885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_101
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83ca2e353618a4458c3ceb6e775eccf
+      internalID: 1072214849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_102
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa6d1c2646b26940bcb2216c30ff4d6
+      internalID: -531406477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_103
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706a930c42b93694297d422af7922290
+      internalID: 26768530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_104
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f7763baf799f74bb7223ebaa974ef5
+      internalID: -452566682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_105
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd3dc7a4ed46914088d5f4f8511ffab
+      internalID: 1673907121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_106
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890eda8b16bacca40ba2b3019fcae225
+      internalID: 1767868616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_107
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 248
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3e1c402a6f3e74c80309a5d6958abf
+      internalID: -693525994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_108
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 243
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11daa778138e4d645b7d889c2497b92c
+      internalID: 460545527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_109
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 242
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9101fe64e2144dd459916e2257ad32f7
+      internalID: -627768377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_110
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d188c08b47f42b644868cf5c88c1de3f
+      internalID: -1311103935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_111
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463aa0731e3939d458d06d7e557a82af
+      internalID: -1743043663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_112
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 237
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a6599b1dcad945959a91d117bd9ed
+      internalID: 1450384628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_113
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 237
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39170122bb699004687e20c58bbc15ae
+      internalID: -1048968150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_114
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 225
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9977e0374dcd2468bccc26470ded32
+      internalID: 1762716778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_115
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341ceb47363e9c346ab3fd11e904a50e
+      internalID: 568555380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_116
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c90ea071ab68a04d83371ce1f2a2569
+      internalID: -628346410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_117
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ec0ce26aec9e442ae85112e439ca2f
+      internalID: 1925345013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_118
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22cffe92c5c8614596ee73d1cf97f53
+      internalID: -1860892368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_119
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4147a8e13ed072c45a65725185da0ee6
+      internalID: 1179261534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_120
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16c81f46d784a04fa826f7a9998c559
+      internalID: 804119759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_121
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 192
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291dfa11281d8044dad5785b35a7f32c
+      internalID: 1621657330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_122
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 187
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f992e1743f4a341b7bd05a6ec2e2d9
+      internalID: 1145247376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_123
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 186
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9c911f3325a884383ec3e698ce63ee
+      internalID: 1211300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_124
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19231fb25de4a5541a753bf871bab529
+      internalID: -662459998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_125
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc1ad97867db4846910cad4d38f9438
+      internalID: -454753497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_126
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 181
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabaec889ae10964f93ef43df9f83dc4
+      internalID: -79277588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_127
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ae431e61112e04e9858d6c91c9832d
+      internalID: -1920012391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_128
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 169
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ba6604ce0f89142a924062444086e5
+      internalID: 761348576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_129
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e3749540f5c78449c24d319d0e8448
+      internalID: 464436484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_130
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d0664f34e393d48abcf87982480133
+      internalID: -1763061857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_131
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57c4f787805c7d4399cb83ffcb3fcf5
+      internalID: -36631287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_132
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45afdb1f3a64f743a9887b9b80a71b0
+      internalID: 2068789049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_133
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23014861bbbbefc46bf81b9d4daad918
+      internalID: 1089771675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_134
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa5c1a373559754280bdbf1744c60ee
+      internalID: 2097903873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_135
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 136
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec296a0313b1c6469c6908dd6373094
+      internalID: -865631523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_136
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 131
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ca32eb8d2f4f4479320f5b478fa2b8
+      internalID: -388054199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_137
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 130
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d102a98dfa5934297472aa1ff25d6f
+      internalID: -2073532086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_138
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 113
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e758970561c8a4894fa69778e22480
+      internalID: -999461338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_139
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 74
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a032c23a77c7f9d478b7264751385bf2
+      internalID: 1406134251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_140
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 75
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f75685ff359c2341832f4ba766c623c
+      internalID: -1866416709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_141
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 80
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe0f0e3b381323448a47607e4d1fbab
+      internalID: -577485261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_142
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 57
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2b5b959171de242847f1e676dbc2a5
+      internalID: -1893186036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_143
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 18
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaeccf76b3f6084d94289182b54715e
+      internalID: 749516328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_144
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 19
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306ca750277b63c4bb667a1f57e8429e
+      internalID: -324051561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_145
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 24
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1281b8a399e284dbfed1aad1e68411
+      internalID: -1364496897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_146
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 24
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07db90fd06384d4a994477fedb318e6
+      internalID: 673372510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_147
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 19
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66fe21a7371b7e4ca7da93c34cdb88f
+      internalID: -756471484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_148
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 18
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b951611152f30a041b65cdfd27313a7a
+      internalID: -1474039979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_149
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 57
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca4a2e28f5c15a47a4ffcd0743b7969
+      internalID: -21482269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_150
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 80
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f63e7d081387ed46922fa92e21b5ae8
+      internalID: 586058536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_151
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 75
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08d0eb89ad8f894589c7b92f32043ff
+      internalID: -1470199164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_152
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ccaf597d982594d8ea6646d2947b6c
+      internalID: -771046475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_153
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 113
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5f81ab23ac1e24490fda2252d5c07e
+      internalID: -621311603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_154
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f308bc4e08032324e8efea1f280f21cf
+      internalID: 1909630919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_155
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b044a590ca5f11b4caccd20c99660812
+      internalID: -164699274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_156
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6274619936cac4ebb9b53f91d1c8aa
+      internalID: -1445871330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_157
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d7c3540fc1e2245afd1a364b9baaf7
+      internalID: -1011911667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_158
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 377
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81877f1bca8423e4ca39d60dd8cdb180
+      internalID: 418800517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_159
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 372
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c42b26a74b23c441967294fb5ab09a2
+      internalID: -220759356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_160
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 393
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a097bcf0fd9e9c84aae4d101932e724f
+      internalID: -1760305970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_161
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 360
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33081173e878f045b7dfc6c594affe2
+      internalID: 1343855220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_162
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 355
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdd92ae3c26060498143a3476efbe88
+      internalID: -1343470776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_163
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 354
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e56db57872c41449b845df7a269a44d
+      internalID: -514680277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_164
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 347
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6737dc601b257044597d763cab3c5bf1
+      internalID: -1718831196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_165
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 347
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5734476e15c5304eb950beb7fc2866e
+      internalID: -1563608352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_166
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 349
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239bb95a894fd244da7519b960c311db
+      internalID: -829167587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_167
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 349
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49286d183738b6e45b6a96c04481e5d4
+      internalID: -496977950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_168
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 337
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b77c9e28043c5418c34e38195045f0
+      internalID: -983941910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_169
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0031d0570dbd7304584a0b981f952023
+      internalID: -350098592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_170
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df73be43222797146b49f450ad5f4bc3
+      internalID: 301233455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_171
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 293
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b5db68ef82a9f4cb48e42175e6ed3a
+      internalID: 1459422831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_172
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01aa98678ff9354cbfcb8935958bbfa
+      internalID: -62160366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_173
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b1f9c0802b2a243b66c11ed0057f45
+      internalID: 591767748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_174
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 321
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9002770b83bed314c97545f1edac4dca
+      internalID: -828609617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_175
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e5cf85e2b8d47408c79d39a345b600
+      internalID: -1057471753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_176
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 316
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c399808fa537ba34996ae6580d7ec991
+      internalID: -320368821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_177
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 304
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556e94bf58dfad24480ab3261b7a89b5
+      internalID: 675752049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_178
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 299
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1648e6306fa1d2145a96f4b2ea17617d
+      internalID: 732309788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_179
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 298
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4545abf3d7121f64fbcbeae3f8018127
+      internalID: -626580067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_180
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6551c7e7d3ee12d4a90b5eca4644293b
+      internalID: -743277155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_181
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 291
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcfa4cbf38b28e42ac00fcb6dfb45cf
+      internalID: 2136635568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_182
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 281
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63e1e61a951d2f43a649da845afb880
+      internalID: -977236099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_183
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53cd13a14caf294ba0f0d7a6d86cb1e
+      internalID: 101951199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_184
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 237
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50617df660094d0488b58e372aa9a9c3
+      internalID: 1514035669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_185
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 237
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e18ad9e2921bf04fbc4cf1c7bfb7b67
+      internalID: -2121923307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_186
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 225
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471acf670a52f2f478b3642686b15992
+      internalID: -1395126593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_187
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ebded341f8b7546b03d21fdb00978e
+      internalID: -1926505424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_188
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 169
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dc7427cc933fd4f812561510213d67
+      internalID: 1380132653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_189
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 125
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5dfbcd8ceff014faa6fa812e02fba9
+      internalID: 1160888445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_190
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 125
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04646cf745f8bc49bfecbc650401a13
+      internalID: 1278277681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_191
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2bffd0209f40a4eabbb5787a354aa6
+      internalID: -2023588726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_192
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 123
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0b87c77d11ac442b24c9874b30ed89
+      internalID: 190697297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_193
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 130
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673aa17e3d009174ab2b04d784a39ebb
+      internalID: 1040339999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_194
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 131
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210b72a64c7da66479ffbd3c4afcb59f
+      internalID: -1366718231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_195
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 136
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011c75496e0c7f14480358b10a6c1b3c
+      internalID: -1711322286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_196
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a15cc934a6b3249aed26498ae52661
+      internalID: -1309377875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_197
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33130d04f7625ba4d8ccfd9fb2359470
+      internalID: -1939183702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_198
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9af3c70dd70ad044b6eeb6386639991
+      internalID: 1592629000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_199
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58813c4c9b782ac4e873ef851953cfb6
+      internalID: -1330208369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_200
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 153
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4bd4692c579424f9c77ddcc33c69dc
+      internalID: -2106464624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_201
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 148
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf7a6d608f43d14f807fdfe9b3d3eb9
+      internalID: -650842521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_202
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 192
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27516fc67c4b79439bf70fe5b774443
+      internalID: -1794775586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_203
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 187
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff525876154fc442a53bdd7dc6bd12c
+      internalID: -1686556206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_204
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 186
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb324534f76dd44eb18abc56e4c87d5
+      internalID: -231789445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_205
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85d84be73357244a9ceab6775c3605a
+      internalID: -785701000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_206
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 179
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381c33251b2ffb44b9738db180319dff
+      internalID: -621644855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_207
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 181
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d0bc0ac86650f449008f588dabd1c5
+      internalID: -1217317836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_208
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c86cdb1d95cca4d9046ba18f6eca6f
+      internalID: -1486212803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_209
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c597a13c122fd4faa3467054983cfa
+      internalID: -354651277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_210
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc0227a1c8b21a4e870371dfcc20362
+      internalID: 30468235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_211
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 209
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e176a0a1a4ef643a41b57b8c7ad921
+      internalID: 2116083910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_212
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8140f5310fb07e941a4619a5e40c0149
+      internalID: -876427205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_213
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 204
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d44474dfdb4184c8eddc2ece91cdd5
+      internalID: -1725009190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_214
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df49ae1f5628761429aca93f47672885
+      internalID: 1443925106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_215
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 235
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380095095cd600242845cb830d44a9fa
+      internalID: -226853816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_216
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 242
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5225a6285a8d8b4fb2aeb15928e9eb2
+      internalID: 1365546700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_217
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 243
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d55a3f21a13dd41adaff2eb212bf32
+      internalID: -79099547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_218
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 248
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8198a0d7213fe3f4c8b191e8701d4b9a
+      internalID: 770435025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_219
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cc0c4b321c96041b4f77f925e3171b
+      internalID: -1800848185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_220
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 260
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831014ca2b8cfd4438a2caedb165e4ec
+      internalID: -1927849994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_221
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aec807d8d9e9a4fa47cdede26d58a6
+      internalID: -1698912627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_222
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1876dfbea1c302b409f2246e40d8e8ac
+      internalID: 953257339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dawnblocker_ortho_extension_223
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 265
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9b926f3af89e04fb68670d0a257d44
+      internalID: 771605616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +4836,231 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dawnblocker_ortho_extension_0: 86371885
+      dawnblocker_ortho_extension_1: 621621874
+      dawnblocker_ortho_extension_10: 1826921296
+      dawnblocker_ortho_extension_100: 1130720885
+      dawnblocker_ortho_extension_101: 1072214849
+      dawnblocker_ortho_extension_102: -531406477
+      dawnblocker_ortho_extension_103: 26768530
+      dawnblocker_ortho_extension_104: -452566682
+      dawnblocker_ortho_extension_105: 1673907121
+      dawnblocker_ortho_extension_106: 1767868616
+      dawnblocker_ortho_extension_107: -693525994
+      dawnblocker_ortho_extension_108: 460545527
+      dawnblocker_ortho_extension_109: -627768377
+      dawnblocker_ortho_extension_11: 1874360454
+      dawnblocker_ortho_extension_110: -1311103935
+      dawnblocker_ortho_extension_111: -1743043663
+      dawnblocker_ortho_extension_112: 1450384628
+      dawnblocker_ortho_extension_113: -1048968150
+      dawnblocker_ortho_extension_114: 1762716778
+      dawnblocker_ortho_extension_115: 568555380
+      dawnblocker_ortho_extension_116: -628346410
+      dawnblocker_ortho_extension_117: 1925345013
+      dawnblocker_ortho_extension_118: -1860892368
+      dawnblocker_ortho_extension_119: 1179261534
+      dawnblocker_ortho_extension_12: 999924404
+      dawnblocker_ortho_extension_120: 804119759
+      dawnblocker_ortho_extension_121: 1621657330
+      dawnblocker_ortho_extension_122: 1145247376
+      dawnblocker_ortho_extension_123: 1211300250
+      dawnblocker_ortho_extension_124: -662459998
+      dawnblocker_ortho_extension_125: -454753497
+      dawnblocker_ortho_extension_126: -79277588
+      dawnblocker_ortho_extension_127: -1920012391
+      dawnblocker_ortho_extension_128: 761348576
+      dawnblocker_ortho_extension_129: 464436484
+      dawnblocker_ortho_extension_13: -1754752833
+      dawnblocker_ortho_extension_130: -1763061857
+      dawnblocker_ortho_extension_131: -36631287
+      dawnblocker_ortho_extension_132: 2068789049
+      dawnblocker_ortho_extension_133: 1089771675
+      dawnblocker_ortho_extension_134: 2097903873
+      dawnblocker_ortho_extension_135: -865631523
+      dawnblocker_ortho_extension_136: -388054199
+      dawnblocker_ortho_extension_137: -2073532086
+      dawnblocker_ortho_extension_138: -999461338
+      dawnblocker_ortho_extension_139: 1406134251
+      dawnblocker_ortho_extension_14: -696493206
+      dawnblocker_ortho_extension_140: -1866416709
+      dawnblocker_ortho_extension_141: -577485261
+      dawnblocker_ortho_extension_142: -1893186036
+      dawnblocker_ortho_extension_143: 749516328
+      dawnblocker_ortho_extension_144: -324051561
+      dawnblocker_ortho_extension_145: -1364496897
+      dawnblocker_ortho_extension_146: 673372510
+      dawnblocker_ortho_extension_147: -756471484
+      dawnblocker_ortho_extension_148: -1474039979
+      dawnblocker_ortho_extension_149: -21482269
+      dawnblocker_ortho_extension_15: 1865037042
+      dawnblocker_ortho_extension_150: 586058536
+      dawnblocker_ortho_extension_151: -1470199164
+      dawnblocker_ortho_extension_152: -771046475
+      dawnblocker_ortho_extension_153: -621311603
+      dawnblocker_ortho_extension_154: 1909630919
+      dawnblocker_ortho_extension_155: -164699274
+      dawnblocker_ortho_extension_156: -1445871330
+      dawnblocker_ortho_extension_157: -1011911667
+      dawnblocker_ortho_extension_158: 418800517
+      dawnblocker_ortho_extension_159: -220759356
+      dawnblocker_ortho_extension_16: -1308378900
+      dawnblocker_ortho_extension_160: -1760305970
+      dawnblocker_ortho_extension_161: 1343855220
+      dawnblocker_ortho_extension_162: -1343470776
+      dawnblocker_ortho_extension_163: -514680277
+      dawnblocker_ortho_extension_164: -1718831196
+      dawnblocker_ortho_extension_165: -1563608352
+      dawnblocker_ortho_extension_166: -829167587
+      dawnblocker_ortho_extension_167: -496977950
+      dawnblocker_ortho_extension_168: -983941910
+      dawnblocker_ortho_extension_169: -350098592
+      dawnblocker_ortho_extension_17: 1805058294
+      dawnblocker_ortho_extension_170: 301233455
+      dawnblocker_ortho_extension_171: 1459422831
+      dawnblocker_ortho_extension_172: -62160366
+      dawnblocker_ortho_extension_173: 591767748
+      dawnblocker_ortho_extension_174: -828609617
+      dawnblocker_ortho_extension_175: -1057471753
+      dawnblocker_ortho_extension_176: -320368821
+      dawnblocker_ortho_extension_177: 675752049
+      dawnblocker_ortho_extension_178: 732309788
+      dawnblocker_ortho_extension_179: -626580067
+      dawnblocker_ortho_extension_18: 1330984215
+      dawnblocker_ortho_extension_180: -743277155
+      dawnblocker_ortho_extension_181: 2136635568
+      dawnblocker_ortho_extension_182: -977236099
+      dawnblocker_ortho_extension_183: 101951199
+      dawnblocker_ortho_extension_184: 1514035669
+      dawnblocker_ortho_extension_185: -2121923307
+      dawnblocker_ortho_extension_186: -1395126593
+      dawnblocker_ortho_extension_187: -1926505424
+      dawnblocker_ortho_extension_188: 1380132653
+      dawnblocker_ortho_extension_189: 1160888445
+      dawnblocker_ortho_extension_19: 1382182515
+      dawnblocker_ortho_extension_190: 1278277681
+      dawnblocker_ortho_extension_191: -2023588726
+      dawnblocker_ortho_extension_192: 190697297
+      dawnblocker_ortho_extension_193: 1040339999
+      dawnblocker_ortho_extension_194: -1366718231
+      dawnblocker_ortho_extension_195: -1711322286
+      dawnblocker_ortho_extension_196: -1309377875
+      dawnblocker_ortho_extension_197: -1939183702
+      dawnblocker_ortho_extension_198: 1592629000
+      dawnblocker_ortho_extension_199: -1330208369
+      dawnblocker_ortho_extension_2: 2097200387
+      dawnblocker_ortho_extension_20: 1514773873
+      dawnblocker_ortho_extension_200: -2106464624
+      dawnblocker_ortho_extension_201: -650842521
+      dawnblocker_ortho_extension_202: -1794775586
+      dawnblocker_ortho_extension_203: -1686556206
+      dawnblocker_ortho_extension_204: -231789445
+      dawnblocker_ortho_extension_205: -785701000
+      dawnblocker_ortho_extension_206: -621644855
+      dawnblocker_ortho_extension_207: -1217317836
+      dawnblocker_ortho_extension_208: -1486212803
+      dawnblocker_ortho_extension_209: -354651277
+      dawnblocker_ortho_extension_21: 1606142203
+      dawnblocker_ortho_extension_210: 30468235
+      dawnblocker_ortho_extension_211: 2116083910
+      dawnblocker_ortho_extension_212: -876427205
+      dawnblocker_ortho_extension_213: -1725009190
+      dawnblocker_ortho_extension_214: 1443925106
+      dawnblocker_ortho_extension_215: -226853816
+      dawnblocker_ortho_extension_216: 1365546700
+      dawnblocker_ortho_extension_217: -79099547
+      dawnblocker_ortho_extension_218: 770435025
+      dawnblocker_ortho_extension_219: -1800848185
+      dawnblocker_ortho_extension_22: 1639658123
+      dawnblocker_ortho_extension_220: -1927849994
+      dawnblocker_ortho_extension_221: -1698912627
+      dawnblocker_ortho_extension_222: 953257339
+      dawnblocker_ortho_extension_223: 771605616
+      dawnblocker_ortho_extension_23: 607007160
+      dawnblocker_ortho_extension_24: 1373676114
+      dawnblocker_ortho_extension_25: 87571124
+      dawnblocker_ortho_extension_26: -344365508
+      dawnblocker_ortho_extension_27: 1931679881
+      dawnblocker_ortho_extension_28: -1591565888
+      dawnblocker_ortho_extension_29: -2140668198
+      dawnblocker_ortho_extension_3: 1919592819
+      dawnblocker_ortho_extension_30: -592980233
+      dawnblocker_ortho_extension_31: 1470125386
+      dawnblocker_ortho_extension_32: 1532177805
+      dawnblocker_ortho_extension_33: -65366051
+      dawnblocker_ortho_extension_34: 1220599753
+      dawnblocker_ortho_extension_35: -1157408231
+      dawnblocker_ortho_extension_36: -931668170
+      dawnblocker_ortho_extension_37: 761026152
+      dawnblocker_ortho_extension_38: -2056028202
+      dawnblocker_ortho_extension_39: 963792776
+      dawnblocker_ortho_extension_4: 1512276182
+      dawnblocker_ortho_extension_40: -926444006
+      dawnblocker_ortho_extension_41: 1487097125
+      dawnblocker_ortho_extension_42: -902016757
+      dawnblocker_ortho_extension_43: 170075865
+      dawnblocker_ortho_extension_44: -1958163584
+      dawnblocker_ortho_extension_45: -346141814
+      dawnblocker_ortho_extension_46: 552104200
+      dawnblocker_ortho_extension_47: 1083427619
+      dawnblocker_ortho_extension_48: 1009135286
+      dawnblocker_ortho_extension_49: 725333825
+      dawnblocker_ortho_extension_5: 495927213
+      dawnblocker_ortho_extension_50: 1863069316
+      dawnblocker_ortho_extension_51: -1611647063
+      dawnblocker_ortho_extension_52: 1951504917
+      dawnblocker_ortho_extension_53: -1996698246
+      dawnblocker_ortho_extension_54: -1559349889
+      dawnblocker_ortho_extension_55: 906243467
+      dawnblocker_ortho_extension_56: -1527385150
+      dawnblocker_ortho_extension_57: 331488325
+      dawnblocker_ortho_extension_58: 637987167
+      dawnblocker_ortho_extension_59: -1558331724
+      dawnblocker_ortho_extension_6: -379505017
+      dawnblocker_ortho_extension_60: -1038083059
+      dawnblocker_ortho_extension_61: 1942333104
+      dawnblocker_ortho_extension_62: 1274936455
+      dawnblocker_ortho_extension_63: -1827911400
+      dawnblocker_ortho_extension_64: 113915617
+      dawnblocker_ortho_extension_65: -104931216
+      dawnblocker_ortho_extension_66: -264408028
+      dawnblocker_ortho_extension_67: 32386366
+      dawnblocker_ortho_extension_68: 1358116916
+      dawnblocker_ortho_extension_69: -204127308
+      dawnblocker_ortho_extension_7: 1965846802
+      dawnblocker_ortho_extension_70: 1419242136
+      dawnblocker_ortho_extension_71: -225804770
+      dawnblocker_ortho_extension_72: -420793620
+      dawnblocker_ortho_extension_73: -1987285178
+      dawnblocker_ortho_extension_74: 387516900
+      dawnblocker_ortho_extension_75: 190256082
+      dawnblocker_ortho_extension_76: 2027008745
+      dawnblocker_ortho_extension_77: 411443347
+      dawnblocker_ortho_extension_78: 1631810589
+      dawnblocker_ortho_extension_79: -309492900
+      dawnblocker_ortho_extension_8: 1200396413
+      dawnblocker_ortho_extension_80: -1348867987
+      dawnblocker_ortho_extension_81: 116045334
+      dawnblocker_ortho_extension_82: 699606905
+      dawnblocker_ortho_extension_83: -1282783733
+      dawnblocker_ortho_extension_84: 2113909434
+      dawnblocker_ortho_extension_85: -378775467
+      dawnblocker_ortho_extension_86: -790944032
+      dawnblocker_ortho_extension_87: 973470219
+      dawnblocker_ortho_extension_88: -1955339638
+      dawnblocker_ortho_extension_89: -425361457
+      dawnblocker_ortho_extension_9: -1164261589
+      dawnblocker_ortho_extension_90: 484946647
+      dawnblocker_ortho_extension_91: 2126620987
+      dawnblocker_ortho_extension_92: -168717522
+      dawnblocker_ortho_extension_93: -1037210693
+      dawnblocker_ortho_extension_94: 1027500138
+      dawnblocker_ortho_extension_95: -735736958
+      dawnblocker_ortho_extension_96: -602196119
+      dawnblocker_ortho_extension_97: -1811370460
+      dawnblocker_ortho_extension_98: -1662888507
+      dawnblocker_ortho_extension_99: -1037701020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
