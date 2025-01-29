@@ -3,11 +3,12 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    Vector3 direction;
-    Rigidbody2D rb;
+    public PlayerFSM psm { get; private set; }
+    public Vector3 direction;
+    public Rigidbody2D rb;
 
     public float speed = 5;
-    bool attackPending = false;
+    public bool attackPending = false;
     bool pickUpPending = false;
 
     private void Awake()
@@ -15,13 +16,25 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate() { }
-
-    void Move()
+    void OnEnable()
     {
-        rb.velocity = direction * speed;
+        psm = new PlayerFSM(this);
+        psm.Initialize(psm.iddleState);
     }
 
+    private void Update()
+    {
+        psm.Update();
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.Log(direction);
+        //Debug.Log(attackPending);
+        psm.FixedUpdate();
+    }
+
+    //Input Sistem ------------------------------------------------------------
     //Controlador de inputs de Movimiento
     public void OnMove(InputAction.CallbackContext context)
     {
