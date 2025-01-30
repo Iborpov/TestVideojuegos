@@ -10,8 +10,11 @@ public class IddleState : IState
         this.player = player;
     }
 
+    private void Update() { }
+
     public void FixedUpdate()
     {
+        Debug.Log("Iddle State --------------------------");
         if (player.direction != Vector3.zero)
         {
             player.psm.TransitionTo(player.psm.runState);

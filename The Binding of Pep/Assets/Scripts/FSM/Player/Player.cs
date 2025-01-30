@@ -29,9 +29,15 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(direction);
+        //Debug.Log(direction);
         //Debug.Log(attackPending);
+        Move();
         psm.FixedUpdate();
+    }
+
+    void Move()
+    {
+        rb.velocity = direction * speed;
     }
 
     //Input Sistem ------------------------------------------------------------

@@ -12,16 +12,16 @@ public class RunState : IState
         this.direction = player.direction;
     }
 
+    private void Update() { }
+
     public void FixedUpdate()
     {
-        if (direction != Vector3.zero)
-        {
-            Move();
-        }
-        else
-        {
-            player.psm.TransitionTo(player.psm.iddleState);
-        }
+        Debug.Log("Run state  --------------------------");
+        //Move();
+        // if (direction == Vector3.zero)
+        // {
+        //     player.psm.TransitionTo(player.psm.iddleState);
+        // }
 
         if (player.attackPending == true)
         {
