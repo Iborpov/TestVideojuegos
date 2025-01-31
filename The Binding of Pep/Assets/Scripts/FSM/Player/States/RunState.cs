@@ -3,25 +3,24 @@ using UnityEngine;
 public class RunState : IState
 {
     private Player player;
-    Vector3 direction;
 
-    // pass in any parameters you need in the constructors
     public RunState(Player player)
     {
         this.player = player;
-        this.direction = player.direction;
     }
 
-    private void Update() { }
+    public void Update()
+    {
+        player.animator.SetBool("IsRunning", true);
+    }
 
     public void FixedUpdate()
     {
-        Debug.Log("Run state  --------------------------");
-        //Move();
-        // if (direction == Vector3.zero)
-        // {
-        //     player.psm.TransitionTo(player.psm.iddleState);
-        // }
+        Move();
+        if (player.direction == Vector3.zero)
+        {
+            player.psm.TransitionTo(player.psm.iddleState);
+        }
 
         if (player.attackPending == true)
         {
@@ -31,6 +30,6 @@ public class RunState : IState
 
     void Move()
     {
-        player.rb.velocity = direction * player.speed;
+        player.rb.velocity = player.direction * player.speed;
     }
 }

@@ -5,13 +5,14 @@ namespace BehaviorTree
 {
     public class InverterNode : Node
     {
+        public InverterNode(BTree bTree)
+            : base(bTree) { }
 
-        public InverterNode(BTree bTree) : base(bTree) { }
-        public InverterNode(BTree bTree, Node child) : base(bTree, child) { }
+        public InverterNode(BTree bTree, Node child)
+            : base(bTree, child) { }
 
         public override NodeState Evaluate()
         {
-
             switch (children[0].Evaluate())
             {
                 case NodeState.FAILURE:
@@ -26,9 +27,6 @@ namespace BehaviorTree
                     break;
             }
             return state;
-
         }
-
     }
-
 }

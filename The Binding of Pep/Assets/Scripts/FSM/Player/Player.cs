@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     public PlayerFSM psm { get; private set; }
     public Vector3 direction;
     public Rigidbody2D rb;
+    public Animator animator;
 
     public float speed = 5;
     public bool attackPending = false;
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void OnEnable()
@@ -29,15 +31,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Debug.Log(direction);
-        //Debug.Log(attackPending);
-        Move();
         psm.FixedUpdate();
-    }
-
-    void Move()
-    {
-        rb.velocity = direction * speed;
     }
 
     //Input Sistem ------------------------------------------------------------

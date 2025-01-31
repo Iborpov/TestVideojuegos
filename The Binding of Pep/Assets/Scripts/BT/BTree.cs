@@ -6,7 +6,6 @@ namespace BehaviorTree
 {
     public abstract class BTree : MonoBehaviour
     {
-
         private Node root = null;
 
         private Dictionary<string, object> dataContext = new Dictionary<string, object>();
@@ -46,7 +45,5 @@ namespace BehaviorTree
             }
             return cleared;
         }
-
     }
-
 }

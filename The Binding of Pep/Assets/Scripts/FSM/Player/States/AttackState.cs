@@ -10,10 +10,14 @@ public class AttackState : IState
         this.player = player;
     }
 
-    public void Update() { }
+    public void Update()
+    {
+        player.animator.SetBool("IsAtacking", true);
+    }
 
     public void FixedUpdate()
     {
+        player.attackPending = false;
         player.psm.TransitionTo(player.psm.iddleState);
     }
 }
