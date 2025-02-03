@@ -4,17 +4,29 @@ public class IddleState : IState
 {
     private Player player;
 
+    private Vector3 lastDirection;
+
     public IddleState(Player player)
     {
         this.player = player;
     }
 
-    public void Update()
+    public void Enter()
     {
         player.animator.SetBool("IsRunning", false);
         player.animator.SetBool("IsAtacking", false);
-        player.animator.SetFloat("Y", player.direction.y);
-        player.animator.SetFloat("X", player.direction.x);
+        lastDirection = player.direction;
+    }
+
+    public void Update()
+    {
+        if (lastDirection != player.direction)
+        {
+            player.animator.SetTrigger("NewDirection");
+            player.animator.SetFloat("Y", player.direction.y);
+            player.animator.SetFloat("X", player.direction.x);
+            lastDirection = player.direction;
+        }
     }
 
     public void FixedUpdate()

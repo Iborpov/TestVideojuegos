@@ -280,7 +280,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Y
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: NewDrirection
+    m_ConditionEvent: NewDirection
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6744863440090175954}
@@ -392,7 +392,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Y
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: NewDrirection
+    m_ConditionEvent: NewDirection
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5412604485959022188}
@@ -600,7 +600,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
+  - m_ConditionMode: 1
     m_ConditionEvent: IsAtacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -731,7 +731,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: NewDrirection
+  - m_Name: NewDirection
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -1027,7 +1027,7 @@ AnimatorStateTransition:
     m_ConditionEvent: X
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: NewDrirection
+    m_ConditionEvent: NewDirection
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7013357486794747537}
@@ -1055,7 +1055,7 @@ AnimatorStateTransition:
     m_ConditionEvent: X
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: NewDrirection
+    m_ConditionEvent: NewDirection
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3806906508808032663}

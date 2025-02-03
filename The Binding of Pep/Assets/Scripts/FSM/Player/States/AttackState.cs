@@ -4,7 +4,6 @@ public class AttackState : IState
 {
     private Player player;
 
-    // pass in any parameters you need in the constructors
     public AttackState(Player player)
     {
         this.player = player;
