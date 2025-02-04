@@ -34,9 +34,12 @@ public class Pots : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Sword"))
         {
+            if (bc.isTrigger == false)
+            {
+                SoundManager.Instance.PlayClip(potBreack);
+            }
             bc.isTrigger = true;
             sr.sprite = brokenAparences[type];
-            SoundManager.Instance.PlayClip(potBreack);
         }
     }
 }

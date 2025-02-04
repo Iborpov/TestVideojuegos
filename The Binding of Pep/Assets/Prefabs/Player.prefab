@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a40081aa8e649b7b4acaea2f2eceb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sword: {fileID: 8300000, guid: e556e61daae31c3ec8c4cf3a7c3d9881, type: 3}
   direction: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   animator: {fileID: 0}

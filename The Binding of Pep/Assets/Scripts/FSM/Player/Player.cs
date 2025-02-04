@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    public AudioClip sword;
     public PlayerFSM psm { get; private set; }
     public Vector3 direction;
     public Rigidbody2D rb;

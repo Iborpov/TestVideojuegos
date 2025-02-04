@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class AttackState : IState
@@ -7,6 +8,11 @@ public class AttackState : IState
     public AttackState(Player player)
     {
         this.player = player;
+    }
+
+    public void Enter()
+    {
+        SoundManager.Instance.PlayClip(player.sword);
     }
 
     public void Update()
