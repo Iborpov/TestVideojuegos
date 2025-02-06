@@ -25,4 +25,12 @@ public class AttackState : IState
         player.attackPending = false;
         player.psm.TransitionTo(player.psm.iddleState);
     }
+
+    public void Exit()
+    {
+        if (player.pickUpActive)
+        {
+            player.pickUpActive = false;
+        }
+    }
 }

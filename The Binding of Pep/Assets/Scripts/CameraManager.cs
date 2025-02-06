@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     float currentPosy;
 
     Vector3 velocity;
-    public float speed = 10f;
+    public float speed = .4f;
 
     // Start is called before the first frame update
     void Awake() { }

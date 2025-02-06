@@ -13,9 +13,11 @@ public class IddleState : IState
 
     public void Enter()
     {
+        Debug.Log(player.pickUpActive);
         player.animator.SetBool("IsRunning", false);
         player.animator.SetBool("IsAtacking", false);
         lastDirection = player.direction;
+        player.animator.SetLayerWeight(0, player.pickUpActive ? 1f : 0f);
     }
 
     public void Update()
@@ -41,6 +43,19 @@ public class IddleState : IState
         if (player.attackPending == true)
         {
             player.psm.TransitionTo(player.psm.attackState);
+        }
+
+        //Si el jugador pulsa el boton de recoger cambia al estade de PickState
+        if (player.pickUpPending == true)
+        {
+            if (player.pickUpActive)
+            {
+                player.psm.TransitionTo(player.psm.attackState);
+            }
+            else
+            {
+                player.psm.TransitionTo(player.psm.pickState);
+            }
         }
     }
 }

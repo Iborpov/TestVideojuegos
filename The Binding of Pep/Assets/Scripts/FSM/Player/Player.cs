@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
 
     public float speed = 5;
     public bool attackPending = false;
-    bool pickUpPending = false;
+    public bool pickUpPending = false;
+
+    public bool pickUpActive = false;
 
     private void Awake()
     {

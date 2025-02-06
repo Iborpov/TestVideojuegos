@@ -18,13 +18,17 @@ public class Pots : MonoBehaviour
 
     void Awake()
     {
+        //Inicializa los componentes
         sr = GetComponent<SpriteRenderer>();
         bc = GetComponent<BoxCollider2D>();
+
+        //Seleción auna aparencia aleatoria
         type = Random.Range(0, 3);
     }
 
     private void Start()
     {
+        //Aplica una aparencia de la lista
         sr.sprite = aparences[type];
     }
 

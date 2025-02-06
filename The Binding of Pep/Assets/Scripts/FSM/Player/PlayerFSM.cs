@@ -4,12 +4,14 @@ public class PlayerFSM
     public IddleState iddleState { get; private set; }
     public RunState runState { get; private set; }
     public AttackState attackState { get; private set; }
+    public PickState pickState { get; private set; }
 
     public PlayerFSM(Player player)
     {
         this.iddleState = new IddleState(player);
         this.runState = new RunState(player);
         this.attackState = new AttackState(player);
+        this.pickState = new PickState(player);
     }
 
     public void Initialize(IState state)
