@@ -887,6 +887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8221110729763313048, guid: 3121d017c916afb37b992856c5c750d0, type: 3}
+      propertyPath: animaActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9216522240289841289, guid: 3121d017c916afb37b992856c5c750d0, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 6

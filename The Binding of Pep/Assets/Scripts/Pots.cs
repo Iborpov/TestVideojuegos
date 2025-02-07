@@ -10,11 +10,16 @@ public class Pots : MonoBehaviour
     List<Sprite> brokenAparences;
 
     [SerializeField]
+    List<Sprite> noShadowAparences;
+
+    [SerializeField]
     AudioClip potBreack;
 
     SpriteRenderer sr;
     BoxCollider2D bc;
     int type;
+
+    public bool isPicked = false;
 
     void Awake()
     {
@@ -32,7 +37,14 @@ public class Pots : MonoBehaviour
         sr.sprite = aparences[type];
     }
 
-    void Update() { }
+    void Update()
+    {
+        if (isPicked)
+        {
+            sr.sprite = noShadowAparences[type];
+            sr.sortingOrder = 3;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

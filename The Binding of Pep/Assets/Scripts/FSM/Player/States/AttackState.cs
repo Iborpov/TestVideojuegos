@@ -1,3 +1,4 @@
+using System.Net;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,25 +13,54 @@ public class AttackState : IState
 
     public void Enter()
     {
-        SoundManager.Instance.PlayClip(player.sword);
+        if (!player.pickUpActive)
+        {
+            //Sonido espada
+            SoundManager.Instance.PlayClip(player.sword);
+        }
+
+        //Animación
+        player.animaActive = true;
+        player.animator.SetBool("IsAtacking", true);
     }
 
     public void Update()
     {
-        player.animator.SetBool("IsAtacking", true);
-    }
+        if (player.pickUpActive)
+        {
+            //LaunchItem();
+        }
 
-    public void FixedUpdate()
-    {
-        player.attackPending = false;
-        player.psm.TransitionTo(player.psm.iddleState);
+        if (!player.animaActive)
+        {
+            player.psm.TransitionTo(player.psm.iddleState);
+        }
     }
 
     public void Exit()
     {
+        player.attackPending = false;
+        player.pickUpPending = false;
+
+        //Si lleva un objeto al atacar lo ha lanzado y pasa a no tener objeto
         if (player.pickUpActive)
         {
             player.pickUpActive = false;
         }
+
+        //Animación
+        player.animator.SetBool("IsAtacking", true);
     }
+
+    // private void LaunchItem()
+    // {
+    //     var startPoint = player.holdedItem.transform.position;
+    //     var endPoint = player.transform.position;
+
+    //     for (int i = 0; i < 20; i++)
+    //     {
+    //         player.hiRb.MovePosition(Vector3.Lerp(startPoint, endPoint, i * .05f));
+    //         yield return new WaitForFixedUpdate();
+    //     }
+    // }
 }
