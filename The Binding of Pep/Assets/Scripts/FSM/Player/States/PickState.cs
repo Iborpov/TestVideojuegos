@@ -81,7 +81,7 @@ public class PickState : IState
             player.holdedItem.transform.position = player.itemHolder.transform.position; //Le pone la posicon 0 para ser la del padre
             player.hiRb = player.holdedItem.GetComponent<Rigidbody2D>(); //Cogemos su rigibody
             player.hiRb.simulated = false; //Le quitamos la simulación
-            player.holdedItem.GetComponent<Pots>().isPicked = true;
+            player.holdedItem.GetComponent<Pots>().isPicked = true; //Indicamos al tarro que ha sido cogido
         }
     }
 }

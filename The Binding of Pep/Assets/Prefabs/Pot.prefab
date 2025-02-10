@@ -107,7 +107,12 @@ MonoBehaviour:
   - {fileID: 2077141913, guid: 4e922af4a92bbbfa19d9a5f4f72ce4f0, type: 3}
   - {fileID: -1109582527, guid: 4e922af4a92bbbfa19d9a5f4f72ce4f0, type: 3}
   - {fileID: -783318049, guid: 4e922af4a92bbbfa19d9a5f4f72ce4f0, type: 3}
+  noShadowAparences:
+  - {fileID: 286777142, guid: f958a2435cb081fddae49fa4da8802da, type: 3}
+  - {fileID: 146546661, guid: f958a2435cb081fddae49fa4da8802da, type: 3}
+  - {fileID: -718927165, guid: f958a2435cb081fddae49fa4da8802da, type: 3}
   potBreack: {fileID: 8300000, guid: 21c27fe08321568cc99209d96f0572dc, type: 3}
+  isPicked: 0
 --- !u!61 &5457705429458673480
 BoxCollider2D:
   m_ObjectHideFlags: 0

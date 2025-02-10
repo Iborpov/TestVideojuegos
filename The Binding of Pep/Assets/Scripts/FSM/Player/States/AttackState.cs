@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Net;
 using UnityEditor;
 using UnityEngine;
@@ -17,6 +18,7 @@ public class AttackState : IState
         {
             //Sonido espada
             SoundManager.Instance.PlayClip(player.sword);
+            player.StartCoroutine(LaunchItem());
         }
 
         //Animación
@@ -26,11 +28,6 @@ public class AttackState : IState
 
     public void Update()
     {
-        if (player.pickUpActive)
-        {
-            //LaunchItem();
-        }
-
         if (!player.animaActive)
         {
             player.psm.TransitionTo(player.psm.iddleState);
@@ -52,15 +49,32 @@ public class AttackState : IState
         player.animator.SetBool("IsAtacking", true);
     }
 
-    // private void LaunchItem()
-    // {
-    //     var startPoint = player.holdedItem.transform.position;
-    //     var endPoint = player.transform.position;
+    private IEnumerator LaunchItem()
+    {
+        Debug.Log("Lanzando");
+        var startPoint = player.holdedItem.transform.position; //El punto de inicio es la posicion del objeto que sujeta el lanzable
+        Vector2 endPoint; //El punto final depende de la dirección en la que el jugador mira
+        switch (player.playerDir)
+        {
+            case Player.PlayerDir.Down:
+                endPoint = startPoint + Vector3.down;
+                break;
+            case Player.PlayerDir.Left:
+                endPoint = Vector2.left;
+                break;
+            case Player.PlayerDir.Right:
+                endPoint = Vector2.right;
+                break;
+            case Player.PlayerDir.Up:
+            default:
+                endPoint = Vector2.up;
+                break;
+        }
 
-    //     for (int i = 0; i < 20; i++)
-    //     {
-    //         player.hiRb.MovePosition(Vector3.Lerp(startPoint, endPoint, i * .05f));
-    //         yield return new WaitForFixedUpdate();
-    //     }
-    // }
+        for (int i = 0; i < 20; i++)
+        {
+            player.hiRb.MovePosition(Vector3.Lerp(startPoint, endPoint, i * .05f));
+            yield return new WaitForFixedUpdate();
+        }
+    }
 }
