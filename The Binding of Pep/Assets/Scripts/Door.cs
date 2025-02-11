@@ -3,14 +3,25 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    //Sprites
     [SerializeField]
     Sprite doorOpen;
 
     [SerializeField]
     Sprite doorClosed;
 
+    //Entities
     [SerializeField]
     GameObject enemies;
+
+    //Sounds
+    [SerializeField]
+    AudioClip doorCloseClip;
+
+    [SerializeField]
+    AudioClip doorOpenClip;
+
+    //Components
     BoxCollider2D bc;
     SpriteRenderer sr;
 
@@ -36,6 +47,7 @@ public class Door : MonoBehaviour
             {
                 sr.sprite = doorOpen;
                 bc.isTrigger = true;
+                SoundManager.Instance.PlayClip(doorOpenClip);
             }
             else
             {
@@ -45,12 +57,13 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             CM.MoveToNewRoom(transform.parent.transform);
             playerInside = true;
+            SoundManager.Instance.PlayClip(doorCloseClip);
         }
 
         //Codigo donde detecte si hay una sala adyacente o no, para crearla y mover la camara

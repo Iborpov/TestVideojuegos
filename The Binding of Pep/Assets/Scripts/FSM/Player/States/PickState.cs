@@ -22,9 +22,6 @@ public class PickState : IState
         {
             PickItem();
         }
-
-        //Ahora lleva un objeto
-        player.pickUpActive = true;
     }
 
     public void Update()
@@ -64,7 +61,6 @@ public class PickState : IState
                 break;
         }
 
-        Debug.Log(player.direction);
         var hit = Physics2D.BoxCast(
             player.bc.bounds.center,
             player.bc.bounds.size,
@@ -82,6 +78,14 @@ public class PickState : IState
             player.hiRb = player.holdedItem.GetComponent<Rigidbody2D>(); //Cogemos su rigibody
             player.hiRb.simulated = false; //Le quitamos la simulación
             player.holdedItem.GetComponent<Pots>().isPicked = true; //Indicamos al tarro que ha sido cogido
+
+            //Ahora lleva un objeto
+            player.pickUpActive = true;
+        }
+        else
+        {
+            //No habia objeto que cojer, entonces no lleva uno
+            player.pickUpActive = false;
         }
     }
 }

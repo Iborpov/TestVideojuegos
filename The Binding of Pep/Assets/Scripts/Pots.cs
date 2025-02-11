@@ -44,6 +44,11 @@ public class Pots : MonoBehaviour
             sr.sprite = noShadowAparences[type];
             sr.sortingOrder = 3;
         }
+        else
+        {
+            sr.sprite = aparences[type];
+            sr.sortingOrder = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

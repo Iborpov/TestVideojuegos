@@ -13,6 +13,12 @@ public class IddleState : IState
 
     public void Enter()
     {
+        //Si el objeto de inventario ya tiene un objeto se indica
+        if (player.itemHolder.transform.childCount != 0)
+        {
+            player.pickUpActive = true;
+        }
+
         //Animaciónes
         player.animator.SetBool("IsRunning", false);
         player.animator.SetBool("IsAtacking", false);

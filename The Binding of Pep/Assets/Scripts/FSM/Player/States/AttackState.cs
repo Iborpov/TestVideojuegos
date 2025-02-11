@@ -18,6 +18,9 @@ public class AttackState : IState
         {
             //Sonido espada
             SoundManager.Instance.PlayClip(player.sword);
+        }
+        else
+        {
             player.StartCoroutine(LaunchItem());
         }
 
@@ -51,28 +54,30 @@ public class AttackState : IState
 
     private IEnumerator LaunchItem()
     {
-        Debug.Log("Lanzando");
-        var startPoint = player.holdedItem.transform.position; //El punto de inicio es la posicion del objeto que sujeta el lanzable
-        Vector2 endPoint; //El punto final depende de la dirección en la que el jugador mira
+        Vector3 startPoint = player.holdedItem.transform.position; //El punto de inicio
+        Vector3 endPoint; //El punto final
+
         switch (player.playerDir)
         {
             case Player.PlayerDir.Down:
-                endPoint = startPoint + Vector3.down;
+                endPoint = startPoint + Vector3.down * 10;
                 break;
             case Player.PlayerDir.Left:
-                endPoint = Vector2.left;
+                endPoint = startPoint + Vector3.left * 10;
                 break;
             case Player.PlayerDir.Right:
-                endPoint = Vector2.right;
+                endPoint = startPoint + Vector3.right * 10;
                 break;
             case Player.PlayerDir.Up:
             default:
-                endPoint = Vector2.up;
+                endPoint = startPoint + Vector3.up * 10;
                 break;
         }
 
+        player.holdedItem.transform.parent = null;
         for (int i = 0; i < 20; i++)
         {
+            //player.holdedItem.transform.position = Vector3.Lerp(startPoint, endPoint, i * .05f);
             player.hiRb.MovePosition(Vector3.Lerp(startPoint, endPoint, i * .05f));
             yield return new WaitForFixedUpdate();
         }
