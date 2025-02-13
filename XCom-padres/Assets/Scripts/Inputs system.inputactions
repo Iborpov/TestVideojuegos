@@ -1,5 +1,34 @@
 {
     "name": "Inputs system",
-    "maps": [],
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "1207a0e8-40de-4406-934b-30ef330037de",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "91e6298f-aba7-41b7-9a74-b972d1e320c1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "99796c9a-d3f1-4c06-b55e-e3beda210cc3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
     "controlSchemes": []
 }
