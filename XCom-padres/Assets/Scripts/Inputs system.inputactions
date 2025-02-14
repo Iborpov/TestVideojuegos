@@ -2,7 +2,7 @@
     "name": "Inputs system",
     "maps": [
         {
-            "name": "Controls",
+            "name": "InputActions",
             "id": "1207a0e8-40de-4406-934b-30ef330037de",
             "actions": [
                 {
@@ -19,6 +19,34 @@
                 {
                     "name": "",
                     "id": "99796c9a-d3f1-4c06-b55e-e3beda210cc3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CameraController",
+            "id": "5996e8a8-f5c5-4206-926f-42b3a4be2d53",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "0af8a8e5-0c97-452b-8568-8739e0b4e730",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b52e330f-5d01-48f9-9e6a-7dc6b5663f8a",
                     "path": "",
                     "interactions": "",
                     "processors": "",
