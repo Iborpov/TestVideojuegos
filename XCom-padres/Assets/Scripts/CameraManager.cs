@@ -1,3 +1,4 @@
+using System;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,9 +17,18 @@ public class CameraManager : MonoBehaviour
     CinemachineTransposer transposer;
 
     Vector2 direction;
-    float targetOffsetValue;
 
-    float rotationSpeed = 5;
+    [SerializeField]
+    float rotationSpeed = 40;
+    float rotation = 0;
+
+    [SerializeField]
+    float zoomSpeed = 5;
+    float zoom;
+
+    float zoomVelocity;
+
+    float targetOffsetValue;
 
     private void Awake()
     {
@@ -30,19 +40,36 @@ public class CameraManager : MonoBehaviour
 
     void Update()
     {
-        Vector3 camChange = new Vector3(direction.x, 0, direction.y);
+        ApplyMovement();
+        ApplyRotation();
+        ApplyZoom();
+    }
+
+    private void ApplyMovement()
+    {
+        Vector3 camChange = transform.forward * direction.y + transform.right * direction.x;
         cameraControler.transform.position += camChange * speed * Time.deltaTime;
     }
 
     private void ApplyRotation()
     {
-        Vector3 rotationVector = Vector3.zero;
+        Vector3 rotationVector = new Vector3(0, rotation, 0);
         transform.eulerAngles += rotationVector * rotationSpeed * Time.deltaTime;
+    }
+
+    private void ApplyZoom()
+    {
+        //targetOffsetValue = zoom / 10 - targetOffsetValue;
+        transposer.m_FollowOffset.y = Mathf.SmoothDamp(
+            transposer.m_FollowOffset.y,
+            targetOffsetValue,
+            ref zoomVelocity,
+            .3f
+        );
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
         direction = context.ReadValue<Vector2>();
         if (direction != Vector2.zero)
         {
@@ -52,11 +79,24 @@ public class CameraManager : MonoBehaviour
 
     public void OnRotate(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
+        if (context.performed)
+        {
+            rotation = context.ReadValue<float>();
+        }
+        else if (context.canceled)
+        {
+            rotation = 0;
+        }
     }
 
     public void OnZoom(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
+        Debug.Log(context.ReadValue<float>());
+        if (context.performed)
+        {
+            zoom = context.ReadValue<float>();
+            targetOffsetValue -= zoom / 90f;
+            targetOffsetValue = Math.Clamp(targetOffsetValue, .5f, 12);
+        }
     }
 }
