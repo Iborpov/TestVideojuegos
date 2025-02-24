@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int maxPointsTurn = 2;
+
+    int actionPoints;
+
+    GridPosition gridPosition;
+
     void Start() { }
 
-    // Update is called once per frame
     void Update() { }
 
     // public GridPosition GetGridPosition()

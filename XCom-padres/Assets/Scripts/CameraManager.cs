@@ -47,19 +47,20 @@ public class CameraManager : MonoBehaviour
 
     private void ApplyMovement()
     {
-        Vector3 camChange = transform.forward * direction.y + transform.right * direction.x;
+        Vector3 camChange =
+            cameraControler.transform.forward * direction.y
+            + cameraControler.transform.right * direction.x;
         cameraControler.transform.position += camChange * speed * Time.deltaTime;
     }
 
     private void ApplyRotation()
     {
         Vector3 rotationVector = new Vector3(0, rotation, 0);
-        transform.eulerAngles += rotationVector * rotationSpeed * Time.deltaTime;
+        cameraControler.transform.eulerAngles += rotationVector * rotationSpeed * Time.deltaTime;
     }
 
     private void ApplyZoom()
     {
-        //targetOffsetValue = zoom / 10 - targetOffsetValue;
         transposer.m_FollowOffset.y = Mathf.SmoothDamp(
             transposer.m_FollowOffset.y,
             targetOffsetValue,
