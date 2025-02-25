@@ -8,7 +8,14 @@ public class GridSystem
     float width;
     float height;
 
+    //Lista de las celdas
     List<GridObject>[] gridObjects;
+
+    public GridSystem(float w, float h)
+    {
+        this.width = w;
+        this.height = h;
+    }
 
     public Vector3 GetWoldPosition(GridPosition gridPosition)
     {
@@ -25,9 +32,9 @@ public class GridSystem
         throw new NotImplementedException();
     }
 
-    public GridObject GetGridObjet()
+    public GridObject GetGridObjet(GridPosition gp)
     {
-        throw new NotImplementedException();
+        return gridObjects[gp.x][gp.z];
     }
 
     public float GetWith()

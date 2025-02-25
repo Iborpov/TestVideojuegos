@@ -1,21 +1,33 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 public class GridObject
 {
+    //Posición de la celda
     GridPosition gridPosition;
 
+    //Listado de unidades en la celda
     List<Unit> unitList;
 
-    public void RemoveUnit() { }
+    //Constructor
+    public GridObject(GridPosition gp)
+    {
+        this.gridPosition = gp;
+    }
 
+    //Quita una unidad de la lista de unidades de la celda
+    public void RemoveUnit(Unit unit)
+    {
+        unitList.Remove(unit);
+    }
+
+    //Añade una unidad a la lista de unidades de la celda
     public void AddUnit(Unit unit)
     {
         unitList.Append(unit);
     }
 
+    //Devuelve la lista de unidades de la celda
     public List<Unit> GetUnitList()
     {
         return unitList;

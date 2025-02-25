@@ -38,7 +38,7 @@ public class SpinAction : BaseAction
 
     public override List<GridPosition> GetValidGridPositionList()
     {
-        return new List<GridPosition> { }; //{ unit.GetGridPosition() };
+        return new List<GridPosition> { unit.GetGridPosition() };
     }
 
     public override int GetActionPointsCost()

@@ -1,8 +1,23 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class MoveAction : BaseAction
 {
+    private void Update()
+    {
+        if (!isActive)
+        {
+            return;
+        }
+
+        if (true)
+        {
+            isActive = false;
+            onActionComplete();
+        }
+    }
+
     public override string GetActionName()
     {
         return "Move";
@@ -10,11 +25,13 @@ public class MoveAction : BaseAction
 
     public override List<GridPosition> GetValidGridPositionList()
     {
-        return new List<GridPosition> { }; //{ unit.GetGridPosition() };
+        GridPosition gp = unit.GetGridPosition();
+        return new List<GridPosition> { };
     }
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
     {
-        throw new NotImplementedException();
+        isActive = true;
+        this.onActionComplete = onActionComplete;
     }
 }

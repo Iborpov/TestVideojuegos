@@ -92,7 +92,6 @@ public class CameraManager : MonoBehaviour
 
     public void OnZoom(InputAction.CallbackContext context)
     {
-        Debug.Log(context.ReadValue<float>());
         if (context.performed)
         {
             zoom = context.ReadValue<float>();

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class LevelGrid : MonoBehaviour
 {
+    [SerializeField]
+    float width;
+
+    [SerializeField]
+    float height;
     public static LevelGrid Instance { get; private set; }
 
     private GridSystem gridSystem;
@@ -17,20 +22,46 @@ public class LevelGrid : MonoBehaviour
         }
         Instance = this;
 
-        gridSystem = new GridSystem();
+        gridSystem = new GridSystem(width, height);
     }
 
     void Start() { }
 
     void Update() { }
 
-    public Vector3 GetWorldPosition(GridPosition gridPosition)
+    public void AddUnitAtGridPosition(Unit unit) { }
+
+    public void GetUnitListAtGridPosition(GridPosition gridPosition) { }
+
+    public void RemoveUnitAtGridPosition(GridPosition gridPosition) { }
+
+    public bool HasAnyUnitOnGridPosition(GridPosition gridPosition)
     {
-        return new Vector3(gridPosition.x, 0, gridPosition.z);
+        return false;
+    }
+
+    public bool IsValidGridPosition(GridPosition gridPosition)
+    {
+        return HasAnyUnitOnGridPosition(gridPosition);
     }
 
     public GridPosition GetGridPosition(Vector3 worldPosition)
     {
         return new GridPosition((int)worldPosition.x, (int)worldPosition.z);
+    }
+
+    public Vector3 GetWorldPosition(GridPosition gridPosition)
+    {
+        return new Vector3(gridPosition.x, 0, gridPosition.z);
+    }
+
+    public float GetWith()
+    {
+        return width;
+    }
+
+    public float GetHeight()
+    {
+        return height;
     }
 }
