@@ -22,8 +22,6 @@ public class CameraManager : MonoBehaviour
     float rotationSpeed = 40;
     float rotation = 0;
 
-    [SerializeField]
-    float zoomSpeed = 5;
     float zoom;
 
     float zoomVelocity;
