@@ -126,6 +126,12 @@ MonoBehaviour:
   unitsLayer:
     serializedVersion: 2
     m_Bits: 64
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  canvas: {fileID: 0}
+  buttonPrefab: {fileID: 7639858503965835688, guid: 0f008137ff5800b89a2bff9bcd134b3b,
+    type: 3}
 --- !u!114 &1187480332942046232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +669,7 @@ GameObject:
   - component: {fileID: 2396918440048562210}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

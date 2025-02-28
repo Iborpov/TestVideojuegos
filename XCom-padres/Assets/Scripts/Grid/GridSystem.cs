@@ -5,26 +5,39 @@ using UnityEngine;
 
 public class GridSystem
 {
-    float width;
-    float height;
+    int width;
+    int height;
+    float cellSize;
 
     //Lista de las celdas
-    List<GridObject>[] gridObjects;
+    GridObject[,] gridObjects;
 
-    public GridSystem(float w, float h)
+    public GridSystem(int w, int h, float cs)
     {
         this.width = w;
         this.height = h;
+        this.cellSize = cs;
+        gridObjects = new GridObject[w, h];
+        for (int i = 0; i < w; i++)
+        {
+            for (int j = 0; j < h; j++)
+            {
+                gridObjects[i, j] = new GridObject(new GridPosition(i, j));
+            }
+        }
     }
 
     public Vector3 GetWoldPosition(GridPosition gridPosition)
     {
-        return LevelGrid.Instance.GetWorldPosition(gridPosition);
+        return new Vector3(gridPosition.x, 0, gridPosition.z) * cellSize;
     }
 
     public GridPosition GetGridPosition(Vector3 worldPosition)
     {
-        return LevelGrid.Instance.GetGridPosition(worldPosition);
+        return new GridPosition(
+            Mathf.RoundToInt(worldPosition.x / cellSize),
+            Mathf.RoundToInt(worldPosition.z / cellSize)
+        );
     }
 
     public bool IsValidGridPosition(GridPosition gridPosition)
@@ -34,7 +47,7 @@ public class GridSystem
 
     public GridObject GetGridObjet(GridPosition gp)
     {
-        return gridObjects[gp.x][gp.z];
+        return gridObjects[gp.x, gp.z];
     }
 
     public float GetWith()

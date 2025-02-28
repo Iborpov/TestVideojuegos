@@ -13,6 +13,7 @@ public class GridObject
     public GridObject(GridPosition gp)
     {
         this.gridPosition = gp;
+        this.unitList = new List<Unit>();
     }
 
     //Quita una unidad de la lista de unidades de la celda
@@ -31,5 +32,11 @@ public class GridObject
     public List<Unit> GetUnitList()
     {
         return unitList;
+    }
+
+    //Devuelve la posicion en el grid de la celda
+    public GridPosition GetPosition()
+    {
+        return gridPosition;
     }
 }

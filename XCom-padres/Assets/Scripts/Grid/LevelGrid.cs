@@ -5,10 +5,14 @@ using UnityEngine;
 public class LevelGrid : MonoBehaviour
 {
     [SerializeField]
-    float width;
+    int width;
 
     [SerializeField]
-    float height;
+    int height;
+
+    [SerializeField]
+    float cellSize;
+
     public static LevelGrid Instance { get; private set; }
 
     private GridSystem gridSystem;
@@ -22,7 +26,7 @@ public class LevelGrid : MonoBehaviour
         }
         Instance = this;
 
-        gridSystem = new GridSystem(width, height);
+        gridSystem = new GridSystem(width, height, cellSize);
     }
 
     void Start() { }
@@ -47,12 +51,12 @@ public class LevelGrid : MonoBehaviour
 
     public GridPosition GetGridPosition(Vector3 worldPosition)
     {
-        return new GridPosition((int)worldPosition.x, (int)worldPosition.z);
+        return gridSystem.GetGridPosition(worldPosition);
     }
 
     public Vector3 GetWorldPosition(GridPosition gridPosition)
     {
-        return new Vector3(gridPosition.x, 0, gridPosition.z);
+        return gridSystem.GetWoldPosition(gridPosition);
     }
 
     public float GetWith()

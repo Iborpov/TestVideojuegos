@@ -5,14 +5,16 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     GameObject selectedVisuals;
-    Animator animatior;
+    public Animator animatior;
+
+    [SerializeField]
     int maxPointsTurn = 2;
 
     int actionPoints;
 
     GridPosition gridPosition;
 
-    List<BaseAction> dispActions;
+    BaseAction[] dispActions;
 
     void Awake()
     {
@@ -20,19 +22,22 @@ public class Unit : MonoBehaviour
         selectedVisuals.SetActive(false);
         animatior = transform.GetChild(0).GetComponent<Animator>();
         animatior.SetBool("IsActive", false);
-        //dispActions = GetComponent<BaseAction>();
+        dispActions = GetComponents<BaseAction>();
+        ResetActionPoints();
     }
 
     void Start() { }
 
     void Update() { }
 
+    //Selecciona la unidad
     public void SelectUnit()
     {
         animatior.SetBool("IsActive", true);
         selectedVisuals.SetActive(true);
     }
 
+    //Deselecciona la unidad
     public void DeselectUnit()
     {
         animatior.SetBool("IsActive", false);
@@ -56,7 +61,7 @@ public class Unit : MonoBehaviour
         return gridPosition;
     }
 
-    public List<BaseAction> GetBaseActionArray()
+    public BaseAction[] GetBaseActionArray()
     {
         return dispActions;
     }

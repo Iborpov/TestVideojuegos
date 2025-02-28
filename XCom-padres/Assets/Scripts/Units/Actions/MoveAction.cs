@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class MoveAction : BaseAction
 {
+    int maxMovement = 3;
+
+    List<GridPosition> movePositions;
+
     private void Update()
     {
         if (!isActive)
@@ -13,6 +16,7 @@ public class MoveAction : BaseAction
 
         if (true)
         {
+            unit.animatior.SetBool("IsRunning", true);
             isActive = false;
             onActionComplete();
         }
@@ -26,7 +30,9 @@ public class MoveAction : BaseAction
     public override List<GridPosition> GetValidGridPositionList()
     {
         GridPosition gp = unit.GetGridPosition();
-        return new List<GridPosition> { };
+        List<GridPosition> validGridPositions = new List<GridPosition>();
+        //for (int i = 0; i < maxMovement; i++) { }
+        return validGridPositions;
     }
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
