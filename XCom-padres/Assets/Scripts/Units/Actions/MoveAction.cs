@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class MoveAction : BaseAction
 {
@@ -31,7 +32,14 @@ public class MoveAction : BaseAction
     {
         GridPosition gp = unit.GetGridPosition();
         List<GridPosition> validGridPositions = new List<GridPosition>();
-        //for (int i = 0; i < maxMovement; i++) { }
+        for (int i = -maxMovement; i < maxMovement; i++) {
+            for (int j = -maxMovement; j < maxMovement; j++) {
+                if (i!=0 && j!=0)
+                {
+                    validGridPositions.Append( new GridPosition(i, j));
+                }
+            }
+        }
         return validGridPositions;
     }
 
@@ -39,5 +47,10 @@ public class MoveAction : BaseAction
     {
         isActive = true;
         this.onActionComplete = onActionComplete;
+    }
+
+     public override int GetActionPointsCost()
+    {
+        return 2;
     }
 }

@@ -30,8 +30,14 @@ public class UnitsControler : MonoBehaviour
 
     List<GridPosition> validPositions;
 
+    //Captura el movimiento del raton 
+    public void OnMouseMovement(InputAction.CallbackContext context)
+    {
+        mousePosition = context.ReadValue<Vector2>();
+    }
     public void OnClick(InputAction.CallbackContext context)
     {
+        //Si se pulsa en UI
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
@@ -39,13 +45,21 @@ public class UnitsControler : MonoBehaviour
 
         if (context.canceled)
         {
+            //Raycas desde la camara segun la posición del raton
             Ray ray = Camera.main.ScreenPointToRay(mousePosition);
             RaycastHit hit;
+
+            //Si el rayo colisiona con una unidad
             if (Physics.Raycast(ray, out hit, float.MaxValue, unitsLayer))
             {
+                //Si ya habia una unidad seleccionada
                 if (selectedUnit)
                 {
                     selectedUnit.DeselectUnit();
+                    foreach (Transform button in buttonsGrid)
+                    {
+                        GameObject.Destroy(button.gameObject);
+                    }
                 }
 
                 selectedUnit = hit.collider.GetComponent<Unit>();
@@ -63,6 +77,8 @@ public class UnitsControler : MonoBehaviour
                 UIActionButtons();
                 return;
             }
+
+            //Si hay una unidad seleccionada y se pulsa en el suelo
             if (selectedUnit && Physics.Raycast(ray, out hit, float.MaxValue, groundLayer))
             {
                 var position = hit.point;
@@ -72,10 +88,6 @@ public class UnitsControler : MonoBehaviour
         }
     }
 
-    public void OnMouseMovement(InputAction.CallbackContext context)
-    {
-        mousePosition = context.ReadValue<Vector2>();
-    }
 
     private void UIActionButtons()
     {
@@ -105,8 +117,10 @@ public class UnitsControler : MonoBehaviour
 
     private void TakeAction(GridPosition gp)
     {
+        Debug.Log(selectedUnit.CanSpendPointsToTakeAction());
         if (selectedUnit.CanSpendPointsToTakeAction())
         {
+            Debug.Log(validPositions.Contains(gp));
             if (validPositions.Contains(gp))
             {
                 //isBusy = true;
