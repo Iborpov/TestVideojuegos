@@ -130,7 +130,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   canvas: {fileID: 0}
+  buttonsGrid: {fileID: 0}
+  floorVisuals: {fileID: 0}
   buttonPrefab: {fileID: 7639858503965835688, guid: 0f008137ff5800b89a2bff9bcd134b3b,
+    type: 3}
+  positionVPrefab: {fileID: 2499213405833897676, guid: d075c20e07d3cca7fb6cebe9db36042d,
+    type: 3}
+  attackVPrefab: {fileID: 6071945903451824980, guid: 368d6f53c9e66636d8a5e900219563a0,
     type: 3}
 --- !u!114 &1187480332942046232
 MonoBehaviour:
@@ -682,8 +688,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8661934557262512226}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3006394, y: -4.6401095e-16, z: 1.4626659e-16, w: 0.9537379}
-  m_LocalPosition: {x: 7.5, y: 7, z: -2.5}
+  m_LocalRotation: {x: 0.42415503, y: 1.4653461e-15, z: -6.8633073e-16, w: 0.9055896}
+  m_LocalPosition: {x: 7.5, y: 11.99999, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

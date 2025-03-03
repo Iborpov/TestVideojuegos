@@ -26,9 +26,15 @@ public class Unit : MonoBehaviour
         ResetActionPoints();
     }
 
-    void Start() { }
+    void Start()
+    {
+        gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+    }
 
-    void Update() { }
+    void Update()
+    {
+        gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+    }
 
     //Selecciona la unidad
     public void SelectUnit()
@@ -54,6 +60,11 @@ public class Unit : MonoBehaviour
     public void ResetActionPoints()
     {
         actionPoints = maxPointsTurn;
+    }
+
+    public void SpendActionPoints(int points)
+    {
+        actionPoints -= points;
     }
 
     public GridPosition GetGridPosition()
