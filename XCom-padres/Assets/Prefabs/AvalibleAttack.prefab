@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5047806279220787492}
   - component: {fileID: 1874234612135770680}
   - component: {fileID: 4030894887750167432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 8595700699640790507}
   - component: {fileID: 2824265782169655812}
   - component: {fileID: 5687884609093895673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9037284206169645575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AvalibleAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 3856509438749675529}
   - component: {fileID: 6675970418311741939}
   - component: {fileID: 2266402945465792327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Quad (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 6978831315629086861}
   - component: {fileID: 4174848071919080631}
   - component: {fileID: 1392060886478475031}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Quad (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

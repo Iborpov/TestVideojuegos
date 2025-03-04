@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2620784498633252380}
   - component: {fileID: 427809814764827117}
   - component: {fileID: 6582819488204171387}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: AvaliblePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 1498711237174505547}
   - component: {fileID: 1366954756244559098}
   - component: {fileID: 5343782255823659712}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: AvaliblePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
