@@ -188,7 +188,6 @@ public class UnitsControler : MonoBehaviour
         selectedAction = baseAction;
         //Recoge todas las posiciones validas de esta acción
         validPositions = selectedAction.GetValidGridPositionList();
-
         //Crea todos los quads necesarios para indicar cuales son las posiciones validas
         foreach (GridPosition vp in validPositions)
         {
@@ -196,6 +195,12 @@ public class UnitsControler : MonoBehaviour
             GameObject posV = Instantiate(positionVPrefab, floorVisuals);
             posV.transform.position = LevelGrid.Instance.GetWorldPosition(vp);
         }
+        // for (int i = 0; i < validPositions.Count; i++)
+        // {
+        //     Debug.Log(validPositions[i]);
+        //     GameObject posV = Instantiate(positionVPrefab, floorVisuals);
+        //     posV.transform.position = LevelGrid.Instance.GetWorldPosition(validPositions[i]);
+        // }
     }
 
     private void TakeAction(GridPosition gp)

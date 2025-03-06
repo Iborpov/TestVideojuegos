@@ -32,14 +32,11 @@ public class MoveAction : BaseAction
     {
         GridPosition gp = unit.GetGridPosition();
         List<GridPosition> validGridPositions = new List<GridPosition>();
-        for (int i = -maxMovement; i < maxMovement; i++)
+        for (int x = gp.x + -maxMovement; x < maxMovement; x++)
         {
-            for (int j = -maxMovement; j < maxMovement; j++)
+            for (int z = gp.z + -maxMovement; z < maxMovement; z++)
             {
-                if (i != 0 && j != 0)
-                {
-                    validGridPositions.Append(new GridPosition(gp.x + i, gp.z + j));
-                }
+                validGridPositions.Add(new GridPosition(x, z));
             }
         }
         return validGridPositions;
