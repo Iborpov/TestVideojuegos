@@ -191,16 +191,15 @@ public class UnitsControler : MonoBehaviour
         //Crea todos los quads necesarios para indicar cuales son las posiciones validas
         foreach (GridPosition vp in validPositions)
         {
-            Debug.Log(vp);
+            Debug.Log(
+                "GridPosition: "
+                    + vp
+                    + " Global position: "
+                    + LevelGrid.Instance.GetWorldPosition(vp)
+            );
             GameObject posV = Instantiate(positionVPrefab, floorVisuals);
             posV.transform.position = LevelGrid.Instance.GetWorldPosition(vp);
         }
-        // for (int i = 0; i < validPositions.Count; i++)
-        // {
-        //     Debug.Log(validPositions[i]);
-        //     GameObject posV = Instantiate(positionVPrefab, floorVisuals);
-        //     posV.transform.position = LevelGrid.Instance.GetWorldPosition(validPositions[i]);
-        // }
     }
 
     private void TakeAction(GridPosition gp)

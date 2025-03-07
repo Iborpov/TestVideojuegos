@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using UnityEngine;
+using UnityEngine.AI;
 
 public class MoveAction : BaseAction
 {
+    [SerializeField]
+    NavMeshAgent navMesh;
     int maxMovement = 3;
 
     List<GridPosition> movePositions;
@@ -18,6 +21,7 @@ public class MoveAction : BaseAction
         if (true)
         {
             unit.animatior.SetBool("IsRunning", true);
+
             isActive = false;
             onActionComplete();
         }
@@ -31,12 +35,21 @@ public class MoveAction : BaseAction
     public override List<GridPosition> GetValidGridPositionList()
     {
         GridPosition gp = unit.GetGridPosition();
+        NavMeshPath path = new NavMeshPath();
         List<GridPosition> validGridPositions = new List<GridPosition>();
-        for (int x = gp.x + -maxMovement; x < maxMovement; x++)
+        for (int x = gp.x + -maxMovement; x < gp.x + maxMovement + 1; x++)
         {
-            for (int z = gp.z + -maxMovement; z < maxMovement; z++)
+            for (int z = gp.z + -maxMovement; z < gp.z + maxMovement + 1; z++)
             {
-                validGridPositions.Add(new GridPosition(x, z));
+                GridPosition posible = new GridPosition(x, z);
+
+                if (navMesh.CalculatePath(LevelGrid.Instance.GetWorldPosition(posible), path))
+                {
+                    if (posible != gp)
+                    {
+                        validGridPositions.Add(posible);
+                    }
+                }
             }
         }
         return validGridPositions;
