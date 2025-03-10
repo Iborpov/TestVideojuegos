@@ -45,9 +45,11 @@ public class UnitsControler : MonoBehaviour
     List<GridPosition> validPositions;
     GameObject uiActions;
 
+    bool isBusy =false;
+
     private void Awake()
     {
-        uiActions = canvas.transform.GetChild(0).gameObject;
+        uiActions = canvas.transform.GetChild(1).gameObject;
     }
 
     //Captura el movimiento del raton
@@ -58,6 +60,11 @@ public class UnitsControler : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
+        if (isBusy)
+        {
+            return;
+        }
+        
         //Si se pulsa en UI
         if (EventSystem.current.IsPointerOverGameObject())
         {
@@ -105,9 +112,11 @@ public class UnitsControler : MonoBehaviour
                 Debug.Log("Clicked position: " + gridPos);
 
                 TakeAction(gridPos);
-
-                //UI de aciones de la unidad oculta
-                uiActions.SetActive(false);
+                //Action points text de la unidad
+                    uiActions.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+                        "AP: " + selectedUnit.GetActionPoints();
+                //Action buttons de la unidad
+                UIActionButtons();
             }
         }
     }
@@ -213,7 +222,7 @@ public class UnitsControler : MonoBehaviour
             if (selectedAction.IsValidActionGridPosition(gp))
             {
                 //Realiza la acción
-                //isBusy = true;
+                isBusy = true;
                 selectedAction.TakeAction(gp, ClearBusy);
                 selectedUnit.SpendActionPoints(selectedAction.GetActionPointsCost());
                 //Borra todos los quads visuales de la acción realizada
@@ -228,7 +237,7 @@ public class UnitsControler : MonoBehaviour
 
     private void ClearBusy()
     {
-        //isBusy = false;
+        isBusy = false;
     }
 
     private void DestroyQuads()

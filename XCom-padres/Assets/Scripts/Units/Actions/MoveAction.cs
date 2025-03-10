@@ -9,21 +9,26 @@ public class MoveAction : BaseAction
     NavMeshAgent navMesh;
     int maxMovement = 3;
 
+    GridPosition actionPosition;
     List<GridPosition> movePositions;
 
     private void Update()
     {
         if (!isActive)
         {
+            unit.animatior.SetBool("IsRunning", false);
             return;
         }
 
         if (true)
         {
             unit.animatior.SetBool("IsRunning", true);
-
-            isActive = false;
-            onActionComplete();
+            navMesh.destination = LevelGrid.Instance.GetWorldPosition(actionPosition);
+            if (Vector2.Distance(new Vector2(unit.GetGridPosition().x, unit.GetGridPosition().z), new Vector2(actionPosition.x,actionPosition.z) ) <= .1) 
+            {  
+                isActive = false;
+                onActionComplete();
+            }
         }
     }
 
@@ -57,12 +62,10 @@ public class MoveAction : BaseAction
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
     {
+        actionPosition = gridPosition;
         isActive = true;
         this.onActionComplete = onActionComplete;
     }
 
-    public override int GetActionPointsCost()
-    {
-        return 2;
-    }
+    
 }

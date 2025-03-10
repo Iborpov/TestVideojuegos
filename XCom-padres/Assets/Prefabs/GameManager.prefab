@@ -47,6 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5381f3168d2ded56ab6295b049c9ea44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allies: {fileID: 0}
+  enemies: {fileID: 0}
+  textPrefab: {fileID: 5786875392261169615, guid: e6ec3e9319b7fb34ab493fe006ca01ba,
+    type: 3}
+  canvas: {fileID: 0}
+  turn: 1
 --- !u!1 &2597443977923667930
 GameObject:
   m_ObjectHideFlags: 0

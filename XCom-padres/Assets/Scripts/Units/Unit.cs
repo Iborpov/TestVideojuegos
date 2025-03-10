@@ -62,21 +62,25 @@ public class Unit : MonoBehaviour
         actionPoints = maxPointsTurn;
     }
 
+//Resta los puntos a gastar a los actuales
     public void SpendActionPoints(int points)
     {
         actionPoints -= points;
     }
 
+//Devuelbe la posicion en el grid de la unidad
     public GridPosition GetGridPosition()
     {
         return gridPosition;
     }
 
+//Devuelve la lista de las acciones disponobles para la unidad
     public BaseAction[] GetBaseActionArray()
     {
         return dispActions;
     }
 
+//Devielde los puntos de accion actuales de la unidad
     public int GetActionPoints()
     {
         return actionPoints;
