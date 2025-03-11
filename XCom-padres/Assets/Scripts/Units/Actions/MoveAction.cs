@@ -7,7 +7,7 @@ public class MoveAction : BaseAction
 {
     [SerializeField]
     NavMeshAgent navMesh;
-    int maxMovement = 3;
+    int maxMovement = 2;
 
     GridPosition actionPosition;
     List<GridPosition> movePositions;
@@ -20,12 +20,20 @@ public class MoveAction : BaseAction
             return;
         }
 
-        if (true)
+        if (isActive)
         {
             unit.animatior.SetBool("IsRunning", true);
             navMesh.destination = LevelGrid.Instance.GetWorldPosition(actionPosition);
-            if (Vector2.Distance(new Vector2(unit.GetGridPosition().x, unit.GetGridPosition().z), new Vector2(actionPosition.x,actionPosition.z) ) <= .1) 
-            {  
+            if (
+                Vector2.Distance(
+                    new Vector2(unit.transform.position.x, unit.transform.position.z),
+                    new Vector2(
+                        LevelGrid.Instance.GetWorldPosition(actionPosition).x,
+                        LevelGrid.Instance.GetWorldPosition(actionPosition).z
+                    )
+                ) <= .1
+            )
+            {
                 isActive = false;
                 onActionComplete();
             }
@@ -66,6 +74,4 @@ public class MoveAction : BaseAction
         isActive = true;
         this.onActionComplete = onActionComplete;
     }
-
-    
 }

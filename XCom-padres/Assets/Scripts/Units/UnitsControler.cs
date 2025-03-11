@@ -45,7 +45,7 @@ public class UnitsControler : MonoBehaviour
     List<GridPosition> validPositions;
     GameObject uiActions;
 
-    bool isBusy =false;
+    bool isBusy = false;
 
     private void Awake()
     {
@@ -64,7 +64,7 @@ public class UnitsControler : MonoBehaviour
         {
             return;
         }
-        
+
         //Si se pulsa en UI
         if (EventSystem.current.IsPointerOverGameObject())
         {
@@ -113,8 +113,8 @@ public class UnitsControler : MonoBehaviour
 
                 TakeAction(gridPos);
                 //Action points text de la unidad
-                    uiActions.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
-                        "AP: " + selectedUnit.GetActionPoints();
+                uiActions.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+                    "AP: " + selectedUnit.GetActionPoints();
                 //Action buttons de la unidad
                 UIActionButtons();
             }
