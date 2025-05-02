@@ -5,7 +5,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     [SerializeField]
-    bool isEnemie;
+    int player;
     GameObject selectedVisuals;
     public Animator animatior;
 

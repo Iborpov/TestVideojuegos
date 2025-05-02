@@ -1,14 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class HealthSystem : MonoBehaviour
+public class HealthSystem : NetworkBehaviour
 {
     public event EventHandler OnDead;
     public event EventHandler OnDamage;
 
-    [SerializeField] private int health = 100;
+    [SerializeField]
+    private int health = 100;
 
     private int healthMax;
 
@@ -30,7 +30,6 @@ public class HealthSystem : MonoBehaviour
     private void Die()
     {
         OnDead?.Invoke(this, EventArgs.Empty);
-
     }
 
     public float GetHealthNormalized()

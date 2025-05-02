@@ -16,13 +16,15 @@ public class MoveAction : BaseAction
     {
         if (!isActive)
         {
-            unit.animatior.SetBool("IsRunning", false);
+            if (IsServer)
+                unit.animatior.SetBool("IsRunning", false);
             return;
         }
 
         if (isActive)
         {
-            unit.animatior.SetBool("IsRunning", true);
+            if (IsServer)
+                unit.animatior.SetBool("IsRunning", true);
             navMesh.destination = LevelGrid.Instance.GetWorldPosition(actionPosition);
             if (
                 Vector2.Distance(

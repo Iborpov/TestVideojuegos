@@ -8,43 +8,60 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    Transform allies;
+    bool online = false; //¿Es una partida online?
 
     [SerializeField]
-    Transform enemies;
+    Transform uf; //Transform padre de los diferentes grupos de unidades por jugador
+
+    List<Transform> activeUnitsList = new List<Transform>(); //Lista de unidades activas
+    int totalAP = 0; //Total de puntos de acción de las unidades activas
+
+    public int turn; // number of the player turn
+
+    public int players; // Number of players in game
+
+    [Header("Canvas")]
+    [SerializeField]
+    GameObject canvas;
 
     [SerializeField]
     GameObject textPrefab;
 
-    [SerializeField]
-    GameObject canvas;
-
     GameObject turns;
     TextMeshProUGUI turnText;
-
-    List<Transform> unitsList = new List<Transform>();
-    int totalAP = 0;
-
-    public bool turn; // True = Allies | False = Enemies
 
     void Awake()
     {
         turns = canvas.transform.GetChild(0).gameObject;
         turnText = turns.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        turn = true;
-        turnText.text = "Allies Turn";
+
+        players = uf.childCount;
+
+        //Turno del jugador 1
+        turn = 1;
+        if (online)
+        {
+            turnText.text = "Player 1 Turn";
+            UnitsList(uf.GetChild(0));
+        }
+        else
+        {
+            turnText.text = "Your Turn";
+            UnitsList(uf.GetChild(1));
+        }
         turnText.color = Color.green;
 
-        UnitsList(allies);
-        GetTurnUnits();
+        CanvasTurnUnits();
     }
 
     void Update()
     {
-        GetTurnUnits();
-        for (int i = 0; i < unitsList.Count(); i++)
+        CanvasTurnUnits();
+
+        //Suma todos los puntos de la unidades activas
+        for (int i = 0; i < activeUnitsList.Count(); i++)
         {
-            totalAP += unitsList[i].GetComponent<Unit>().GetActionPoints();
+            totalAP += activeUnitsList[i].GetComponent<Unit>().GetActionPoints();
         }
         if (totalAP <= 0)
         {
@@ -52,55 +69,101 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //Pasa de turno, reinicia los puntos y actualiza el canvas de turno
     public void NextTurn()
     {
-        if (turn)
+        turn++;
+        if (online)
         {
-            turn = false;
-            turnText.text = "Enemies Turn";
-            turnText.color = Color.red;
-            UnitsList(enemies);
+            if (turn > players)
+            {
+                turn = 1;
+            }
         }
         else
         {
-            turn = true;
-            turnText.text = "Allies Turn";
-            turnText.color = Color.green;
-            UnitsList(allies);
+            if (turn > 1)
+            {
+                turn = 0;
+            }
         }
 
-        foreach (Transform unit in unitsList)
+        NewActionPoints();
+
+        turnText.text = "Player " + turn + " Turn";
+
+        switch (turn)
         {
-            unit.GetComponent<Unit>().ResetActionPoints();
+            case 0:
+                turnText.text = "Enemy Turn";
+                turnText.color = Color.red;
+                UnitsList(uf.GetChild(0));
+                return;
+            case 1:
+                turnText.color = Color.green;
+
+                if (online)
+                {
+                    UnitsList(uf.GetChild(0));
+                }
+                else
+                {
+                    turnText.text = "Your Turn";
+                    UnitsList(uf.GetChild(1));
+                }
+                return;
+            case 2:
+                turnText.color = Color.blue;
+                UnitsList(uf.GetChild(1));
+                return;
+            case 3:
+                turnText.color = Color.yellow;
+                UnitsList(uf.GetChild(2));
+                return;
+            case 4:
+                turnText.color = Color.magenta;
+                UnitsList(uf.GetChild(3));
+                return;
+            default:
+                return;
         }
     }
 
-    public void GetTurnUnits()
+    //Obtiene las unidades activas en el turno para pintar el canvas
+    public void CanvasTurnUnits()
     {
         Transform panel = turns.transform.GetChild(1);
         foreach (Transform textPanel in panel)
         {
             Destroy(textPanel.gameObject);
         }
-        for (int i = 0; i < unitsList.Count(); i++)
+        for (int i = 0; i < activeUnitsList.Count(); i++)
         {
-            var unitComponent = unitsList[i].GetComponent<Unit>();
+            var unitComponent = activeUnitsList[i].GetComponent<Unit>();
             GameObject text = Instantiate(textPrefab, panel);
             text.GetComponent<TextMeshProUGUI>().text =
-                unitsList[i].name + " | " + unitComponent.GetActionPoints() + "AP";
+                activeUnitsList[i].name + " | " + unitComponent.GetActionPoints() + "AP";
         }
     }
 
     public void UnitsList(Transform units)
     {
-        if (unitsList != null)
+        if (activeUnitsList != null)
         {
-            unitsList.Clear();
+            activeUnitsList.Clear();
         }
 
         foreach (Transform unit in units)
         {
-            unitsList.Add(unit);
+            activeUnitsList.Add(unit);
+        }
+    }
+
+    void NewActionPoints()
+    {
+        foreach (Transform unit in activeUnitsList)
+        {
+            unit.GetComponent<Unit>().ResetActionPoints();
         }
     }
 }
