@@ -1,27 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using TMPro;
+using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Unit : MonoBehaviour
+public class Unit : NetworkBehaviour
 {
     [SerializeField]
     int player;
+    private HealthSystem healthSystem;
     GameObject selectedVisuals;
     public Animator animatior;
 
     [SerializeField]
     int maxPointsTurn = 2;
 
-    int actionPoints;
+    public NetworkVariable<int> actionPoints;
+    int oflActionPoints;
 
     GridPosition gridPosition;
 
     BaseAction[] dispActions;
 
+    GameObject canvas;
+
     void Awake()
     {
+        healthSystem = GetComponent<HealthSystem>();
         selectedVisuals = transform.GetChild(1).gameObject;
         selectedVisuals.SetActive(false);
+        canvas = transform.GetChild(2).gameObject;
         animatior = transform.GetChild(0).GetComponent<Animator>();
         animatior.SetBool("IsActive", false);
         dispActions = GetComponents<BaseAction>();
@@ -30,7 +38,46 @@ public class Unit : MonoBehaviour
 
     void Start()
     {
+        healthSystem.OnDamage += HealthSystem_OnDamage;
+        healthSystem.OnDead += HealthSystem_OnDead;
+
         gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+
+        TextMeshProUGUI name = canvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        name.text = this.name;
+        switch (player)
+        {
+            case 1:
+                name.color = Color.green;
+                break;
+            case 2:
+                name.color = Color.blue;
+                break;
+            case 3:
+                name.color = Color.yellow;
+                break;
+            case 4:
+                name.color = Color.magenta;
+                break;
+
+            default:
+                return;
+        }
+
+        canvas.GetComponentInChildren<Scrollbar>().size = healthSystem.GetHealthNormalized();
+    }
+
+    private void HealthSystem_OnDamage(object sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void HealthSystem_OnDead(object sender, EventArgs e)
+    {
+        healthSystem.OnDamage -= HealthSystem_OnDamage;
+        healthSystem.OnDead -= HealthSystem_OnDead;
+
+        Destroy(this.gameObject);
     }
 
     void Update()
@@ -55,19 +102,19 @@ public class Unit : MonoBehaviour
     //Comprueba si quedan puntos de accion disponibles
     public bool CanSpendPointsToTakeAction()
     {
-        return actionPoints > 0;
+        return actionPoints.Value > 0;
     }
 
     //Reestablece los puntos de accion al maximo por turno
     public void ResetActionPoints()
     {
-        actionPoints = maxPointsTurn;
+        actionPoints.Value = maxPointsTurn;
     }
 
     //Resta los puntos a gastar a los actuales
     public void SpendActionPoints(int points)
     {
-        actionPoints -= points;
+        actionPoints.Value -= points;
     }
 
     //Devuelbe la posicion en el grid de la unidad
@@ -85,6 +132,6 @@ public class Unit : MonoBehaviour
     //Devielde los puntos de accion actuales de la unidad
     public int GetActionPoints()
     {
-        return actionPoints;
+        return actionPoints.Value;
     }
 }

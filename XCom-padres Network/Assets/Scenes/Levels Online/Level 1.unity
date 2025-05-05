@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 2617787543642287790, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
       propertyPath: m_Name
-      value: Player 1 (1)
+      value: Greeeeen
       objectReference: {fileID: 0}
     - target: {fileID: 4376262012310357396, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
@@ -806,18 +806,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1964712257}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &194812661 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4150471381938157032, guid: 14f9dae6a82cff46fb944b307beaa6c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 807174455}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5381f3168d2ded56ab6295b049c9ea44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &246264247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1570628789228942, guid: baebdd3b26f756b4c8f1b2d2efe1cf42,
@@ -1714,7 +1702,7 @@ PrefabInstance:
     - target: {fileID: 8362354300759969148, guid: 1d761914ed6e7b7b5beb1674cad3e394,
         type: 3}
       propertyPath: m_Name
-      value: Player 2
+      value: Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1744,6 +1732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342066940553563581, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1181639263
       objectReference: {fileID: 0}
     - target: {fileID: 1885758981249919112, guid: 14f9dae6a82cff46fb944b307beaa6c1,
         type: 3}
@@ -1966,6 +1959,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Virtual Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: uf
+      value: 
+      objectReference: {fileID: 151686149}
+    - target: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1710349197}
+    - target: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: online
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: players
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+        type: 3}
+      propertyPath: uFather
+      value: 
+      objectReference: {fileID: 151686149}
     - target: {fileID: 7503575939016003623, guid: 14f9dae6a82cff46fb944b307beaa6c1,
         type: 3}
       propertyPath: FollowOffset.y
@@ -2004,6 +2022,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f9dae6a82cff46fb944b307beaa6c1, type: 3}
+--- !u!114 &807174459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7307559838668920123, guid: 14f9dae6a82cff46fb944b307beaa6c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 807174455}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a588c0254cb3de4a71b46ef28fd19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2214,7 @@ PrefabInstance:
     - target: {fileID: 2617787543642287790, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
       propertyPath: m_Name
-      value: Player 1
+      value: Verdito
       objectReference: {fileID: 0}
     - target: {fileID: 4376262012310357396, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
@@ -2823,7 +2853,7 @@ PrefabInstance:
     - target: {fileID: 8362354300759969148, guid: 1d761914ed6e7b7b5beb1674cad3e394,
         type: 3}
       propertyPath: m_Name
-      value: Player 2 (2)
+      value: Blas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3070,8 +3100,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 194812661}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 807174459}
+        m_TargetAssemblyTypeName: TurnManager, Assembly-CSharp
         m_MethodName: NextTurn
         m_Mode: 1
         m_Arguments:
@@ -3568,7 +3598,7 @@ PrefabInstance:
     - target: {fileID: 2617787543642287790, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
       propertyPath: m_Name
-      value: Player 1 (2)
+      value: Verdon
       objectReference: {fileID: 0}
     - target: {fileID: 4376262012310357396, guid: 6e58942f9bbb33b2eb5206fea3b8c0e1,
         type: 3}
@@ -3831,7 +3861,7 @@ PrefabInstance:
     - target: {fileID: 8362354300759969148, guid: 1d761914ed6e7b7b5beb1674cad3e394,
         type: 3}
       propertyPath: m_Name
-      value: Player 2 (1)
+      value: Blis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4077,9 +4107,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 151686149}
   - {fileID: 55761110}
   - {fileID: 807174455}
   - {fileID: 1555457368}
+  - {fileID: 151686149}
   - {fileID: 1710349201}
   - {fileID: 613303372}
