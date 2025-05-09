@@ -1,0 +1,10 @@
+# ninja log v5
+1	928	1746804420622551762	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2b10de7e58e0998c
+1	942	1746804420638551680	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	bb64e8235068b897
+2	972	1746804420670551516	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	3808872439d45139
+0	1010	1746804420706551332	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	8a9cb7557f6420f1
+0	1013	1746804420710551311	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	bb7fd87c572ba6f5
+3	1073	1746804420770551003	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	c4eadfd7f875735a
+1	1260	1746804420958550039	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	28fdacdaa2c4a03e
+0	1365	1746804421062549506	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b373f3c3ba7b33b8
+1365	1392	1746804421094549342	/home/ciclost/Documentos/GitHub/TestVideojuegos/TGC To Live!/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/302a4m4h/obj/arm64-v8a/libgame.so	1b5352b8295da6a7
