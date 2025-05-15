@@ -27,3 +27,243 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: Espeon
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5069528622413414479
+      m_GuidHigh: 13558773339320855226
+    m_SerializedTextureGuid:
+      m_GuidLow: 7610471775791902497
+      m_GuidHigh: 7187676949529803515
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Glaceon
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4961274291978720129
+      m_GuidHigh: 16037583070050752662
+    m_SerializedTextureGuid:
+      m_GuidLow: 933977371987858163
+      m_GuidHigh: 2413761018404412745
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Accelgor
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5353443865001147909
+      m_GuidHigh: 2496047112290825148
+    m_SerializedTextureGuid:
+      m_GuidLow: 4420446974081257299
+      m_GuidHigh: 16020556669459204392
+    m_Size: {x: 0.062, y: 0.08636491}
+    m_SpecifySize: 1
+    m_Name: Arcanine
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5061550740790582504
+      m_GuidHigh: 7319065255100692111
+    m_SerializedTextureGuid:
+      m_GuidLow: 6585523589853982550
+      m_GuidHigh: 4117677008292180522
+    m_Size: {x: 0.062, y: 0.08764586}
+    m_SpecifySize: 1
+    m_Name: Ashs_Pikachu
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5137289162613002467
+      m_GuidHigh: 3766471717351177129
+    m_SerializedTextureGuid:
+      m_GuidLow: 7682137721825921394
+      m_GuidHigh: 16682994526798132089
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Charcadet
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5044312022386851084
+      m_GuidHigh: 16807876231014162091
+    m_SerializedTextureGuid:
+      m_GuidLow: 14371769194226464413
+      m_GuidHigh: 9405461338699312248
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Chimchar
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5200544446829360081
+      m_GuidHigh: 1021202134696616886
+    m_SerializedTextureGuid:
+      m_GuidLow: 482664661061989054
+      m_GuidHigh: 14054807115017715289
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Cobalion
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4973259383165810377
+      m_GuidHigh: 487349243485450424
+    m_SerializedTextureGuid:
+      m_GuidLow: 2835551108568905000
+      m_GuidHigh: 11900024391174311499
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Combusken
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5332888545533670656
+      m_GuidHigh: 9609565304236789896
+    m_SerializedTextureGuid:
+      m_GuidLow: 1828152007964142783
+      m_GuidHigh: 4335106868216612730
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Cottonee
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5050875669392076690
+      m_GuidHigh: 13143622561248756638
+    m_SerializedTextureGuid:
+      m_GuidLow: 9520678369056980982
+      m_GuidHigh: 7603593567862947352
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Cradily
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4910457038752710015
+      m_GuidHigh: 6237953612621192114
+    m_SerializedTextureGuid:
+      m_GuidLow: 9539974932526403584
+      m_GuidHigh: 3027847844137963706
+    m_Size: {x: 0.062, y: 0.086546935}
+    m_SpecifySize: 1
+    m_Name: Detective_Pikachu
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5177933023991719429
+      m_GuidHigh: 2170016508420096667
+    m_SerializedTextureGuid:
+      m_GuidLow: 10271192702905300954
+      m_GuidHigh: 15085497844141199081
+    m_Size: {x: 0.062, y: 0.08777255}
+    m_SpecifySize: 1
+    m_Name: Detective_Psyduck
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5004512064556592162
+      m_GuidHigh: 3451109628976977084
+    m_SerializedTextureGuid:
+      m_GuidLow: 14288801218701055106
+      m_GuidHigh: 2577495465781056825
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Emolga
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4672893471544096012
+      m_GuidHigh: 8664935937081643963
+    m_SerializedTextureGuid:
+      m_GuidLow: 12333452451874473827
+      m_GuidHigh: 3201545323324805289
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Falinks
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4807049582842151224
+      m_GuidHigh: 9154947170510068138
+    m_SerializedTextureGuid:
+      m_GuidLow: 17947769634909025143
+      m_GuidHigh: 10217063082547104586
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Fidough
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4843886229433924625
+      m_GuidHigh: 14455419475340504506
+    m_SerializedTextureGuid:
+      m_GuidLow: 12898231131248413561
+      m_GuidHigh: 6824034155012320552
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Kyurem
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5627965984832342179
+      m_GuidHigh: 15059234509081505193
+    m_SerializedTextureGuid:
+      m_GuidLow: 15224260597910297661
+      m_GuidHigh: 6993999273270008136
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Marowak
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5351776736273801750
+      m_GuidHigh: 14106411790286582167
+    m_SerializedTextureGuid:
+      m_GuidLow: 3393388350858651534
+      m_GuidHigh: 5780895591004508488
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Meditite
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4998634751854856503
+      m_GuidHigh: 1437918861650344632
+    m_SerializedTextureGuid:
+      m_GuidLow: 16469456290665625809
+      m_GuidHigh: 17053584936346584200
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Purugly
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4866246769966862527
+      m_GuidHigh: 18194216018986468031
+    m_SerializedTextureGuid:
+      m_GuidLow: 7610663098716613147
+      m_GuidHigh: 5205658748541248712
+    m_Size: {x: 0.062, y: 0.08625614}
+    m_SpecifySize: 1
+    m_Name: Spheal
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4705389260615781732
+      m_GuidHigh: 489253435876138629
+    m_SerializedTextureGuid:
+      m_GuidLow: 9778984498317190448
+      m_GuidHigh: 17991278219499877498
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Swalot
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5261495638893269894
+      m_GuidHigh: 13646855441042820539
+    m_SerializedTextureGuid:
+      m_GuidLow: 9126987491786005161
+      m_GuidHigh: 4312056513433373338
+    m_Size: {x: 0.062, y: 0.086442724}
+    m_SpecifySize: 1
+    m_Name: Togedemaru
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5246558394464029134
+      m_GuidHigh: 18143373630419440021
+    m_SerializedTextureGuid:
+      m_GuidLow: 10388807005753438758
+      m_GuidHigh: 4305308531671263608
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Tranquill
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5671645461794322937
+      m_GuidHigh: 1166719378259355552
+    m_SerializedTextureGuid:
+      m_GuidLow: 11777554104397518010
+      m_GuidHigh: 13215531769806354091
+    m_Size: {x: 0.062, y: 0.08649591}
+    m_SpecifySize: 1
+    m_Name: Turtwig
+    m_Texture: {fileID: 0}
