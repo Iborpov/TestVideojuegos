@@ -1,13 +1,17 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class UnitsControler : MonoBehaviour
+public class UnitsControler : NetworkBehaviour
 {
+    //[SerializeField]
+    ulong playerId = 1;
+
     //Layers ----------------------------
     [SerializeField]
     LayerMask unitsLayer;
@@ -56,6 +60,11 @@ public class UnitsControler : MonoBehaviour
     public void OnMouseMovement(InputAction.CallbackContext context)
     {
         mousePosition = context.ReadValue<Vector2>();
+    }
+
+    public override void OnNetworkSpawn()
+    {
+        playerId = NetworkManager.Singleton.LocalClientId;
     }
 
     public void OnClick(InputAction.CallbackContext context)
@@ -118,6 +127,13 @@ public class UnitsControler : MonoBehaviour
                 //Action buttons de la unidad
                 UIActionButtons();
             }
+
+            // Click sin colisión → deselecciona lo actual
+            if (selectedUnit != null)
+            {
+                selectedUnit.DeselectUnit();
+                selectedUnit = null;
+            }
         }
     }
 
@@ -129,7 +145,14 @@ public class UnitsControler : MonoBehaviour
             //Si ya habia una unidad seleccionada y es diferente a la nueva seleccionada
             if (selectedUnit != hit.collider.GetComponent<Unit>())
             {
-                return true;
+                if (IsServer && hit.collider.GetComponent<Unit>().player == 1)
+                {
+                    return true;
+                }
+                else if (!IsServer && hit.collider.GetComponent<Unit>().player == 2)
+                {
+                    return true;
+                }
             }
         }
         else

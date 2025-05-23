@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Unit : NetworkBehaviour
 {
     [SerializeField]
-    int player;
+    public int player;
     private HealthSystem healthSystem;
     GameObject selectedVisuals;
     public Animator animatior;
@@ -18,7 +18,10 @@ public class Unit : NetworkBehaviour
     public NetworkVariable<int> actionPoints;
     int oflActionPoints;
 
-    GridPosition gridPosition;
+    public int attackRange = 3;
+    public int attack = 20;
+
+    public GridPosition gridPosition;
 
     BaseAction[] dispActions;
 
@@ -38,11 +41,8 @@ public class Unit : NetworkBehaviour
 
     void Start()
     {
-        healthSystem.OnDamage += HealthSystem_OnDamage;
-        healthSystem.OnDead += HealthSystem_OnDead;
-
         gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
-
+        LevelGrid.Instance.AddUnitAtGridPosition(this);
         TextMeshProUGUI name = canvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         name.text = this.name;
         switch (player)
@@ -63,13 +63,23 @@ public class Unit : NetworkBehaviour
             default:
                 return;
         }
+    }
 
+    public override void OnNetworkSpawn()
+    {
+        healthSystem.OnDamage += HealthSystem_OnDamage;
+        healthSystem.OnDead += HealthSystem_OnDead;
         canvas.GetComponentInChildren<Scrollbar>().size = healthSystem.GetHealthNormalized();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        healthSystem.Damage(damage);
     }
 
     private void HealthSystem_OnDamage(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        canvas.GetComponentInChildren<Scrollbar>().size = healthSystem.GetHealthNormalized();
     }
 
     private void HealthSystem_OnDead(object sender, EventArgs e)
@@ -82,7 +92,13 @@ public class Unit : NetworkBehaviour
 
     void Update()
     {
-        gridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+        var newGridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
+        if (gridPosition != newGridPosition)
+        {
+            LevelGrid.Instance.RemoveUnitAtGridPosition(gridPosition);
+            gridPosition = newGridPosition;
+            LevelGrid.Instance.AddUnitAtGridPosition(this);
+        }
     }
 
     //Selecciona la unidad

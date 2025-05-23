@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelGrid : MonoBehaviour
@@ -14,8 +16,9 @@ public class LevelGrid : MonoBehaviour
     float cellSize;
 
     public static LevelGrid Instance { get; private set; }
+    public event EventHandler<GridPosition> OnMoveRealized;
 
-    private GridSystem gridSystem;
+    public GridSystem gridSystem;
 
     void Awake()
     {
@@ -33,20 +36,54 @@ public class LevelGrid : MonoBehaviour
 
     void Update() { }
 
-    public void AddUnitAtGridPosition(Unit unit) { }
-
-    public void GetUnitListAtGridPosition(GridPosition gridPosition) { }
-
-    public void RemoveUnitAtGridPosition(GridPosition gridPosition) { }
-
-    public bool HasAnyUnitOnGridPosition(GridPosition gridPosition)
+    public void AddUnitAtGridPosition(Unit unit)
     {
+        GridObject currentGridObject;
+        currentGridObject = gridSystem.GetGridObject(unit.GetGridPosition());
+        if (currentGridObject != null)
+        {
+            Debug.Log("Unidad localizada en " + unit.GetGridPosition());
+            currentGridObject.AddUnit(unit);
+            //OnMoveRealized?.Invoke(this, unit.gridPosition);
+        }
+        else
+        {
+            Debug.Log("Intento de añadir unidad en posición sin gridobject");
+        }
+    }
+
+    public List<Unit> GetUnitListAtGridPosition(GridPosition pos)
+    {
+        return gridSystem.GetGridObject(pos).GetUnitList();
+    }
+
+    public List<Unit> GetUnitListAtGridObject(GridObject gridObject)
+    {
+        return gridObject.GetUnitList();
+    }
+
+    public bool HasEnemyOnGridPosition(GridPosition gridPos, Unit allie)
+    {
+        List<Unit> unitList = GetUnitListAtGridPosition(gridPos);
+        foreach (Unit u in unitList)
+        {
+            if (u.player != allie.player)
+            {
+                return true;
+            }
+        }
         return false;
     }
 
-    public bool IsValidGridPosition(GridPosition gridPosition)
+    public void RemoveUnitAtGridPosition(Unit unit)
     {
-        return HasAnyUnitOnGridPosition(gridPosition);
+        Debug.Log("Unidad eliminada de posición " + unit.gridPosition);
+        GridObject gridObject = gridSystem.GetGridObject(unit.gridPosition);
+
+        if (gridObject != null)
+        {
+            gridObject.RemoveUnit(unit);
+        }
     }
 
     public GridPosition GetGridPosition(Vector3 worldPosition)
@@ -56,8 +93,21 @@ public class LevelGrid : MonoBehaviour
 
     public Vector3 GetWorldPosition(GridPosition gridPosition)
     {
-        return gridSystem.GetWoldPosition(gridPosition);
+        return gridSystem.GetWorldPosition(gridPosition);
     }
+
+    public bool IsValidGridPosition(GridPosition mousePosition)
+    {
+        return gridSystem.IsValidGridPosition(mousePosition);
+    }
+
+    public bool HasAnyUnitOnGridPosition(GridPosition gridPosition)
+    {
+        bool hasUnits = GetUnitListAtGridPosition(gridPosition).Count > 0;
+        return hasUnits;
+    }
+
+    public void RemoveUnitAtGridPosition(GridPosition gridPosition) { }
 
     public float GetWith()
     {
@@ -67,5 +117,27 @@ public class LevelGrid : MonoBehaviour
     public float GetHeight()
     {
         return height;
+    }
+
+    public List<Unit> GetEnemyUnitsFromGrid(int id)
+    {
+        //Debug.Log("enemy count:" + GetUnitsFromGrid().Where(x => x.IsEnemy == true).ToList().Count());
+        return GetUnitsFromGrid().Where(x => x.player == id).ToList();
+    }
+
+    public List<Unit> GetUnitsFromGrid()
+    {
+        GridObject[,] gridObjects = gridSystem.GetGridObjects();
+        List<Unit> units = new List<Unit>();
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int z = 0; z < height; z++)
+            {
+                units.AddRange(GetUnitListAtGridObject(gridObjects[x, z]));
+            }
+        }
+
+        return units;
     }
 }

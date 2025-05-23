@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class BaseAction : NetworkBehaviour
 {
     protected Unit unit;
+    protected Unit enemyUnit;
     protected bool isActive;
     protected Action onActionComplete;
 

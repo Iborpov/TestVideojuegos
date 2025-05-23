@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 
 public class GridObject
 {
@@ -25,7 +24,7 @@ public class GridObject
     //Añade una unidad a la lista de unidades de la celda
     public void AddUnit(Unit unit)
     {
-        unitList.Append(unit);
+        unitList.Add(unit);
     }
 
     //Devuelve la lista de unidades de la celda

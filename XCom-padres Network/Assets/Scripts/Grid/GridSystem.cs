@@ -27,7 +27,7 @@ public class GridSystem
         }
     }
 
-    public Vector3 GetWoldPosition(GridPosition gridPosition)
+    public Vector3 GetWorldPosition(GridPosition gridPosition)
     {
         return new Vector3(gridPosition.x, 0, gridPosition.z) * cellSize;
     }
@@ -40,14 +40,23 @@ public class GridSystem
         );
     }
 
-    public bool IsValidGridPosition(GridPosition gridPosition)
+    public bool IsValidGridPosition(GridPosition position)
     {
-        throw new NotImplementedException();
+        if (position.x >= 0 && position.x < width && position.z >= 0 && position.z < height)
+        {
+            return true;
+        }
+        return false;
     }
 
-    public GridObject GetGridObjet(GridPosition gp)
+    public GridObject GetGridObject(GridPosition gp)
     {
         return gridObjects[gp.x, gp.z];
+    }
+
+    public GridObject[,] GetGridObjects()
+    {
+        return gridObjects;
     }
 
     public float GetWith()
