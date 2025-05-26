@@ -31,4 +31,9 @@ public abstract class BaseAction : NetworkBehaviour
     {
         return 1;
     }
+
+    public virtual bool IsAttack()
+    {
+        return false;
+    }
 }

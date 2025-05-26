@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,10 +15,11 @@ public class AttackAction : BaseAction
         if (true)
         {
             if (IsServer)
+            {
+                transform.LookAt(enemyUnit.transform);
                 unit.animatior.SetBool("Shoot", true);
-            enemyUnit.TakeDamage(unit.attack);
-            isActive = false;
-            onActionComplete();
+                StartCoroutine(WaitForAnimation());
+            }
         }
     }
 
@@ -66,18 +68,6 @@ public class AttackAction : BaseAction
             }
         }
 
-        //Filtra las posiciones para que solo haya el maximo posible en todas las direcciones
-        /*validGridPositions = validGridPositions.FindAll(
-            (GridPosition gridPosition) =>
-            {
-                Vector3 yIgnore = Vector3.down + Vector3.one;
-                float dist = Vector3.Distance(
-                    Vector3.Scale(LevelGrid.Instance.GetWorldPosition(gridPosition), yIgnore),
-                    Vector3.Scale(transform.position, yIgnore)
-                );
-                return dist / Mathf.Sqrt(3) <= range + 0.1f;
-            }
-        );*/
         return validGridPositions;
     }
 
@@ -92,5 +82,18 @@ public class AttackAction : BaseAction
         enemyUnit = enemyUnits[0];
         isActive = true;
         this.onActionComplete = onActionComplete;
+    }
+
+    private IEnumerator WaitForAnimation()
+    {
+        yield return new WaitForSeconds(8f);
+        enemyUnit.TakeDamage(unit.attack);
+        isActive = false;
+        onActionComplete();
+    }
+
+    public override bool IsAttack()
+    {
+        return true;
     }
 }

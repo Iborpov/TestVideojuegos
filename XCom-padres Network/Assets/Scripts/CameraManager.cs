@@ -93,7 +93,7 @@ public class CameraManager : MonoBehaviour
         if (context.performed)
         {
             zoom = context.ReadValue<float>();
-            targetOffsetValue -= zoom / 90f;
+            targetOffsetValue -= zoom;
             targetOffsetValue = Math.Clamp(targetOffsetValue, .5f, 12);
         }
     }

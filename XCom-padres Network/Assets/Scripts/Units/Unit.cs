@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Unit : NetworkBehaviour
 {
     [SerializeField]
-    public int player;
+    public ulong player;
     private HealthSystem healthSystem;
     GameObject selectedVisuals;
     public Animator animatior;

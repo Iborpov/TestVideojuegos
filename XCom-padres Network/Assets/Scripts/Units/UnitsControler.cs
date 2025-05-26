@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class UnitsControler : NetworkBehaviour
 {
-    //[SerializeField]
     ulong playerId = 1;
 
     //Layers ----------------------------
@@ -102,13 +101,7 @@ public class UnitsControler : NetworkBehaviour
                     selectedUnit = hit.collider.GetComponent<Unit>();
                     selectedUnit.SelectUnit();
 
-                    //UI de aciones de la unidad visible
-                    uiActions.SetActive(true);
-                    //Action points text de la unidad
-                    uiActions.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
-                        "AP: " + selectedUnit.GetActionPoints();
-                    //Action buttons de la unidad
-                    UIActionButtons();
+                    ActiveUI(selectedUnit);
                     return;
                 }
             }
@@ -127,39 +120,34 @@ public class UnitsControler : NetworkBehaviour
                 //Action buttons de la unidad
                 UIActionButtons();
             }
-
-            // Click sin colisión → deselecciona lo actual
-            if (selectedUnit != null)
+            else if (
+                selectedUnit != null
+                && Physics.Raycast(ray, out hit, float.MaxValue, groundLayer)
+            ) // Click sin colisión → deselecciona lo actual
             {
-                selectedUnit.DeselectUnit();
-                selectedUnit = null;
+                Deselect();
             }
         }
     }
 
     bool SelectUnit(RaycastHit hit)
     {
-        //Si hay una acción seleccionada
+        Unit unit = hit.collider.GetComponent<Unit>();
+        if (unit == null)
+            return false;
+
+        // Verifica que la unidad es del jugador local
+        if (unit.player != playerId)
+            return false;
+
+        // Si hay una acción seleccionada y estamos cambiando de unidad, permitirlo
         if (selectedAction)
         {
-            //Si ya habia una unidad seleccionada y es diferente a la nueva seleccionada
-            if (selectedUnit != hit.collider.GetComponent<Unit>())
-            {
-                if (IsServer && hit.collider.GetComponent<Unit>().player == 1)
-                {
-                    return true;
-                }
-                else if (!IsServer && hit.collider.GetComponent<Unit>().player == 2)
-                {
-                    return true;
-                }
-            }
+            return selectedUnit != unit;
         }
-        else
-        {
-            return true;
-        }
-        return false;
+
+        // Si no hay acción seleccionada, permite la selección
+        return true;
     }
 
     private void UIActionButtons()
@@ -195,11 +183,14 @@ public class UnitsControler : NetworkBehaviour
                             //Pone el color de todos los botones a negro
                             foreach (Transform button in buttonsGrid)
                             {
-                                button.GetComponent<Image>().color = Color.black;
+                                button.GetComponent<Image>().color = Color.white;
+                                button.GetComponentInChildren<TextMeshProUGUI>().color =
+                                    Color.white;
                             }
 
                             //El seleccionado se cambia a gris
-                            button.GetComponent<Image>().color = Color.gray;
+                            button.GetComponent<Image>().color = Color.blue;
+                            button.GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
 
                             //Establece que función realiza
                             SetActiveAction(baseAction);
@@ -210,6 +201,7 @@ public class UnitsControler : NetworkBehaviour
             {
                 //Los no disponibles por puntos se cambian a rojo
                 button.GetComponent<Image>().color = Color.red;
+                button.GetComponentInChildren<TextMeshProUGUI>().color = Color.red;
             }
         }
     }
@@ -229,7 +221,15 @@ public class UnitsControler : NetworkBehaviour
                     + " Global position: "
                     + LevelGrid.Instance.GetWorldPosition(vp)
             );
-            GameObject posV = Instantiate(positionVPrefab, floorVisuals);
+            GameObject posV;
+            if (selectedAction.IsAttack())
+            {
+                posV = Instantiate(attackVPrefab, floorVisuals);
+            }
+            else
+            {
+                posV = Instantiate(positionVPrefab, floorVisuals);
+            }
             posV.transform.position = LevelGrid.Instance.GetWorldPosition(vp);
         }
     }
@@ -255,6 +255,10 @@ public class UnitsControler : NetworkBehaviour
                 }
                 selectedAction = null;
             }
+            else
+            {
+                Deselect();
+            }
         }
     }
 
@@ -270,5 +274,27 @@ public class UnitsControler : NetworkBehaviour
         {
             Destroy(fv.gameObject);
         }
+    }
+
+    public void ActiveUI(Unit unit)
+    {
+        //UI de aciones de la unidad visible
+        uiActions.SetActive(true);
+        //Action points text de la unidad
+        uiActions.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
+            "AP: " + selectedUnit.GetActionPoints();
+        //Nombre de la unidad
+        uiActions.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = selectedUnit.name;
+        //Action buttons de la unidad
+        UIActionButtons();
+    }
+
+    public void Deselect()
+    {
+        DestroyQuads();
+        selectedUnit.DeselectUnit();
+        uiActions.SetActive(false);
+        selectedUnit = null;
+        selectedAction = null;
     }
 }

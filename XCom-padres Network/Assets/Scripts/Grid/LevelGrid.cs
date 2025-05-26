@@ -119,7 +119,7 @@ public class LevelGrid : MonoBehaviour
         return height;
     }
 
-    public List<Unit> GetEnemyUnitsFromGrid(int id)
+    public List<Unit> GetEnemyUnitsFromGrid(ulong id)
     {
         //Debug.Log("enemy count:" + GetUnitsFromGrid().Where(x => x.IsEnemy == true).ToList().Count());
         return GetUnitsFromGrid().Where(x => x.player == id).ToList();
