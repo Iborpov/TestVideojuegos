@@ -64,6 +64,7 @@ public class UnitsControler : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         playerId = NetworkManager.Singleton.LocalClientId;
+        Debug.Log("El player id es: " + playerId);
     }
 
     public void OnClick(InputAction.CallbackContext context)

@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 1998671739159879051, guid: 730c5beb8326e6a36997344b5944aa01,
         type: 3}
       propertyPath: player
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2104329025690709626, guid: 730c5beb8326e6a36997344b5944aa01,
         type: 3}

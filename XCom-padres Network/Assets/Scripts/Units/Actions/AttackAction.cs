@@ -86,8 +86,9 @@ public class AttackAction : BaseAction
 
     private IEnumerator WaitForAnimation()
     {
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(0.2f);
         enemyUnit.TakeDamage(unit.attack);
+        unit.animatior.SetBool("Shoot", false);
         isActive = false;
         onActionComplete();
     }
